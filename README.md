@@ -1,6 +1,6 @@
 # TiFi
 
-This is the source code for the TiFi.
+This is the source code for the Mobicom 2018 - TiFi.
 
 \WiFi contains the Matlab Code for generating the WiFi Packet.
 

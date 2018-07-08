@@ -1,3 +1,9 @@
 # TiFi
 
 This is the source code for the TiFi.
+
+\WiFi contains the Matlab Code for generating the WiFi Packet.
+
+\RFID contains the Code for generating the RFID Command.
+
+\USRP contains the Labview Codes for constructing the whole TiFi Project.

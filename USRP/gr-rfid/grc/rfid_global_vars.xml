@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<block>
+  <name>global_vars</name>
+  <key>rfid_global_vars</key>
+  <category>rfid</category>
+  <import>import rfid</import>
+  <make>rfid.global_vars()</make>
+</block>

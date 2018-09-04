@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgr_1_1rfid_1_1READER__STATS" kind="struct" language="C++" prot="public">
+    <compoundname>gr::rfid::READER_STATS</compoundname>
+    <includes refid="global__vars_8h" local="no">global_vars.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a1527719d36aa694a9975ba8b315da1f9" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::n_queries_sent</definition>
+        <argsstring></argsstring>
+        <name>n_queries_sent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="38" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a68aa26b264f037219b59591685a7a470" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::cur_inventory_round</definition>
+        <argsstring></argsstring>
+        <name>cur_inventory_round</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="40" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a24fbcfab7343a50159c6a78031d1a786" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::cur_slot_number</definition>
+        <argsstring></argsstring>
+        <name>cur_slot_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="41" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1ace809496ad18add9d8ec9b1ad8fef4d0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::max_slot_number</definition>
+        <argsstring></argsstring>
+        <name>max_slot_number</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="43" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1af0ae16885e598080b93b03d218ba8a87" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::max_inventory_round</definition>
+        <argsstring></argsstring>
+        <name>max_inventory_round</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="44" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a8ef95b2c22b5349a8a9842678ed80cc7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATS::n_epc_correct</definition>
+        <argsstring></argsstring>
+        <name>n_epc_correct</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="46" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1afa72a20bba0ffd675737a4119c03f36c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; gr::rfid::READER_STATS::unique_tags_round</definition>
+        <argsstring></argsstring>
+        <name>unique_tags_round</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="49" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a64222623f51729e30a7b517d61e203f8" prot="public" static="no" mutable="no">
+        <type>std::map&lt; int, int &gt;</type>
+        <definition>std::map&lt;int,int&gt; gr::rfid::READER_STATS::tag_reads</definition>
+        <argsstring></argsstring>
+        <name>tag_reads</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="50" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATS_1a1fb2661b3ef8726c185692a6e01aad95" prot="public" static="no" mutable="no">
+        <type>struct timeval start</type>
+        <definition>struct timeval start gr::rfid::READER_STATS::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="50" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="15">
+        <label>gr::rfid::READER_STATS</label>
+        <link refid="structgr_1_1rfid_1_1READER__STATS"/>
+        <childnode refid="16" relation="usage">
+          <edgelabel>tag_reads</edgelabel>
+        </childnode>
+        <childnode refid="17" relation="usage">
+          <edgelabel>unique_tags_round</edgelabel>
+        </childnode>
+      </node>
+      <node id="16">
+        <label>std::map&lt; int, int &gt;</label>
+      </node>
+      <node id="17">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="37" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="36" bodyend="53"/>
+    <listofallmembers>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a68aa26b264f037219b59591685a7a470" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>cur_inventory_round</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a24fbcfab7343a50159c6a78031d1a786" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>cur_slot_number</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a1fb2661b3ef8726c185692a6e01aad95" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>end</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1af0ae16885e598080b93b03d218ba8a87" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>max_inventory_round</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1ace809496ad18add9d8ec9b1ad8fef4d0" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>max_slot_number</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a8ef95b2c22b5349a8a9842678ed80cc7" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>n_epc_correct</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a1527719d36aa694a9975ba8b315da1f9" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>n_queries_sent</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1a64222623f51729e30a7b517d61e203f8" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>tag_reads</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATS_1afa72a20bba0ffd675737a4119c03f36c" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATS</scope><name>unique_tags_round</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,755 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="namespacegr_1_1rfid" kind="namespace" language="C++">
+    <compoundname>gr::rfid</compoundname>
+    <innerclass refid="classgr_1_1rfid_1_1gate" prot="public">gr::rfid::gate</innerclass>
+    <innerclass refid="classgr_1_1rfid_1_1gate__impl" prot="public">gr::rfid::gate_impl</innerclass>
+    <innerclass refid="classgr_1_1rfid_1_1reader" prot="public">gr::rfid::reader</innerclass>
+    <innerclass refid="classgr_1_1rfid_1_1reader__impl" prot="public">gr::rfid::reader_impl</innerclass>
+    <innerclass refid="structgr_1_1rfid_1_1READER__STATE" prot="public">gr::rfid::READER_STATE</innerclass>
+    <innerclass refid="structgr_1_1rfid_1_1READER__STATS" prot="public">gr::rfid::READER_STATS</innerclass>
+    <innerclass refid="classgr_1_1rfid_1_1tag__decoder" prot="public">gr::rfid::tag_decoder</innerclass>
+    <innerclass refid="classgr_1_1rfid_1_1tag__decoder__impl" prot="public">gr::rfid::tag_decoder_impl</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespacegr_1_1rfid_1ab94587ed81e2417bd38423bb95ed6999" prot="public" static="no">
+        <name>STATUS</name>
+        <enumvalue id="namespacegr_1_1rfid_1ab94587ed81e2417bd38423bb95ed6999a82fed27cf1f44b38331826c573d9ef0a" prot="public">
+          <name>RUNNING</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1rfid_1ab94587ed81e2417bd38423bb95ed6999a6c82ed95a73bd33e1183537ed9cbd3fe" prot="public">
+          <name>TERMINATED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="31" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2" prot="public" static="no">
+        <name>GEN2_LOGIC_STATUS</name>
+        <enumvalue id="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a1aba60322b5ea5e0f280ef81c7212a41" prot="public">
+          <name>SEND_QUERY</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a76113274bacc2cebc8fe47a0a097babd" prot="public">
+          <name>SEND_ACK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a2f90fb7a3ce27d21bb004bc5d9d770fb" prot="public">
+          <name>SEND_QUERY_REP</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a31862032210f7a4f2aa41d437b0fa041" prot="public">
+          <name>IDLE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2afddbcac3b674ef719587e81ddc5faabc" prot="public">
+          <name>SEND_CW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a1d1263e99b3f79582452df39abed07f0" prot="public">
+          <name>START</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a39b3b00ea8b7f171bfe69933e569dca0" prot="public">
+          <name>SEND_QUERY_ADJUST</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a1564a32cb0d9c4e15bab57598b2e3e25" prot="public">
+          <name>SEND_NAK_QR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a8dd090ba36246a7c5c1f9c82f0b081e4" prot="public">
+          <name>SEND_NAK_Q</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2aea34c959312bf6cae9cf1f7e721e8c07" prot="public">
+          <name>POWER_DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="32" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1rfid_1a90334419f6b1eab60573c3b68c0012cf" prot="public" static="no">
+        <name>GATE_STATUS</name>
+        <enumvalue id="namespacegr_1_1rfid_1a90334419f6b1eab60573c3b68c0012cfa0d011171e9b4bb7cc5fa17832658e231" prot="public">
+          <name>GATE_OPEN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1rfid_1a90334419f6b1eab60573c3b68c0012cfa14329420ef4eec0155906a9186b92c37" prot="public">
+          <name>GATE_CLOSED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1rfid_1a90334419f6b1eab60573c3b68c0012cfa3adb863f7872d33b38c282404b26d483" prot="public">
+          <name>GATE_SEEK_RN16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1rfid_1a90334419f6b1eab60573c3b68c0012cfa055c9b7ef9f24d811336e940dfdb2004" prot="public">
+          <name>GATE_SEEK_EPC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="33" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespacegr_1_1rfid_1a32b78fe37f6088115bf7ee2e30957359" prot="public" static="no">
+        <name>DECODER_STATUS</name>
+        <enumvalue id="namespacegr_1_1rfid_1a32b78fe37f6088115bf7ee2e30957359ae3453e19adac39e6a8aa46ad9086cc66" prot="public">
+          <name>DECODER_DECODE_RN16</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespacegr_1_1rfid_1a32b78fe37f6088115bf7ee2e30957359a5af6bd1e6407ff5c474f10273e2927d8" prot="public">
+          <name>DECODER_DECODE_EPC</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="34" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="34" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1aac760815dc901805db6f8df209fd6498" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::FIXED_Q</definition>
+        <argsstring></argsstring>
+        <name>FIXED_Q</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="72" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1ab7e414c95a3bf373a3006ea0385b5cfa" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::MAX_NUM_QUERIES</definition>
+        <argsstring></argsstring>
+        <name>MAX_NUM_QUERIES</name>
+        <initializer>= 1000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="76" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a301526d69d45cc7057a3faf9b27a350c" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::Q_VALUE[16][4]</definition>
+        <argsstring>[16][4]</argsstring>
+        <name>Q_VALUE</name>
+        <initializer>=  
+    {
+        {0,0,0,0}, {0,0,0,1}, {0,0,1,0}, {0,0,1,1}, 
+        {0,1,0,0}, {0,1,0,1}, {0,1,1,0}, {0,1,1,1}, 
+        {1,0,0,0}, {1,0,0,1}, {1,0,1,0}, {1,0,1,1},
+        {1,1,0,0}, {1,1,0,1}, {1,1,1,0}, {1,1,1,1}
+    }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="79" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1ac7abce47d09ed4f0ea2f0511fc949fab" prot="public" static="no" mutable="no">
+        <type>const bool</type>
+        <definition>const bool gr::rfid::P_DOWN</definition>
+        <argsstring></argsstring>
+        <name>P_DOWN</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="87" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1adc9819d2ed986276d2ee4a555daffb1f" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::CW_D</definition>
+        <argsstring></argsstring>
+        <name>CW_D</name>
+        <initializer>= 250</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="90" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a4cdb62a23d98e1dced452cf9aeef70f0" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::P_DOWN_D</definition>
+        <argsstring></argsstring>
+        <name>P_DOWN_D</name>
+        <initializer>= 2000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="91" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a76d8be672b97cd9c38fcc4e666a5d3cd" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::T1_D</definition>
+        <argsstring></argsstring>
+        <name>T1_D</name>
+        <initializer>= 240</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="92" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a3a91d48106d5457fdab25b1aad9ed79d" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::T2_D</definition>
+        <argsstring></argsstring>
+        <name>T2_D</name>
+        <initializer>= 480</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="93" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1ab641757eade3653d9cb523c7caf8de99" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::PW_D</definition>
+        <argsstring></argsstring>
+        <name>PW_D</name>
+        <initializer>= 12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="94" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1aa2a807d13259030e1403d2a6a36a292b" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::DELIM_D</definition>
+        <argsstring></argsstring>
+        <name>DELIM_D</name>
+        <initializer>= 12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="95" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a346bfd24f485e16c2772f7c7cced7f90" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::TRCAL_D</definition>
+        <argsstring></argsstring>
+        <name>TRCAL_D</name>
+        <initializer>= 200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="96" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a23f9cae3330e49ed3d33125c3e9d79a7" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::RTCAL_D</definition>
+        <argsstring></argsstring>
+        <name>RTCAL_D</name>
+        <initializer>= 72</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="97" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a44f69e94cf21ffd0692272bca67d1f19" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::NUM_PULSES_COMMAND</definition>
+        <argsstring></argsstring>
+        <name>NUM_PULSES_COMMAND</name>
+        <initializer>= 5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="99" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a44840e7602a0795baaf3eaaebdd773ec" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::NUMBER_UNIQUE_TAGS</definition>
+        <argsstring></argsstring>
+        <name>NUMBER_UNIQUE_TAGS</name>
+        <initializer>= 100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="100" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1ad19a52a127d4c0585919c342cc550b46" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::PILOT_TONE</definition>
+        <argsstring></argsstring>
+        <name>PILOT_TONE</name>
+        <initializer>= 12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="104" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1afc83e4a02bbaa02f0f73f1971317219e" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::TAG_PREAMBLE_BITS</definition>
+        <argsstring></argsstring>
+        <name>TAG_PREAMBLE_BITS</name>
+        <initializer>= 6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="105" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a9c2b84aa7507be75f8f7a7d5b868c30c" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::RN16_BITS</definition>
+        <argsstring></argsstring>
+        <name>RN16_BITS</name>
+        <initializer>= 17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="106" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1ae2120f75cab7d0af96b95519d68659cd" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::EPC_BITS</definition>
+        <argsstring></argsstring>
+        <name>EPC_BITS</name>
+        <initializer>= 129</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="107" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1ad463446bd49798ecdb81d232d09ac9be" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::QUERY_LENGTH</definition>
+        <argsstring></argsstring>
+        <name>QUERY_LENGTH</name>
+        <initializer>= 22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="108" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a3a8bde273cf402c2d9f2b403a8d55aef" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::T_READER_FREQ</definition>
+        <argsstring></argsstring>
+        <name>T_READER_FREQ</name>
+        <initializer>= 40e3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="110" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a1124a7e94c1a579c56be0c9743cc73e5" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float gr::rfid::TAG_BIT_D</definition>
+        <argsstring></argsstring>
+        <name>TAG_BIT_D</name>
+        <initializer>= 1.0/<ref refid="namespacegr_1_1rfid_1a3a8bde273cf402c2d9f2b403a8d55aef" kindref="member">T_READER_FREQ</ref> * pow(10,6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="111" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1aae4ba959d3e4c0c3f32ba77ab8ed643e" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::RN16_D</definition>
+        <argsstring></argsstring>
+        <name>RN16_D</name>
+        <initializer>= (<ref refid="namespacegr_1_1rfid_1a9c2b84aa7507be75f8f7a7d5b868c30c" kindref="member">RN16_BITS</ref> + <ref refid="namespacegr_1_1rfid_1afc83e4a02bbaa02f0f73f1971317219e" kindref="member">TAG_PREAMBLE_BITS</ref>) * <ref refid="namespacegr_1_1rfid_1a1124a7e94c1a579c56be0c9743cc73e5" kindref="member">TAG_BIT_D</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="112" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a574d0288e3c56281e9f40b7b46511b78" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::EPC_D</definition>
+        <argsstring></argsstring>
+        <name>EPC_D</name>
+        <initializer>= (<ref refid="namespacegr_1_1rfid_1ae2120f75cab7d0af96b95519d68659cd" kindref="member">EPC_BITS</ref>  + <ref refid="namespacegr_1_1rfid_1afc83e4a02bbaa02f0f73f1971317219e" kindref="member">TAG_PREAMBLE_BITS</ref>) * <ref refid="namespacegr_1_1rfid_1a1124a7e94c1a579c56be0c9743cc73e5" kindref="member">TAG_BIT_D</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="113" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a5e6ae8f49dc724b69e41ae431051d218" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::QUERY_CODE[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>QUERY_CODE</name>
+        <initializer>= {1,0,0,0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="115" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1af9272092a76f761aabeb7c2179344786" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::M[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>M</name>
+        <initializer>= {0,0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="116" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a0f174cba1b21dd163e8cab1661aecee0" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::SEL[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>SEL</name>
+        <initializer>= {0,0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="117" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1adc251a244cf6b4e2cbbe92f8e090ef0d" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::SESSION[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>SESSION</name>
+        <initializer>= {0,0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="118" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1af8c1b08bb1923157341fb1fb005b6115" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::TARGET</definition>
+        <argsstring></argsstring>
+        <name>TARGET</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="119" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a618fe6ef127841d15e0fa417cde91b53" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::TREXT</definition>
+        <argsstring></argsstring>
+        <name>TREXT</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="120" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1ab9a0ea42163aecbbb434e0b0966cc038" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::DR</definition>
+        <argsstring></argsstring>
+        <name>DR</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="121" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1af7c32689de81b32e4907a75a5c963a1c" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::NAK_CODE[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>NAK_CODE</name>
+        <initializer>= {1,1,0,0,0,0,0,0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="124" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1acbdff0a888d5d286d5706a2e34e8b6ca" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::ACK_CODE[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>ACK_CODE</name>
+        <initializer>= {0,1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="127" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a7d6500085063f496d3052156af6c55d5" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::QADJ_CODE[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>QADJ_CODE</name>
+        <initializer>= {1,0,0,1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="130" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1ae32d063fd982c0c4c2483900e1eeb158" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::Q_UPDN[3][3]</definition>
+        <argsstring>[3][3]</argsstring>
+        <name>Q_UPDN</name>
+        <initializer>= { {1,1,0}, {0,0,0}, {0,1,0} }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="133" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1aeb6bdd215e5ddbf45353750ab6f1b942" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::TAG_PREAMBLE[]</definition>
+        <argsstring>[]</argsstring>
+        <name>TAG_PREAMBLE</name>
+        <initializer>= {1,1,0,1,0,0,1,0,0,0,1,1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="136" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a06821299c58b0e0aee8bcd9613decb21" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float gr::rfid::THRESH_FRACTION</definition>
+        <argsstring></argsstring>
+        <name>THRESH_FRACTION</name>
+        <initializer>= 0.75</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="139" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1a1e0910da44382a233c26f79591e40c91" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::WIN_SIZE_D</definition>
+        <argsstring></argsstring>
+        <name>WIN_SIZE_D</name>
+        <initializer>= 250</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="140" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1ab30763a64307a4c1016f45b8dc7aa211" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int gr::rfid::DC_SIZE_D</definition>
+        <argsstring></argsstring>
+        <name>DC_SIZE_D</name>
+        <initializer>= 120</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="143" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespacegr_1_1rfid_1adf8470c0e9a2ba7fabfc198aebb3a965" prot="public" static="no" mutable="no">
+        <type><ref refid="structgr_1_1rfid_1_1READER__STATE" kindref="compound">READER_STATE</ref> *</type>
+        <definition>READER_STATE* gr::rfid::reader_state</definition>
+        <argsstring></argsstring>
+        <name>reader_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="146" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespacegr_1_1rfid_1a6d5de3efda67218f654f00a6e2090893" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::rfid::initialize_reader_state</definition>
+        <argsstring>()</argsstring>
+        <name>initialize_reader_state</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="147" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/gate.h" line="28" column="1"/>
+  </compounddef>
+</doxygen>

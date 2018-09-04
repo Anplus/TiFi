@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classgr_1_1rfid_1_1gate" kind="class"><name>gr::rfid::gate</name>
+    <member refid="classgr_1_1rfid_1_1gate_1aa1447930908ef3e0bc1a055bdae3867d" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1rfid_1_1gate_1ab191626d620d7e8a8adb69823bb621bd" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1rfid_1_1reader" kind="class"><name>gr::rfid::reader</name>
+    <member refid="classgr_1_1rfid_1_1reader_1a1efdd97124f849c52fb1b17e54ebbe88" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1rfid_1_1reader_1a221197c51d2f2077abcd64551f7ecaae" kind="function"><name>print_results</name></member>
+    <member refid="classgr_1_1rfid_1_1reader_1a15fa9d96326e0a1c9c1ef5452629cbe5" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="structgr_1_1rfid_1_1READER__STATE" kind="struct"><name>gr::rfid::READER_STATE</name>
+    <member refid="structgr_1_1rfid_1_1READER__STATE_1a7c78a0347b7d5854cb5cd5f53c952cff" kind="variable"><name>status</name></member>
+    <member refid="structgr_1_1rfid_1_1READER__STATE_1afa78a5450325015d5b0e993819dbbb3d" kind="variable"><name>gen2_logic_status</name></member>
+    <member refid="structgr_1_1rfid_1_1READER__STATE_1a6549dd155209c2d3ac2cf5080a97a3a8" kind="variable"><name>gate_status</name></member>
+    <member refid="structgr_1_1rfid_1_1READER__STATE_1affd25019b61b24eed5ca62be43ad84b4" kind="variable"><name>decoder_status</name></member>
+    <member refid="structgr_1_1rfid_1_1READER__STATE_1acf760dd2ee5151f524f9622ff881519b" kind="variable"><name>reader_stats</name></member>
+    <member refid="structgr_1_1rfid_1_1READER__STATE_1a94f6ec6de8c1c140727c1066786bcbf9" kind="variable"><name>magn_squared_samples</name></member>
+    <member refid="structgr_1_1rfid_1_1READER__STATE_1aac7df759dd8cf4aef1e9a0fcf17bba6b" kind="variable"><name>n_samples_to_ungate</name></member>
+  </compound>
+  <compound refid="structgr_1_1rfid_1_1READER__STATS" kind="struct"><name>gr::rfid::READER_STATS</name>
+    <member refid="structgr_1_1rfid_1_1READER__STATS_1a1527719d36aa694a9975ba8b315da1f9" kind="variable"><name>n_queries_sent</name></member>
+    <member refid="structgr_1_1rfid_1_1READER__STATS_1a68aa26b264f037219b59591685a7a470" kind="variable"><name>cur_inventory_round</name></member>
+    <member refid="structgr_1_1rfid_1_1READER__STATS_1a24fbcfab7343a50159c6a78031d1a786" kind="variable"><name>cur_slot_number</name></member>
+    <member refid="structgr_1_1rfid_1_1READER__STATS_1ace809496ad18add9d8ec9b1ad8fef4d0" kind="variable"><name>max_slot_number</name></member>
+    <member refid="structgr_1_1rfid_1_1READER__STATS_1af0ae16885e598080b93b03d218ba8a87" kind="variable"><name>max_inventory_round</name></member>
+    <member refid="structgr_1_1rfid_1_1READER__STATS_1a8ef95b2c22b5349a8a9842678ed80cc7" kind="variable"><name>n_epc_correct</name></member>
+    <member refid="structgr_1_1rfid_1_1READER__STATS_1afa72a20bba0ffd675737a4119c03f36c" kind="variable"><name>unique_tags_round</name></member>
+    <member refid="structgr_1_1rfid_1_1READER__STATS_1a64222623f51729e30a7b517d61e203f8" kind="variable"><name>tag_reads</name></member>
+    <member refid="structgr_1_1rfid_1_1READER__STATS_1a1fb2661b3ef8726c185692a6e01aad95" kind="variable"><name>end</name></member>
+  </compound>
+  <compound refid="classgr_1_1rfid_1_1tag__decoder" kind="class"><name>gr::rfid::tag_decoder</name>
+    <member refid="classgr_1_1rfid_1_1tag__decoder_1a274bcdb425fe4e2e087aeed97b740ce2" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1rfid_1_1tag__decoder_1adad091444d138d7aa6d1f883886066c1" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1rfid" kind="namespace"><name>gr::rfid</name>
+    <member refid="namespacegr_1_1rfid_1ab94587ed81e2417bd38423bb95ed6999" kind="enum"><name>STATUS</name></member>
+    <member refid="namespacegr_1_1rfid_1ab94587ed81e2417bd38423bb95ed6999a82fed27cf1f44b38331826c573d9ef0a" kind="enumvalue"><name>RUNNING</name></member>
+    <member refid="namespacegr_1_1rfid_1ab94587ed81e2417bd38423bb95ed6999a6c82ed95a73bd33e1183537ed9cbd3fe" kind="enumvalue"><name>TERMINATED</name></member>
+    <member refid="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2" kind="enum"><name>GEN2_LOGIC_STATUS</name></member>
+    <member refid="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a1aba60322b5ea5e0f280ef81c7212a41" kind="enumvalue"><name>SEND_QUERY</name></member>
+    <member refid="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a76113274bacc2cebc8fe47a0a097babd" kind="enumvalue"><name>SEND_ACK</name></member>
+    <member refid="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a2f90fb7a3ce27d21bb004bc5d9d770fb" kind="enumvalue"><name>SEND_QUERY_REP</name></member>
+    <member refid="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a31862032210f7a4f2aa41d437b0fa041" kind="enumvalue"><name>IDLE</name></member>
+    <member refid="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2afddbcac3b674ef719587e81ddc5faabc" kind="enumvalue"><name>SEND_CW</name></member>
+    <member refid="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a1d1263e99b3f79582452df39abed07f0" kind="enumvalue"><name>START</name></member>
+    <member refid="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a39b3b00ea8b7f171bfe69933e569dca0" kind="enumvalue"><name>SEND_QUERY_ADJUST</name></member>
+    <member refid="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a1564a32cb0d9c4e15bab57598b2e3e25" kind="enumvalue"><name>SEND_NAK_QR</name></member>
+    <member refid="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2a8dd090ba36246a7c5c1f9c82f0b081e4" kind="enumvalue"><name>SEND_NAK_Q</name></member>
+    <member refid="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2aea34c959312bf6cae9cf1f7e721e8c07" kind="enumvalue"><name>POWER_DOWN</name></member>
+    <member refid="namespacegr_1_1rfid_1a90334419f6b1eab60573c3b68c0012cf" kind="enum"><name>GATE_STATUS</name></member>
+    <member refid="namespacegr_1_1rfid_1a90334419f6b1eab60573c3b68c0012cfa0d011171e9b4bb7cc5fa17832658e231" kind="enumvalue"><name>GATE_OPEN</name></member>
+    <member refid="namespacegr_1_1rfid_1a90334419f6b1eab60573c3b68c0012cfa14329420ef4eec0155906a9186b92c37" kind="enumvalue"><name>GATE_CLOSED</name></member>
+    <member refid="namespacegr_1_1rfid_1a90334419f6b1eab60573c3b68c0012cfa3adb863f7872d33b38c282404b26d483" kind="enumvalue"><name>GATE_SEEK_RN16</name></member>
+    <member refid="namespacegr_1_1rfid_1a90334419f6b1eab60573c3b68c0012cfa055c9b7ef9f24d811336e940dfdb2004" kind="enumvalue"><name>GATE_SEEK_EPC</name></member>
+    <member refid="namespacegr_1_1rfid_1a32b78fe37f6088115bf7ee2e30957359" kind="enum"><name>DECODER_STATUS</name></member>
+    <member refid="namespacegr_1_1rfid_1a32b78fe37f6088115bf7ee2e30957359ae3453e19adac39e6a8aa46ad9086cc66" kind="enumvalue"><name>DECODER_DECODE_RN16</name></member>
+    <member refid="namespacegr_1_1rfid_1a32b78fe37f6088115bf7ee2e30957359a5af6bd1e6407ff5c474f10273e2927d8" kind="enumvalue"><name>DECODER_DECODE_EPC</name></member>
+    <member refid="namespacegr_1_1rfid_1aac760815dc901805db6f8df209fd6498" kind="variable"><name>FIXED_Q</name></member>
+    <member refid="namespacegr_1_1rfid_1ab7e414c95a3bf373a3006ea0385b5cfa" kind="variable"><name>MAX_NUM_QUERIES</name></member>
+    <member refid="namespacegr_1_1rfid_1a301526d69d45cc7057a3faf9b27a350c" kind="variable"><name>Q_VALUE</name></member>
+    <member refid="namespacegr_1_1rfid_1ac7abce47d09ed4f0ea2f0511fc949fab" kind="variable"><name>P_DOWN</name></member>
+    <member refid="namespacegr_1_1rfid_1adc9819d2ed986276d2ee4a555daffb1f" kind="variable"><name>CW_D</name></member>
+    <member refid="namespacegr_1_1rfid_1a4cdb62a23d98e1dced452cf9aeef70f0" kind="variable"><name>P_DOWN_D</name></member>
+    <member refid="namespacegr_1_1rfid_1a76d8be672b97cd9c38fcc4e666a5d3cd" kind="variable"><name>T1_D</name></member>
+    <member refid="namespacegr_1_1rfid_1a3a91d48106d5457fdab25b1aad9ed79d" kind="variable"><name>T2_D</name></member>
+    <member refid="namespacegr_1_1rfid_1ab641757eade3653d9cb523c7caf8de99" kind="variable"><name>PW_D</name></member>
+    <member refid="namespacegr_1_1rfid_1aa2a807d13259030e1403d2a6a36a292b" kind="variable"><name>DELIM_D</name></member>
+    <member refid="namespacegr_1_1rfid_1a346bfd24f485e16c2772f7c7cced7f90" kind="variable"><name>TRCAL_D</name></member>
+    <member refid="namespacegr_1_1rfid_1a23f9cae3330e49ed3d33125c3e9d79a7" kind="variable"><name>RTCAL_D</name></member>
+    <member refid="namespacegr_1_1rfid_1a44f69e94cf21ffd0692272bca67d1f19" kind="variable"><name>NUM_PULSES_COMMAND</name></member>
+    <member refid="namespacegr_1_1rfid_1a44840e7602a0795baaf3eaaebdd773ec" kind="variable"><name>NUMBER_UNIQUE_TAGS</name></member>
+    <member refid="namespacegr_1_1rfid_1ad19a52a127d4c0585919c342cc550b46" kind="variable"><name>PILOT_TONE</name></member>
+    <member refid="namespacegr_1_1rfid_1afc83e4a02bbaa02f0f73f1971317219e" kind="variable"><name>TAG_PREAMBLE_BITS</name></member>
+    <member refid="namespacegr_1_1rfid_1a9c2b84aa7507be75f8f7a7d5b868c30c" kind="variable"><name>RN16_BITS</name></member>
+    <member refid="namespacegr_1_1rfid_1ae2120f75cab7d0af96b95519d68659cd" kind="variable"><name>EPC_BITS</name></member>
+    <member refid="namespacegr_1_1rfid_1ad463446bd49798ecdb81d232d09ac9be" kind="variable"><name>QUERY_LENGTH</name></member>
+    <member refid="namespacegr_1_1rfid_1a3a8bde273cf402c2d9f2b403a8d55aef" kind="variable"><name>T_READER_FREQ</name></member>
+    <member refid="namespacegr_1_1rfid_1a1124a7e94c1a579c56be0c9743cc73e5" kind="variable"><name>TAG_BIT_D</name></member>
+    <member refid="namespacegr_1_1rfid_1aae4ba959d3e4c0c3f32ba77ab8ed643e" kind="variable"><name>RN16_D</name></member>
+    <member refid="namespacegr_1_1rfid_1a574d0288e3c56281e9f40b7b46511b78" kind="variable"><name>EPC_D</name></member>
+    <member refid="namespacegr_1_1rfid_1a5e6ae8f49dc724b69e41ae431051d218" kind="variable"><name>QUERY_CODE</name></member>
+    <member refid="namespacegr_1_1rfid_1af9272092a76f761aabeb7c2179344786" kind="variable"><name>M</name></member>
+    <member refid="namespacegr_1_1rfid_1a0f174cba1b21dd163e8cab1661aecee0" kind="variable"><name>SEL</name></member>
+    <member refid="namespacegr_1_1rfid_1adc251a244cf6b4e2cbbe92f8e090ef0d" kind="variable"><name>SESSION</name></member>
+    <member refid="namespacegr_1_1rfid_1af8c1b08bb1923157341fb1fb005b6115" kind="variable"><name>TARGET</name></member>
+    <member refid="namespacegr_1_1rfid_1a618fe6ef127841d15e0fa417cde91b53" kind="variable"><name>TREXT</name></member>
+    <member refid="namespacegr_1_1rfid_1ab9a0ea42163aecbbb434e0b0966cc038" kind="variable"><name>DR</name></member>
+    <member refid="namespacegr_1_1rfid_1af7c32689de81b32e4907a75a5c963a1c" kind="variable"><name>NAK_CODE</name></member>
+    <member refid="namespacegr_1_1rfid_1acbdff0a888d5d286d5706a2e34e8b6ca" kind="variable"><name>ACK_CODE</name></member>
+    <member refid="namespacegr_1_1rfid_1a7d6500085063f496d3052156af6c55d5" kind="variable"><name>QADJ_CODE</name></member>
+    <member refid="namespacegr_1_1rfid_1ae32d063fd982c0c4c2483900e1eeb158" kind="variable"><name>Q_UPDN</name></member>
+    <member refid="namespacegr_1_1rfid_1aeb6bdd215e5ddbf45353750ab6f1b942" kind="variable"><name>TAG_PREAMBLE</name></member>
+    <member refid="namespacegr_1_1rfid_1a06821299c58b0e0aee8bcd9613decb21" kind="variable"><name>THRESH_FRACTION</name></member>
+    <member refid="namespacegr_1_1rfid_1a1e0910da44382a233c26f79591e40c91" kind="variable"><name>WIN_SIZE_D</name></member>
+    <member refid="namespacegr_1_1rfid_1ab30763a64307a4c1016f45b8dc7aa211" kind="variable"><name>DC_SIZE_D</name></member>
+    <member refid="namespacegr_1_1rfid_1adf8470c0e9a2ba7fabfc198aebb3a965" kind="variable"><name>reader_state</name></member>
+    <member refid="namespacegr_1_1rfid_1a6d5de3efda67218f654f00a6e2090893" kind="function"><name>initialize_reader_state</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a8b664d0567d96e56db2576032ff26bb6" kind="define"><name>RFID_API</name></member>
+  </compound>
+  <compound refid="gate_8h" kind="file"><name>gate.h</name>
+  </compound>
+  <compound refid="global__vars_8h" kind="file"><name>global_vars.h</name>
+  </compound>
+  <compound refid="reader_8h" kind="file"><name>reader.h</name>
+  </compound>
+  <compound refid="tag__decoder_8h" kind="file"><name>tag_decoder.h</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>/home/anplus/Documents/TiFi/USRP/gr-rfid/include</name>
+  </compound>
+  <compound refid="dir_e39922f9597dfb000da5adf7eb00c0a7" kind="dir"><name>/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid</name>
+  </compound>
+</doxygenindex>

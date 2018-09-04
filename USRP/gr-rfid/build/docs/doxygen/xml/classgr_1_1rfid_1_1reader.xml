@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1rfid_1_1reader" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::rfid::reader</compoundname>
+    <basecompoundref prot="public" virt="virtual">block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1rfid_1_1reader__impl" prot="public" virt="non-virtual">gr::rfid::reader_impl</derivedcompoundref>
+    <includes refid="reader_8h" local="no">reader.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1rfid_1_1reader_1a1efdd97124f849c52fb1b17e54ebbe88" prot="public" static="no">
+        <type>boost::shared_ptr&lt; <ref refid="classgr_1_1rfid_1_1reader" kindref="compound">reader</ref> &gt;</type>
+        <definition>typedef boost::shared_ptr&lt;reader&gt; gr::rfid::reader::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/reader.h" line="41" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/reader.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1rfid_1_1reader_1a221197c51d2f2077abcd64551f7ecaae" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::rfid::reader::print_results</definition>
+        <argsstring>()=0</argsstring>
+        <name>print_results</name>
+        <reimplementedby refid="classgr_1_1rfid_1_1reader__impl_1a71bc335d7a4881fe100d84c796b20449">print_results</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/reader.h" line="42" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1rfid_1_1reader_1a15fa9d96326e0a1c9c1ef5452629cbe5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1rfid_1_1reader_1a1efdd97124f849c52fb1b17e54ebbe88" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::rfid::reader::make</definition>
+        <argsstring>(int sample_rate, int dac_rate)</argsstring>
+        <name>make</name>
+        <param>
+          <type>int</type>
+          <declname>sample_rate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dac_rate</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1rfid_1_1reader" kindref="compound">rfid::reader</ref>. </para>        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1rfid_1_1reader" kindref="compound">rfid::reader</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1rfid_1_1reader_1a15fa9d96326e0a1c9c1ef5452629cbe5" kindref="member">rfid::reader::make</ref> is the public interface for creating new instances. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/reader.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The block is responsible for sending commands for transmission. </para>    </briefdescription>
+    <detaileddescription>
+<para>It moves between the following states. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="11">
+        <label>gr::rfid::reader</label>
+        <link refid="classgr_1_1rfid_1_1reader"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>gr::rfid::reader_impl</label>
+        <link refid="classgr_1_1rfid_1_1reader__impl"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>gr::block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="14">
+        <label>gr::rfid::reader</label>
+        <link refid="classgr_1_1rfid_1_1reader"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>gr::block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/reader.h" line="39" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/reader.h" bodystart="38" bodyend="53"/>
+    <listofallmembers>
+      <member refid="classgr_1_1rfid_1_1reader_1a15fa9d96326e0a1c9c1ef5452629cbe5" prot="public" virt="non-virtual"><scope>gr::rfid::reader</scope><name>make</name></member>
+      <member refid="classgr_1_1rfid_1_1reader_1a221197c51d2f2077abcd64551f7ecaae" prot="public" virt="pure-virtual"><scope>gr::rfid::reader</scope><name>print_results</name></member>
+      <member refid="classgr_1_1rfid_1_1reader_1a1efdd97124f849c52fb1b17e54ebbe88" prot="public" virt="non-virtual"><scope>gr::rfid::reader</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

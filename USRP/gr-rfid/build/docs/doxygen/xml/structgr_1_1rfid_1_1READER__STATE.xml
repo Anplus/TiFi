@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgr_1_1rfid_1_1READER__STATE" kind="struct" language="C++" prot="public">
+    <compoundname>gr::rfid::READER_STATE</compoundname>
+    <includes refid="global__vars_8h" local="no">global_vars.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATE_1a7c78a0347b7d5854cb5cd5f53c952cff" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1rfid_1ab94587ed81e2417bd38423bb95ed6999" kindref="member">STATUS</ref></type>
+        <definition>STATUS gr::rfid::READER_STATE::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="57" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATE_1afa78a5450325015d5b0e993819dbbb3d" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1rfid_1a42dbc560ed43bedf687fae608be83ac2" kindref="member">GEN2_LOGIC_STATUS</ref></type>
+        <definition>GEN2_LOGIC_STATUS gr::rfid::READER_STATE::gen2_logic_status</definition>
+        <argsstring></argsstring>
+        <name>gen2_logic_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="58" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATE_1a6549dd155209c2d3ac2cf5080a97a3a8" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1rfid_1a90334419f6b1eab60573c3b68c0012cf" kindref="member">GATE_STATUS</ref></type>
+        <definition>GATE_STATUS gr::rfid::READER_STATE::gate_status</definition>
+        <argsstring></argsstring>
+        <name>gate_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="59" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATE_1affd25019b61b24eed5ca62be43ad84b4" prot="public" static="no" mutable="no">
+        <type><ref refid="namespacegr_1_1rfid_1a32b78fe37f6088115bf7ee2e30957359" kindref="member">DECODER_STATUS</ref></type>
+        <definition>DECODER_STATUS gr::rfid::READER_STATE::decoder_status</definition>
+        <argsstring></argsstring>
+        <name>decoder_status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="60" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATE_1acf760dd2ee5151f524f9622ff881519b" prot="public" static="no" mutable="no">
+        <type><ref refid="structgr_1_1rfid_1_1READER__STATS" kindref="compound">READER_STATS</ref></type>
+        <definition>READER_STATS gr::rfid::READER_STATE::reader_stats</definition>
+        <argsstring></argsstring>
+        <name>reader_stats</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="61" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATE_1a94f6ec6de8c1c140727c1066786bcbf9" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt;float&gt; gr::rfid::READER_STATE::magn_squared_samples</definition>
+        <argsstring></argsstring>
+        <name>magn_squared_samples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="65" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structgr_1_1rfid_1_1READER__STATE_1aac7df759dd8cf4aef1e9a0fcf17bba6b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::rfid::READER_STATE::n_samples_to_ungate</definition>
+        <argsstring></argsstring>
+        <name>n_samples_to_ungate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="66" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="25">
+        <label>gr::rfid::READER_STATS</label>
+        <link refid="structgr_1_1rfid_1_1READER__STATS"/>
+        <childnode refid="26" relation="usage">
+          <edgelabel>tag_reads</edgelabel>
+        </childnode>
+        <childnode refid="27" relation="usage">
+          <edgelabel>unique_tags_round</edgelabel>
+        </childnode>
+      </node>
+      <node id="23">
+        <label>gr::rfid::READER_STATE</label>
+        <link refid="structgr_1_1rfid_1_1READER__STATE"/>
+        <childnode refid="24" relation="usage">
+          <edgelabel>magn_squared_samples</edgelabel>
+        </childnode>
+        <childnode refid="25" relation="usage">
+          <edgelabel>reader_stats</edgelabel>
+        </childnode>
+      </node>
+      <node id="24">
+        <label>std::vector&lt; float &gt;</label>
+      </node>
+      <node id="26">
+        <label>std::map&lt; int, int &gt;</label>
+      </node>
+      <node id="27">
+        <label>std::vector&lt; int &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" line="56" column="1" bodyfile="/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h" bodystart="55" bodyend="67"/>
+    <listofallmembers>
+      <member refid="structgr_1_1rfid_1_1READER__STATE_1affd25019b61b24eed5ca62be43ad84b4" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATE</scope><name>decoder_status</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATE_1a6549dd155209c2d3ac2cf5080a97a3a8" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATE</scope><name>gate_status</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATE_1afa78a5450325015d5b0e993819dbbb3d" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATE</scope><name>gen2_logic_status</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATE_1a94f6ec6de8c1c140727c1066786bcbf9" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATE</scope><name>magn_squared_samples</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATE_1aac7df759dd8cf4aef1e9a0fcf17bba6b" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATE</scope><name>n_samples_to_ungate</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATE_1acf760dd2ee5151f524f9622ff881519b" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATE</scope><name>reader_stats</name></member>
+      <member refid="structgr_1_1rfid_1_1READER__STATE_1a7c78a0347b7d5854cb5cd5f53c952cff" prot="public" virt="non-virtual"><scope>gr::rfid::READER_STATE</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

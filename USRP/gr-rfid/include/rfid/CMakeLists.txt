@@ -25,5 +25,6 @@ install(FILES
     gate.h
     global_vars.h
     reader.h
-    tag_decoder.h DESTINATION include/rfid
+    tag_decoder.h
+    wifi_control.h DESTINATION include/rfid
 )

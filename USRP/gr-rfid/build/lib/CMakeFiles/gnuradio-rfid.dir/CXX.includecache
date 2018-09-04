@@ -36,6 +36,14 @@ rfid/api.h
 gnuradio/block.h
 -
 
+../include/rfid/wifi_control.h
+rfid/api.h
+-
+gnuradio/sync_block.h
+-
+gnuradio/blocks/file_sink_base.h
+-
+
 /home/anplus/Documents/TiFi/USRP/gr-rfid/lib/gate_impl.cc
 config.h
 /home/anplus/Documents/TiFi/USRP/gr-rfid/lib/config.h
@@ -116,6 +124,20 @@ numeric
 fstream
 -
 
+/home/anplus/Documents/TiFi/USRP/gr-rfid/lib/wifi_control_impl.cc
+config.h
+/home/anplus/Documents/TiFi/USRP/gr-rfid/lib/config.h
+gnuradio/io_signature.h
+-
+wifi_control_impl.h
+/home/anplus/Documents/TiFi/USRP/gr-rfid/lib/wifi_control_impl.h
+stdexcept
+-
+
+/home/anplus/Documents/TiFi/USRP/gr-rfid/lib/wifi_control_impl.h
+rfid/wifi_control.h
+-
+
 /usr/local/include/gnuradio/api.h
 gnuradio/attributes.h
 -
@@ -170,6 +192,18 @@ gnuradio/api.h
 gnuradio/basic_block.h
 -
 map
+-
+
+/usr/local/include/gnuradio/blocks/api.h
+gnuradio/attributes.h
+-
+
+/usr/local/include/gnuradio/blocks/file_sink_base.h
+gnuradio/blocks/api.h
+-
+boost/thread.hpp
+-
+cstdio
 -
 
 /usr/local/include/gnuradio/config.h
@@ -344,6 +378,12 @@ gnuradio/types.h
 gnuradio/api.h
 -
 boost/shared_ptr.hpp
+-
+
+/usr/local/include/gnuradio/sync_block.h
+gnuradio/api.h
+-
+gnuradio/block.h
 -
 
 /usr/local/include/gnuradio/tags.h

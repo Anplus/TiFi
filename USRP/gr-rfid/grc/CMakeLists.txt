@@ -21,5 +21,6 @@ install(FILES
     rfid_global_vars.xml
     rfid_gate.xml
     rfid_reader.xml
-    rfid_tag_decoder.xml DESTINATION share/gnuradio/grc/blocks
+    rfid_tag_decoder.xml
+    rfid_wifi_control.xml DESTINATION share/gnuradio/grc/blocks
 )

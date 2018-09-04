@@ -39,6 +39,7 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     "/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/global_vars.h"
     "/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/reader.h"
     "/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/tag_decoder.h"
+    "/home/anplus/Documents/TiFi/USRP/gr-rfid/include/rfid/wifi_control.h"
     )
 endif()
 

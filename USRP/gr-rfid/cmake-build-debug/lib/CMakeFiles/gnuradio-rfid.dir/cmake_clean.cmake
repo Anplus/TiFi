@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/gnuradio-rfid.dir/gate_impl.cc.o"
   "CMakeFiles/gnuradio-rfid.dir/reader_impl.cc.o"
   "CMakeFiles/gnuradio-rfid.dir/tag_decoder_impl.cc.o"
+  "CMakeFiles/gnuradio-rfid.dir/wifi_control_impl.cc.o"
   "libgnuradio-rfid.pdb"
   "libgnuradio-rfid.so"
 )

@@ -561,6 +561,12 @@
 		<Unit filename="/home/anplus/Documents/TiFi/USRP/gr-rfid/lib/test_rfid.cc">
 			<Option target="test-rfid"/>
 		</Unit>
+		<Unit filename="/home/anplus/Documents/TiFi/USRP/gr-rfid/lib/wifi_control_impl.cc">
+			<Option target="gnuradio-rfid"/>
+		</Unit>
+		<Unit filename="/home/anplus/Documents/TiFi/USRP/gr-rfid/lib/wifi_control_impl.h">
+			<Option target="gnuradio-rfid"/>
+		</Unit>
 		<Unit filename="/home/anplus/Documents/TiFi/USRP/gr-rfid/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -28,6 +28,8 @@
 namespace gr {
     namespace rfid {
 
+        int epc_wifi = 1;
+
         enum STATUS {
             RUNNING, TERMINATED
         };

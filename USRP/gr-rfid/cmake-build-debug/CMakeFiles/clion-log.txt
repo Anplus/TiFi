@@ -1,40 +1,15 @@
 /home/anplus/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/182.4129.51/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/anplus/Documents/TiFi/USRP/gr-rfid
--- The CXX compiler identification is GNU 5.4.0
--- The C compiler identification is GNU 5.4.0
--- Check for working CXX compiler: /usr/bin/c++
--- Check for working CXX compiler: /usr/bin/c++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Check for working C compiler: /usr/bin/cc
--- Check for working C compiler: /usr/bin/cc -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
 -- Boost version: 1.58.0
 -- Found the following Boost libraries:
 --   filesystem
 --   system
--- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
--- Checking for module 'cppunit'
---   Found cppunit, version 1.13.2
--- Found CPPUNIT: /usr/lib/x86_64-linux-gnu/libcppunit.so;dl  
--- Found Doxygen: /usr/bin/doxygen (found version "1.8.11") found components:  doxygen missing components:  dot
 Checking for GNU Radio Module: RUNTIME
--- Checking for module 'gnuradio-runtime'
---   Found gnuradio-runtime, version 3.7.11.1
  * INCLUDES=/usr/local/include
  * LIBS=/usr/local/lib/libgnuradio-runtime.so;/usr/local/lib/libgnuradio-pmt.so
--- Found GNURADIO_RUNTIME: /usr/local/lib/libgnuradio-runtime.so;/usr/local/lib/libgnuradio-pmt.so  
 GNURADIO_RUNTIME_FOUND = TRUE
 Checking for GNU Radio Module: FILTER
--- Checking for module 'gnuradio-filter'
---   Found gnuradio-filter, version 3.7.11.1
  * INCLUDES=/usr/local/include
  * LIBS=/usr/local/lib/libgnuradio-filter.so;/usr/local/lib/libgnuradio-fft.so;/usr/local/lib/libgnuradio-runtime.so;/usr/local/lib/libgnuradio-pmt.so
--- Found GNURADIO_FILTER: /usr/local/lib/libgnuradio-filter.so;/usr/local/lib/libgnuradio-fft.so;/usr/local/lib/libgnuradio-runtime.so;/usr/local/lib/libgnuradio-pmt.so  
 GNURADIO_FILTER_FOUND = TRUE
 CMake Warning (dev) at /usr/local/lib/cmake/gnuradio/GrTest.cmake:45 (get_target_property):
   Policy CMP0026 is not set: Disallow use of the LOCATION target property.
@@ -46,17 +21,12 @@ CMake Warning (dev) at /usr/local/lib/cmake/gnuradio/GrTest.cmake:45 (get_target
   expression $<TARGET_FILE>, as appropriate.
 
 Call Stack (most recent call first):
-  lib/CMakeLists.txt:82 (GR_ADD_TEST)
+  lib/CMakeLists.txt:83 (GR_ADD_TEST)
 This warning is for project developers.  Use -Wno-dev to suppress it.
 
 -- 
 -- Checking for module SWIG
 -- Found SWIG version 3.0.8.
--- Found SWIG: /usr/bin/swig3.0  
--- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython2.7.so (found suitable version "2.7.12", minimum required is "2") 
--- Found PythonInterp: /usr/bin/python2 (found suitable version "2.7.12", minimum required is "2") 
--- Performing Test HAVE_WNO_UNUSED_BUT_SET_VARIABLE
--- Performing Test HAVE_WNO_UNUSED_BUT_SET_VARIABLE - Success
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/anplus/Documents/TiFi/USRP/gr-rfid/cmake-build-debug

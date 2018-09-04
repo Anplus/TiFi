@@ -359,6 +359,33 @@ test_rfid.cc.s:
 	cd /home/anplus/Documents/TiFi/USRP/gr-rfid/cmake-build-debug && $(MAKE) -f lib/CMakeFiles/test-rfid.dir/build.make lib/CMakeFiles/test-rfid.dir/test_rfid.cc.s
 .PHONY : test_rfid.cc.s
 
+wifi_control_impl.o: wifi_control_impl.cc.o
+
+.PHONY : wifi_control_impl.o
+
+# target to build an object file
+wifi_control_impl.cc.o:
+	cd /home/anplus/Documents/TiFi/USRP/gr-rfid/cmake-build-debug && $(MAKE) -f lib/CMakeFiles/gnuradio-rfid.dir/build.make lib/CMakeFiles/gnuradio-rfid.dir/wifi_control_impl.cc.o
+.PHONY : wifi_control_impl.cc.o
+
+wifi_control_impl.i: wifi_control_impl.cc.i
+
+.PHONY : wifi_control_impl.i
+
+# target to preprocess a source file
+wifi_control_impl.cc.i:
+	cd /home/anplus/Documents/TiFi/USRP/gr-rfid/cmake-build-debug && $(MAKE) -f lib/CMakeFiles/gnuradio-rfid.dir/build.make lib/CMakeFiles/gnuradio-rfid.dir/wifi_control_impl.cc.i
+.PHONY : wifi_control_impl.cc.i
+
+wifi_control_impl.s: wifi_control_impl.cc.s
+
+.PHONY : wifi_control_impl.s
+
+# target to generate assembly for a file
+wifi_control_impl.cc.s:
+	cd /home/anplus/Documents/TiFi/USRP/gr-rfid/cmake-build-debug && $(MAKE) -f lib/CMakeFiles/gnuradio-rfid.dir/build.make lib/CMakeFiles/gnuradio-rfid.dir/wifi_control_impl.cc.s
+.PHONY : wifi_control_impl.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -392,6 +419,9 @@ help:
 	@echo "... test_rfid.o"
 	@echo "... test_rfid.i"
 	@echo "... test_rfid.s"
+	@echo "... wifi_control_impl.o"
+	@echo "... wifi_control_impl.i"
+	@echo "... wifi_control_impl.s"
 .PHONY : help
 
 

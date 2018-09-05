@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
+  <compound refid="classgr_1_1sendfile_1_1file__sender" kind="class"><name>gr::sendfile::file_sender</name>
+    <member refid="classgr_1_1sendfile_1_1file__sender_1a669526442d79507a09539b0afdec7aea" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1sendfile_1_1file__sender_1a01128b119933b095a0cf8fe9e019440d" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1sendfile_1_1file__sender__impl" kind="class"><name>gr::sendfile::file_sender_impl</name>
+    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a374dfc0ccfd9368f3ce274d9d84d08af" kind="variable"><name>d_itemsize</name></member>
+    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a69a25ae94c499ee1d62e8d5c570d7707" kind="variable"><name>filename</name></member>
+    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a5afa8b700dc3c4fae5ed874a95b794ee" kind="variable"><name>d_fp</name></member>
+    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1aac3e2ee587c880569e6f858d2c07d2b8" kind="variable"><name>d_new_fp</name></member>
+    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a2116e391edb80424d30773618305e003" kind="variable"><name>d_repeat</name></member>
+    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a63fdb9e334eb75bd4bf364bd945342ae" kind="variable"><name>d_updated</name></member>
+    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1afd066ad8fb48464b73b4c4c77be57096" kind="variable"><name>fp_mutex</name></member>
+    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1ae586c007275cf17c3c0c008c1c303548" kind="function"><name>do_update</name></member>
+    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a9b293a071f12155ed7e7b8a25b30eaf0" kind="function"><name>file_sender_impl</name></member>
+    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1acf94d0bc88f503de154109d2e3cc6b47" kind="function"><name>~file_sender_impl</name></member>
+    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a87668c9a601df1ca0e36a648922ed882" kind="function"><name>seek</name></member>
+    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a2b6aefc40cddb411443f22b82509f133" kind="function"><name>open</name></member>
+    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a0985c49f9c51b3daf42f7ccb84617eb7" kind="function"><name>close</name></member>
+    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1acc00d38a379ac2528d7008cbce515cd9" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1sendfile" kind="namespace"><name>gr::sendfile</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a1e9c79e4dae8c940fb34c829514bf7f2" kind="define"><name>SENDFILE_API</name></member>
+  </compound>
+  <compound refid="file__sender_8h" kind="file"><name>file_sender.h</name>
+  </compound>
+  <compound refid="file__sender__impl_8h" kind="file"><name>file_sender_impl.h</name>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="dir_af1b9256995a263700529b2a83a806f7" kind="dir"><name>sendfile</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

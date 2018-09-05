@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_af1b9256995a263700529b2a83a806f7" kind="dir">
+    <compoundname>sendfile</compoundname>
+    <innerfile refid="api_8h">api.h</innerfile>
+    <innerfile refid="file__sender_8h">file_sender.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/anplus/Documents/gnuradio-file/gr-sendfile/include/sendfile/"/>
+  </compounddef>
+</doxygen>

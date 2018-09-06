@@ -22,5 +22,5 @@
 ########################################################################
 install(FILES
     api.h
-    file_sender.h DESTINATION include/sendfile
+    sendfile_wifi.h DESTINATION include/sendfile
 )

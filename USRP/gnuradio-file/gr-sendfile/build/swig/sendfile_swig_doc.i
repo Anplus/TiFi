@@ -8,24 +8,24 @@
 
 
 
-%feature("docstring") gr::sendfile::file_sender "<+description of block+>
+%feature("docstring") gr::sendfile::sendfile_wifi "<+description of block+>
 
 Constructor Specific Documentation:
 
-Return a shared_ptr to a new instance of sendfile::file_sender.
+Return a shared_ptr to a new instance of sendfile::sendfile_wifi.
 
-To avoid accidental use of raw pointers, sendfile::file_sender's constructor is in a private implementation class. sendfile::file_sender::make is the public interface for creating new instances.
+To avoid accidental use of raw pointers, sendfile::sendfile_wifi's constructor is in a private implementation class. sendfile::sendfile_wifi::make is the public interface for creating new instances.
 
 Args:
     itemsize : "
 
-%feature("docstring") gr::sendfile::file_sender::make "<+description of block+>
+%feature("docstring") gr::sendfile::sendfile_wifi::make "<+description of block+>
 
 Constructor Specific Documentation:
 
-Return a shared_ptr to a new instance of sendfile::file_sender.
+Return a shared_ptr to a new instance of sendfile::sendfile_wifi.
 
-To avoid accidental use of raw pointers, sendfile::file_sender's constructor is in a private implementation class. sendfile::file_sender::make is the public interface for creating new instances.
+To avoid accidental use of raw pointers, sendfile::sendfile_wifi's constructor is in a private implementation class. sendfile::sendfile_wifi::make is the public interface for creating new instances.
 
 Args:
     itemsize : "

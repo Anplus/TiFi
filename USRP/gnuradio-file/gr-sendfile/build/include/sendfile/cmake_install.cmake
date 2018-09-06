@@ -35,7 +35,7 @@ endif()
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/sendfile" TYPE FILE FILES
     "/home/anplus/Documents/gnuradio-file/gr-sendfile/include/sendfile/api.h"
-    "/home/anplus/Documents/gnuradio-file/gr-sendfile/include/sendfile/file_sender.h"
+    "/home/anplus/Documents/gnuradio-file/gr-sendfile/include/sendfile/sendfile_wifi.h"
     )
 endif()
 

@@ -10,12 +10,10 @@
 gnuradio/attributes.h
 -
 
-../include/sendfile/file_sender.h
+../include/sendfile/sendfile_wifi.h
 sendfile/api.h
 -
 gnuradio/sync_block.h
--
-gnuradio/blocks/file_sink_base.h
 -
 
 /home/anplus/Documents/gnuradio-file/gr-sendfile/build/swig/sendfile_swigPYTHON_wrap.cxx
@@ -63,8 +61,8 @@ gnuradio/high_res_timer.h
 -
 limits.h
 -
-sendfile/file_sender.h
-/home/anplus/Documents/gnuradio-file/gr-sendfile/build/swig/sendfile/file_sender.h
+sendfile/sendfile_wifi.h
+/home/anplus/Documents/gnuradio-file/gr-sendfile/build/swig/sendfile/sendfile_wifi.h
 float.h
 -
 math.h
@@ -536,18 +534,6 @@ gnuradio/api.h
 gnuradio/basic_block.h
 -
 map
--
-
-/usr/local/include/gnuradio/blocks/api.h
-gnuradio/attributes.h
--
-
-/usr/local/include/gnuradio/blocks/file_sink_base.h
-gnuradio/blocks/api.h
--
-boost/thread.hpp
--
-cstdio
 -
 
 /usr/local/include/gnuradio/config.h

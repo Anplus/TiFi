@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="classgr_1_1sendfile_1_1sendfile__wifi__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::sendfile::sendfile_wifi_impl</compoundname>
+    <basecompoundref refid="classgr_1_1sendfile_1_1sendfile__wifi" prot="public" virt="non-virtual">gr::sendfile::sendfile_wifi</basecompoundref>
+    <includes refid="sendfile__wifi__impl_8h" local="no">sendfile_wifi_impl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a8a7642e0524e8e8480fbbcb3882c26e0" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t gr::sendfile::sendfile_wifi_impl::d_itemsize</definition>
+        <argsstring></argsstring>
+        <name>d_itemsize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" line="35" column="1" bodyfile="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1sendfile_1_1sendfile__wifi__impl_1ae17fb112ef6d38ef80a4496280cf87ba" prot="private" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* gr::sendfile::sendfile_wifi_impl::filename</definition>
+        <argsstring></argsstring>
+        <name>filename</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" line="36" column="1" bodyfile="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a3f62e9a69e790bcb784262fbf6264a0e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::sendfile::sendfile_wifi_impl::enable_send</definition>
+        <argsstring></argsstring>
+        <name>enable_send</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" line="37" column="1" bodyfile="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1sendfile_1_1sendfile__wifi__impl_1aaabfded2f446811dbc79a7c81d1afeb3" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* gr::sendfile::sendfile_wifi_impl::d_fp</definition>
+        <argsstring></argsstring>
+        <name>d_fp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" line="39" column="1" bodyfile="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a1c9a42573b53eade3e2967124d36a340" prot="private" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* gr::sendfile::sendfile_wifi_impl::d_new_fp</definition>
+        <argsstring></argsstring>
+        <name>d_new_fp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" line="40" column="1" bodyfile="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a126fcae58d8a3db1bce99e1bc49c233e" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::sendfile::sendfile_wifi_impl::d_repeat</definition>
+        <argsstring></argsstring>
+        <name>d_repeat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" line="41" column="1" bodyfile="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a885b1e1ddf3ac7f476ee92e3a1b1e662" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::sendfile::sendfile_wifi_impl::d_updated</definition>
+        <argsstring></argsstring>
+        <name>d_updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" line="42" column="1" bodyfile="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a755e45a53bc8427b5567f72fbc2e7528" prot="private" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex gr::sendfile::sendfile_wifi_impl::fp_mutex</definition>
+        <argsstring></argsstring>
+        <name>fp_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" line="43" column="1" bodyfile="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a403bbd07dcea1a7030504d169d058d67" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::sendfile::sendfile_wifi_impl::do_update</definition>
+        <argsstring>()</argsstring>
+        <name>do_update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" line="44" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a8b29692a2d3ecf3792f314c683403062" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::sendfile::sendfile_wifi_impl::sendfile_wifi_impl</definition>
+        <argsstring>(size_t itemsize)</argsstring>
+        <name>sendfile_wifi_impl</name>
+        <param>
+          <type>size_t</type>
+          <declname>itemsize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a14468c0cbaf9b3c5d44d9943f3cbdf9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::sendfile::sendfile_wifi_impl::~sendfile_wifi_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~sendfile_wifi_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1sendfile_1_1sendfile__wifi__impl_1ac23c2a01aa942249bccfb4cc945def2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::sendfile::sendfile_wifi_impl::work</definition>
+        <argsstring>(int noutput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" line="51" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="7">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="6">
+        <label>gr::sendfile::sendfile_wifi</label>
+        <link refid="classgr_1_1sendfile_1_1sendfile__wifi"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gr::sendfile::sendfile_wifi_impl</label>
+        <link refid="classgr_1_1sendfile_1_1sendfile__wifi__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="10">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="9">
+        <label>gr::sendfile::sendfile_wifi</label>
+        <link refid="classgr_1_1sendfile_1_1sendfile__wifi"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gr::sendfile::sendfile_wifi_impl</label>
+        <link refid="classgr_1_1sendfile_1_1sendfile__wifi__impl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" line="32" column="1" bodyfile="/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h" bodystart="31" bodyend="54"/>
+    <listofallmembers>
+      <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1aaabfded2f446811dbc79a7c81d1afeb3" prot="private" virt="non-virtual"><scope>gr::sendfile::sendfile_wifi_impl</scope><name>d_fp</name></member>
+      <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a8a7642e0524e8e8480fbbcb3882c26e0" prot="private" virt="non-virtual"><scope>gr::sendfile::sendfile_wifi_impl</scope><name>d_itemsize</name></member>
+      <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a1c9a42573b53eade3e2967124d36a340" prot="private" virt="non-virtual"><scope>gr::sendfile::sendfile_wifi_impl</scope><name>d_new_fp</name></member>
+      <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a126fcae58d8a3db1bce99e1bc49c233e" prot="private" virt="non-virtual"><scope>gr::sendfile::sendfile_wifi_impl</scope><name>d_repeat</name></member>
+      <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a885b1e1ddf3ac7f476ee92e3a1b1e662" prot="private" virt="non-virtual"><scope>gr::sendfile::sendfile_wifi_impl</scope><name>d_updated</name></member>
+      <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a403bbd07dcea1a7030504d169d058d67" prot="private" virt="non-virtual"><scope>gr::sendfile::sendfile_wifi_impl</scope><name>do_update</name></member>
+      <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a3f62e9a69e790bcb784262fbf6264a0e" prot="private" virt="non-virtual"><scope>gr::sendfile::sendfile_wifi_impl</scope><name>enable_send</name></member>
+      <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1ae17fb112ef6d38ef80a4496280cf87ba" prot="private" virt="non-virtual"><scope>gr::sendfile::sendfile_wifi_impl</scope><name>filename</name></member>
+      <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a755e45a53bc8427b5567f72fbc2e7528" prot="private" virt="non-virtual"><scope>gr::sendfile::sendfile_wifi_impl</scope><name>fp_mutex</name></member>
+      <member refid="classgr_1_1sendfile_1_1sendfile__wifi_1ae643fc74fb7cc8ed1d696ac8d2413261" prot="public" virt="non-virtual"><scope>gr::sendfile::sendfile_wifi_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a8b29692a2d3ecf3792f314c683403062" prot="public" virt="non-virtual"><scope>gr::sendfile::sendfile_wifi_impl</scope><name>sendfile_wifi_impl</name></member>
+      <member refid="classgr_1_1sendfile_1_1sendfile__wifi_1a1fb063fececc92feef39421972526494" prot="public" virt="non-virtual"><scope>gr::sendfile::sendfile_wifi_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1ac23c2a01aa942249bccfb4cc945def2d" prot="public" virt="non-virtual"><scope>gr::sendfile::sendfile_wifi_impl</scope><name>work</name></member>
+      <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a14468c0cbaf9b3c5d44d9943f3cbdf9b" prot="public" virt="non-virtual"><scope>gr::sendfile::sendfile_wifi_impl</scope><name>~sendfile_wifi_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

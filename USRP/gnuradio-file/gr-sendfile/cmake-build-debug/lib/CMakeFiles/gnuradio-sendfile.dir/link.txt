@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libgnuradio-sendfile-1.0.0git.so.0.0.0 -o libgnuradio-sendfile-1.0.0git.so.0.0.0 CMakeFiles/gnuradio-sendfile.dir/file_sender_impl.cc.o -Wl,-rpath,/usr/local/lib: -lboost_filesystem -lboost_system /usr/local/lib/libgnuradio-runtime.so /usr/local/lib/libgnuradio-pmt.so 

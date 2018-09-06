@@ -3,7 +3,7 @@
   <compounddef id="dir_af1b9256995a263700529b2a83a806f7" kind="dir">
     <compoundname>/home/anplus/Documents/gnuradio-file/gr-sendfile/include/sendfile</compoundname>
     <innerfile refid="api_8h">api.h</innerfile>
-    <innerfile refid="file__sender_8h">file_sender.h</innerfile>
+    <innerfile refid="sendfile__wifi_8h">sendfile_wifi.h</innerfile>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

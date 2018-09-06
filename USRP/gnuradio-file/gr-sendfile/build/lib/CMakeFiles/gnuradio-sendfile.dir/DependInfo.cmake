@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/file_sender_impl.cc" "/home/anplus/Documents/gnuradio-file/gr-sendfile/build/lib/CMakeFiles/gnuradio-sendfile.dir/file_sender_impl.cc.o"
+  "/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.cc" "/home/anplus/Documents/gnuradio-file/gr-sendfile/build/lib/CMakeFiles/gnuradio-sendfile.dir/sendfile_wifi_impl.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

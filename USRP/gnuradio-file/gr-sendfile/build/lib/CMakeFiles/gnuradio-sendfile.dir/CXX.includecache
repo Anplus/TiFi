@@ -10,21 +10,19 @@
 gnuradio/attributes.h
 -
 
-../include/sendfile/file_sender.h
+../include/sendfile/sendfile_wifi.h
 sendfile/api.h
 -
 gnuradio/sync_block.h
 -
-gnuradio/blocks/file_sink_base.h
--
 
-/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/file_sender_impl.cc
+/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.cc
 config.h
 /home/anplus/Documents/gnuradio-file/gr-sendfile/lib/config.h
 gnuradio/io_signature.h
 -
-file_sender_impl.h
-/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/file_sender_impl.h
+sendfile_wifi_impl.h
+/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h
 gnuradio/thread/thread.h
 -
 cstdio
@@ -42,10 +40,8 @@ stdio.h
 io.h
 -
 
-/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/file_sender_impl.h
-sendfile/file_sender.h
--
-boost/thread/mutex.hpp
+/home/anplus/Documents/gnuradio-file/gr-sendfile/lib/sendfile_wifi_impl.h
+sendfile/sendfile_wifi.h
 -
 
 /usr/local/include/gnuradio/api.h
@@ -102,18 +98,6 @@ gnuradio/api.h
 gnuradio/basic_block.h
 -
 map
--
-
-/usr/local/include/gnuradio/blocks/api.h
-gnuradio/attributes.h
--
-
-/usr/local/include/gnuradio/blocks/file_sink_base.h
-gnuradio/blocks/api.h
--
-boost/thread.hpp
--
-cstdio
 -
 
 /usr/local/include/gnuradio/config.h

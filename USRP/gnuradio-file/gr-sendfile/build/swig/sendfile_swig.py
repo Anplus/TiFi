@@ -115,15 +115,15 @@ def high_res_timer_tps():
 def high_res_timer_epoch():
     """high_res_timer_epoch() -> gr::high_res_timer_type"""
     return _sendfile_swig.high_res_timer_epoch()
-class file_sender(object):
+class sendfile_wifi(object):
     """
     <+description of block+>
 
     Constructor Specific Documentation:
 
-    Return a shared_ptr to a new instance of sendfile::file_sender.
+    Return a shared_ptr to a new instance of sendfile::sendfile_wifi.
 
-    To avoid accidental use of raw pointers, sendfile::file_sender's constructor is in a private implementation class. sendfile::file_sender::make is the public interface for creating new instances.
+    To avoid accidental use of raw pointers, sendfile::sendfile_wifi's constructor is in a private implementation class. sendfile::sendfile_wifi::make is the public interface for creating new instances.
 
     Args:
         itemsize : 
@@ -137,393 +137,393 @@ class file_sender(object):
 
     def make(itemsize):
         """
-        make(size_t itemsize) -> file_sender_sptr
+        make(size_t itemsize) -> sendfile_wifi_sptr
 
         <+description of block+>
 
         Constructor Specific Documentation:
 
-        Return a shared_ptr to a new instance of sendfile::file_sender.
+        Return a shared_ptr to a new instance of sendfile::sendfile_wifi.
 
-        To avoid accidental use of raw pointers, sendfile::file_sender's constructor is in a private implementation class. sendfile::file_sender::make is the public interface for creating new instances.
+        To avoid accidental use of raw pointers, sendfile::sendfile_wifi's constructor is in a private implementation class. sendfile::sendfile_wifi::make is the public interface for creating new instances.
 
         Args:
             itemsize : 
         """
-        return _sendfile_swig.file_sender_make(itemsize)
+        return _sendfile_swig.sendfile_wifi_make(itemsize)
 
     make = staticmethod(make)
-    __swig_destroy__ = _sendfile_swig.delete_file_sender
+    __swig_destroy__ = _sendfile_swig.delete_sendfile_wifi
     __del__ = lambda self: None
-file_sender_swigregister = _sendfile_swig.file_sender_swigregister
-file_sender_swigregister(file_sender)
+sendfile_wifi_swigregister = _sendfile_swig.sendfile_wifi_swigregister
+sendfile_wifi_swigregister(sendfile_wifi)
 
-def file_sender_make(itemsize):
+def sendfile_wifi_make(itemsize):
     """
-    file_sender_make(size_t itemsize) -> file_sender_sptr
+    sendfile_wifi_make(size_t itemsize) -> sendfile_wifi_sptr
 
     <+description of block+>
 
     Constructor Specific Documentation:
 
-    Return a shared_ptr to a new instance of sendfile::file_sender.
+    Return a shared_ptr to a new instance of sendfile::sendfile_wifi.
 
-    To avoid accidental use of raw pointers, sendfile::file_sender's constructor is in a private implementation class. sendfile::file_sender::make is the public interface for creating new instances.
+    To avoid accidental use of raw pointers, sendfile::sendfile_wifi's constructor is in a private implementation class. sendfile::sendfile_wifi::make is the public interface for creating new instances.
 
     Args:
         itemsize : 
     """
-    return _sendfile_swig.file_sender_make(itemsize)
+    return _sendfile_swig.sendfile_wifi_make(itemsize)
 
-class file_sender_sptr(object):
-    """Proxy of C++ boost::shared_ptr<(gr::sendfile::file_sender)> class."""
+class sendfile_wifi_sptr(object):
+    """Proxy of C++ boost::shared_ptr<(gr::sendfile::sendfile_wifi)> class."""
 
     thisown = _swig_property(lambda x: x.this.own(), lambda x, v: x.this.own(v), doc='The membership flag')
     __repr__ = _swig_repr
 
     def __init__(self, *args):
         """
-        __init__(boost::shared_ptr<(gr::sendfile::file_sender)> self) -> file_sender_sptr
-        __init__(boost::shared_ptr<(gr::sendfile::file_sender)> self, file_sender p) -> file_sender_sptr
+        __init__(boost::shared_ptr<(gr::sendfile::sendfile_wifi)> self) -> sendfile_wifi_sptr
+        __init__(boost::shared_ptr<(gr::sendfile::sendfile_wifi)> self, sendfile_wifi p) -> sendfile_wifi_sptr
         """
-        this = _sendfile_swig.new_file_sender_sptr(*args)
+        this = _sendfile_swig.new_sendfile_wifi_sptr(*args)
         try:
             self.this.append(this)
         except Exception:
             self.this = this
 
     def __deref__(self):
-        """__deref__(file_sender_sptr self) -> file_sender"""
-        return _sendfile_swig.file_sender_sptr___deref__(self)
+        """__deref__(sendfile_wifi_sptr self) -> sendfile_wifi"""
+        return _sendfile_swig.sendfile_wifi_sptr___deref__(self)
 
-    __swig_destroy__ = _sendfile_swig.delete_file_sender_sptr
+    __swig_destroy__ = _sendfile_swig.delete_sendfile_wifi_sptr
     __del__ = lambda self: None
 
     def make(self, itemsize):
         """
-        make(file_sender_sptr self, size_t itemsize) -> file_sender_sptr
+        make(sendfile_wifi_sptr self, size_t itemsize) -> sendfile_wifi_sptr
 
         <+description of block+>
 
         Constructor Specific Documentation:
 
-        Return a shared_ptr to a new instance of sendfile::file_sender.
+        Return a shared_ptr to a new instance of sendfile::sendfile_wifi.
 
-        To avoid accidental use of raw pointers, sendfile::file_sender's constructor is in a private implementation class. sendfile::file_sender::make is the public interface for creating new instances.
+        To avoid accidental use of raw pointers, sendfile::sendfile_wifi's constructor is in a private implementation class. sendfile::sendfile_wifi::make is the public interface for creating new instances.
 
         Args:
             itemsize : 
         """
-        return _sendfile_swig.file_sender_sptr_make(self, itemsize)
+        return _sendfile_swig.sendfile_wifi_sptr_make(self, itemsize)
 
 
     def history(self):
-        """history(file_sender_sptr self) -> unsigned int"""
-        return _sendfile_swig.file_sender_sptr_history(self)
+        """history(sendfile_wifi_sptr self) -> unsigned int"""
+        return _sendfile_swig.sendfile_wifi_sptr_history(self)
 
 
     def declare_sample_delay(self, *args):
         """
-        declare_sample_delay(file_sender_sptr self, int which, int delay)
-        declare_sample_delay(file_sender_sptr self, unsigned int delay)
+        declare_sample_delay(sendfile_wifi_sptr self, int which, int delay)
+        declare_sample_delay(sendfile_wifi_sptr self, unsigned int delay)
         """
-        return _sendfile_swig.file_sender_sptr_declare_sample_delay(self, *args)
+        return _sendfile_swig.sendfile_wifi_sptr_declare_sample_delay(self, *args)
 
 
     def sample_delay(self, which):
-        """sample_delay(file_sender_sptr self, int which) -> unsigned int"""
-        return _sendfile_swig.file_sender_sptr_sample_delay(self, which)
+        """sample_delay(sendfile_wifi_sptr self, int which) -> unsigned int"""
+        return _sendfile_swig.sendfile_wifi_sptr_sample_delay(self, which)
 
 
     def output_multiple(self):
-        """output_multiple(file_sender_sptr self) -> int"""
-        return _sendfile_swig.file_sender_sptr_output_multiple(self)
+        """output_multiple(sendfile_wifi_sptr self) -> int"""
+        return _sendfile_swig.sendfile_wifi_sptr_output_multiple(self)
 
 
     def relative_rate(self):
-        """relative_rate(file_sender_sptr self) -> double"""
-        return _sendfile_swig.file_sender_sptr_relative_rate(self)
+        """relative_rate(sendfile_wifi_sptr self) -> double"""
+        return _sendfile_swig.sendfile_wifi_sptr_relative_rate(self)
 
 
     def start(self):
-        """start(file_sender_sptr self) -> bool"""
-        return _sendfile_swig.file_sender_sptr_start(self)
+        """start(sendfile_wifi_sptr self) -> bool"""
+        return _sendfile_swig.sendfile_wifi_sptr_start(self)
 
 
     def stop(self):
-        """stop(file_sender_sptr self) -> bool"""
-        return _sendfile_swig.file_sender_sptr_stop(self)
+        """stop(sendfile_wifi_sptr self) -> bool"""
+        return _sendfile_swig.sendfile_wifi_sptr_stop(self)
 
 
     def nitems_read(self, which_input):
-        """nitems_read(file_sender_sptr self, unsigned int which_input) -> uint64_t"""
-        return _sendfile_swig.file_sender_sptr_nitems_read(self, which_input)
+        """nitems_read(sendfile_wifi_sptr self, unsigned int which_input) -> uint64_t"""
+        return _sendfile_swig.sendfile_wifi_sptr_nitems_read(self, which_input)
 
 
     def nitems_written(self, which_output):
-        """nitems_written(file_sender_sptr self, unsigned int which_output) -> uint64_t"""
-        return _sendfile_swig.file_sender_sptr_nitems_written(self, which_output)
+        """nitems_written(sendfile_wifi_sptr self, unsigned int which_output) -> uint64_t"""
+        return _sendfile_swig.sendfile_wifi_sptr_nitems_written(self, which_output)
 
 
     def max_noutput_items(self):
-        """max_noutput_items(file_sender_sptr self) -> int"""
-        return _sendfile_swig.file_sender_sptr_max_noutput_items(self)
+        """max_noutput_items(sendfile_wifi_sptr self) -> int"""
+        return _sendfile_swig.sendfile_wifi_sptr_max_noutput_items(self)
 
 
     def set_max_noutput_items(self, m):
-        """set_max_noutput_items(file_sender_sptr self, int m)"""
-        return _sendfile_swig.file_sender_sptr_set_max_noutput_items(self, m)
+        """set_max_noutput_items(sendfile_wifi_sptr self, int m)"""
+        return _sendfile_swig.sendfile_wifi_sptr_set_max_noutput_items(self, m)
 
 
     def unset_max_noutput_items(self):
-        """unset_max_noutput_items(file_sender_sptr self)"""
-        return _sendfile_swig.file_sender_sptr_unset_max_noutput_items(self)
+        """unset_max_noutput_items(sendfile_wifi_sptr self)"""
+        return _sendfile_swig.sendfile_wifi_sptr_unset_max_noutput_items(self)
 
 
     def is_set_max_noutput_items(self):
-        """is_set_max_noutput_items(file_sender_sptr self) -> bool"""
-        return _sendfile_swig.file_sender_sptr_is_set_max_noutput_items(self)
+        """is_set_max_noutput_items(sendfile_wifi_sptr self) -> bool"""
+        return _sendfile_swig.sendfile_wifi_sptr_is_set_max_noutput_items(self)
 
 
     def set_min_noutput_items(self, m):
-        """set_min_noutput_items(file_sender_sptr self, int m)"""
-        return _sendfile_swig.file_sender_sptr_set_min_noutput_items(self, m)
+        """set_min_noutput_items(sendfile_wifi_sptr self, int m)"""
+        return _sendfile_swig.sendfile_wifi_sptr_set_min_noutput_items(self, m)
 
 
     def min_noutput_items(self):
-        """min_noutput_items(file_sender_sptr self) -> int"""
-        return _sendfile_swig.file_sender_sptr_min_noutput_items(self)
+        """min_noutput_items(sendfile_wifi_sptr self) -> int"""
+        return _sendfile_swig.sendfile_wifi_sptr_min_noutput_items(self)
 
 
     def max_output_buffer(self, i):
-        """max_output_buffer(file_sender_sptr self, int i) -> long"""
-        return _sendfile_swig.file_sender_sptr_max_output_buffer(self, i)
+        """max_output_buffer(sendfile_wifi_sptr self, int i) -> long"""
+        return _sendfile_swig.sendfile_wifi_sptr_max_output_buffer(self, i)
 
 
     def set_max_output_buffer(self, *args):
         """
-        set_max_output_buffer(file_sender_sptr self, long max_output_buffer)
-        set_max_output_buffer(file_sender_sptr self, int port, long max_output_buffer)
+        set_max_output_buffer(sendfile_wifi_sptr self, long max_output_buffer)
+        set_max_output_buffer(sendfile_wifi_sptr self, int port, long max_output_buffer)
         """
-        return _sendfile_swig.file_sender_sptr_set_max_output_buffer(self, *args)
+        return _sendfile_swig.sendfile_wifi_sptr_set_max_output_buffer(self, *args)
 
 
     def min_output_buffer(self, i):
-        """min_output_buffer(file_sender_sptr self, int i) -> long"""
-        return _sendfile_swig.file_sender_sptr_min_output_buffer(self, i)
+        """min_output_buffer(sendfile_wifi_sptr self, int i) -> long"""
+        return _sendfile_swig.sendfile_wifi_sptr_min_output_buffer(self, i)
 
 
     def set_min_output_buffer(self, *args):
         """
-        set_min_output_buffer(file_sender_sptr self, long min_output_buffer)
-        set_min_output_buffer(file_sender_sptr self, int port, long min_output_buffer)
+        set_min_output_buffer(sendfile_wifi_sptr self, long min_output_buffer)
+        set_min_output_buffer(sendfile_wifi_sptr self, int port, long min_output_buffer)
         """
-        return _sendfile_swig.file_sender_sptr_set_min_output_buffer(self, *args)
+        return _sendfile_swig.sendfile_wifi_sptr_set_min_output_buffer(self, *args)
 
 
     def pc_noutput_items(self):
-        """pc_noutput_items(file_sender_sptr self) -> float"""
-        return _sendfile_swig.file_sender_sptr_pc_noutput_items(self)
+        """pc_noutput_items(sendfile_wifi_sptr self) -> float"""
+        return _sendfile_swig.sendfile_wifi_sptr_pc_noutput_items(self)
 
 
     def pc_noutput_items_avg(self):
-        """pc_noutput_items_avg(file_sender_sptr self) -> float"""
-        return _sendfile_swig.file_sender_sptr_pc_noutput_items_avg(self)
+        """pc_noutput_items_avg(sendfile_wifi_sptr self) -> float"""
+        return _sendfile_swig.sendfile_wifi_sptr_pc_noutput_items_avg(self)
 
 
     def pc_noutput_items_var(self):
-        """pc_noutput_items_var(file_sender_sptr self) -> float"""
-        return _sendfile_swig.file_sender_sptr_pc_noutput_items_var(self)
+        """pc_noutput_items_var(sendfile_wifi_sptr self) -> float"""
+        return _sendfile_swig.sendfile_wifi_sptr_pc_noutput_items_var(self)
 
 
     def pc_nproduced(self):
-        """pc_nproduced(file_sender_sptr self) -> float"""
-        return _sendfile_swig.file_sender_sptr_pc_nproduced(self)
+        """pc_nproduced(sendfile_wifi_sptr self) -> float"""
+        return _sendfile_swig.sendfile_wifi_sptr_pc_nproduced(self)
 
 
     def pc_nproduced_avg(self):
-        """pc_nproduced_avg(file_sender_sptr self) -> float"""
-        return _sendfile_swig.file_sender_sptr_pc_nproduced_avg(self)
+        """pc_nproduced_avg(sendfile_wifi_sptr self) -> float"""
+        return _sendfile_swig.sendfile_wifi_sptr_pc_nproduced_avg(self)
 
 
     def pc_nproduced_var(self):
-        """pc_nproduced_var(file_sender_sptr self) -> float"""
-        return _sendfile_swig.file_sender_sptr_pc_nproduced_var(self)
+        """pc_nproduced_var(sendfile_wifi_sptr self) -> float"""
+        return _sendfile_swig.sendfile_wifi_sptr_pc_nproduced_var(self)
 
 
     def pc_input_buffers_full(self, *args):
         """
-        pc_input_buffers_full(file_sender_sptr self, int which) -> float
-        pc_input_buffers_full(file_sender_sptr self) -> pmt_vector_float
+        pc_input_buffers_full(sendfile_wifi_sptr self, int which) -> float
+        pc_input_buffers_full(sendfile_wifi_sptr self) -> pmt_vector_float
         """
-        return _sendfile_swig.file_sender_sptr_pc_input_buffers_full(self, *args)
+        return _sendfile_swig.sendfile_wifi_sptr_pc_input_buffers_full(self, *args)
 
 
     def pc_input_buffers_full_avg(self, *args):
         """
-        pc_input_buffers_full_avg(file_sender_sptr self, int which) -> float
-        pc_input_buffers_full_avg(file_sender_sptr self) -> pmt_vector_float
+        pc_input_buffers_full_avg(sendfile_wifi_sptr self, int which) -> float
+        pc_input_buffers_full_avg(sendfile_wifi_sptr self) -> pmt_vector_float
         """
-        return _sendfile_swig.file_sender_sptr_pc_input_buffers_full_avg(self, *args)
+        return _sendfile_swig.sendfile_wifi_sptr_pc_input_buffers_full_avg(self, *args)
 
 
     def pc_input_buffers_full_var(self, *args):
         """
-        pc_input_buffers_full_var(file_sender_sptr self, int which) -> float
-        pc_input_buffers_full_var(file_sender_sptr self) -> pmt_vector_float
+        pc_input_buffers_full_var(sendfile_wifi_sptr self, int which) -> float
+        pc_input_buffers_full_var(sendfile_wifi_sptr self) -> pmt_vector_float
         """
-        return _sendfile_swig.file_sender_sptr_pc_input_buffers_full_var(self, *args)
+        return _sendfile_swig.sendfile_wifi_sptr_pc_input_buffers_full_var(self, *args)
 
 
     def pc_output_buffers_full(self, *args):
         """
-        pc_output_buffers_full(file_sender_sptr self, int which) -> float
-        pc_output_buffers_full(file_sender_sptr self) -> pmt_vector_float
+        pc_output_buffers_full(sendfile_wifi_sptr self, int which) -> float
+        pc_output_buffers_full(sendfile_wifi_sptr self) -> pmt_vector_float
         """
-        return _sendfile_swig.file_sender_sptr_pc_output_buffers_full(self, *args)
+        return _sendfile_swig.sendfile_wifi_sptr_pc_output_buffers_full(self, *args)
 
 
     def pc_output_buffers_full_avg(self, *args):
         """
-        pc_output_buffers_full_avg(file_sender_sptr self, int which) -> float
-        pc_output_buffers_full_avg(file_sender_sptr self) -> pmt_vector_float
+        pc_output_buffers_full_avg(sendfile_wifi_sptr self, int which) -> float
+        pc_output_buffers_full_avg(sendfile_wifi_sptr self) -> pmt_vector_float
         """
-        return _sendfile_swig.file_sender_sptr_pc_output_buffers_full_avg(self, *args)
+        return _sendfile_swig.sendfile_wifi_sptr_pc_output_buffers_full_avg(self, *args)
 
 
     def pc_output_buffers_full_var(self, *args):
         """
-        pc_output_buffers_full_var(file_sender_sptr self, int which) -> float
-        pc_output_buffers_full_var(file_sender_sptr self) -> pmt_vector_float
+        pc_output_buffers_full_var(sendfile_wifi_sptr self, int which) -> float
+        pc_output_buffers_full_var(sendfile_wifi_sptr self) -> pmt_vector_float
         """
-        return _sendfile_swig.file_sender_sptr_pc_output_buffers_full_var(self, *args)
+        return _sendfile_swig.sendfile_wifi_sptr_pc_output_buffers_full_var(self, *args)
 
 
     def pc_work_time(self):
-        """pc_work_time(file_sender_sptr self) -> float"""
-        return _sendfile_swig.file_sender_sptr_pc_work_time(self)
+        """pc_work_time(sendfile_wifi_sptr self) -> float"""
+        return _sendfile_swig.sendfile_wifi_sptr_pc_work_time(self)
 
 
     def pc_work_time_avg(self):
-        """pc_work_time_avg(file_sender_sptr self) -> float"""
-        return _sendfile_swig.file_sender_sptr_pc_work_time_avg(self)
+        """pc_work_time_avg(sendfile_wifi_sptr self) -> float"""
+        return _sendfile_swig.sendfile_wifi_sptr_pc_work_time_avg(self)
 
 
     def pc_work_time_var(self):
-        """pc_work_time_var(file_sender_sptr self) -> float"""
-        return _sendfile_swig.file_sender_sptr_pc_work_time_var(self)
+        """pc_work_time_var(sendfile_wifi_sptr self) -> float"""
+        return _sendfile_swig.sendfile_wifi_sptr_pc_work_time_var(self)
 
 
     def pc_work_time_total(self):
-        """pc_work_time_total(file_sender_sptr self) -> float"""
-        return _sendfile_swig.file_sender_sptr_pc_work_time_total(self)
+        """pc_work_time_total(sendfile_wifi_sptr self) -> float"""
+        return _sendfile_swig.sendfile_wifi_sptr_pc_work_time_total(self)
 
 
     def pc_throughput_avg(self):
-        """pc_throughput_avg(file_sender_sptr self) -> float"""
-        return _sendfile_swig.file_sender_sptr_pc_throughput_avg(self)
+        """pc_throughput_avg(sendfile_wifi_sptr self) -> float"""
+        return _sendfile_swig.sendfile_wifi_sptr_pc_throughput_avg(self)
 
 
     def set_processor_affinity(self, mask):
-        """set_processor_affinity(file_sender_sptr self, std::vector< int,std::allocator< int > > const & mask)"""
-        return _sendfile_swig.file_sender_sptr_set_processor_affinity(self, mask)
+        """set_processor_affinity(sendfile_wifi_sptr self, std::vector< int,std::allocator< int > > const & mask)"""
+        return _sendfile_swig.sendfile_wifi_sptr_set_processor_affinity(self, mask)
 
 
     def unset_processor_affinity(self):
-        """unset_processor_affinity(file_sender_sptr self)"""
-        return _sendfile_swig.file_sender_sptr_unset_processor_affinity(self)
+        """unset_processor_affinity(sendfile_wifi_sptr self)"""
+        return _sendfile_swig.sendfile_wifi_sptr_unset_processor_affinity(self)
 
 
     def processor_affinity(self):
-        """processor_affinity(file_sender_sptr self) -> std::vector< int,std::allocator< int > >"""
-        return _sendfile_swig.file_sender_sptr_processor_affinity(self)
+        """processor_affinity(sendfile_wifi_sptr self) -> std::vector< int,std::allocator< int > >"""
+        return _sendfile_swig.sendfile_wifi_sptr_processor_affinity(self)
 
 
     def active_thread_priority(self):
-        """active_thread_priority(file_sender_sptr self) -> int"""
-        return _sendfile_swig.file_sender_sptr_active_thread_priority(self)
+        """active_thread_priority(sendfile_wifi_sptr self) -> int"""
+        return _sendfile_swig.sendfile_wifi_sptr_active_thread_priority(self)
 
 
     def thread_priority(self):
-        """thread_priority(file_sender_sptr self) -> int"""
-        return _sendfile_swig.file_sender_sptr_thread_priority(self)
+        """thread_priority(sendfile_wifi_sptr self) -> int"""
+        return _sendfile_swig.sendfile_wifi_sptr_thread_priority(self)
 
 
     def set_thread_priority(self, priority):
-        """set_thread_priority(file_sender_sptr self, int priority) -> int"""
-        return _sendfile_swig.file_sender_sptr_set_thread_priority(self, priority)
+        """set_thread_priority(sendfile_wifi_sptr self, int priority) -> int"""
+        return _sendfile_swig.sendfile_wifi_sptr_set_thread_priority(self, priority)
 
 
     def name(self):
-        """name(file_sender_sptr self) -> std::string"""
-        return _sendfile_swig.file_sender_sptr_name(self)
+        """name(sendfile_wifi_sptr self) -> std::string"""
+        return _sendfile_swig.sendfile_wifi_sptr_name(self)
 
 
     def symbol_name(self):
-        """symbol_name(file_sender_sptr self) -> std::string"""
-        return _sendfile_swig.file_sender_sptr_symbol_name(self)
+        """symbol_name(sendfile_wifi_sptr self) -> std::string"""
+        return _sendfile_swig.sendfile_wifi_sptr_symbol_name(self)
 
 
     def input_signature(self):
-        """input_signature(file_sender_sptr self) -> io_signature_sptr"""
-        return _sendfile_swig.file_sender_sptr_input_signature(self)
+        """input_signature(sendfile_wifi_sptr self) -> io_signature_sptr"""
+        return _sendfile_swig.sendfile_wifi_sptr_input_signature(self)
 
 
     def output_signature(self):
-        """output_signature(file_sender_sptr self) -> io_signature_sptr"""
-        return _sendfile_swig.file_sender_sptr_output_signature(self)
+        """output_signature(sendfile_wifi_sptr self) -> io_signature_sptr"""
+        return _sendfile_swig.sendfile_wifi_sptr_output_signature(self)
 
 
     def unique_id(self):
-        """unique_id(file_sender_sptr self) -> long"""
-        return _sendfile_swig.file_sender_sptr_unique_id(self)
+        """unique_id(sendfile_wifi_sptr self) -> long"""
+        return _sendfile_swig.sendfile_wifi_sptr_unique_id(self)
 
 
     def to_basic_block(self):
-        """to_basic_block(file_sender_sptr self) -> basic_block_sptr"""
-        return _sendfile_swig.file_sender_sptr_to_basic_block(self)
+        """to_basic_block(sendfile_wifi_sptr self) -> basic_block_sptr"""
+        return _sendfile_swig.sendfile_wifi_sptr_to_basic_block(self)
 
 
     def check_topology(self, ninputs, noutputs):
-        """check_topology(file_sender_sptr self, int ninputs, int noutputs) -> bool"""
-        return _sendfile_swig.file_sender_sptr_check_topology(self, ninputs, noutputs)
+        """check_topology(sendfile_wifi_sptr self, int ninputs, int noutputs) -> bool"""
+        return _sendfile_swig.sendfile_wifi_sptr_check_topology(self, ninputs, noutputs)
 
 
     def alias(self):
-        """alias(file_sender_sptr self) -> std::string"""
-        return _sendfile_swig.file_sender_sptr_alias(self)
+        """alias(sendfile_wifi_sptr self) -> std::string"""
+        return _sendfile_swig.sendfile_wifi_sptr_alias(self)
 
 
     def set_block_alias(self, name):
-        """set_block_alias(file_sender_sptr self, std::string name)"""
-        return _sendfile_swig.file_sender_sptr_set_block_alias(self, name)
+        """set_block_alias(sendfile_wifi_sptr self, std::string name)"""
+        return _sendfile_swig.sendfile_wifi_sptr_set_block_alias(self, name)
 
 
     def _post(self, which_port, msg):
-        """_post(file_sender_sptr self, swig_int_ptr which_port, swig_int_ptr msg)"""
-        return _sendfile_swig.file_sender_sptr__post(self, which_port, msg)
+        """_post(sendfile_wifi_sptr self, swig_int_ptr which_port, swig_int_ptr msg)"""
+        return _sendfile_swig.sendfile_wifi_sptr__post(self, which_port, msg)
 
 
     def message_ports_in(self):
-        """message_ports_in(file_sender_sptr self) -> swig_int_ptr"""
-        return _sendfile_swig.file_sender_sptr_message_ports_in(self)
+        """message_ports_in(sendfile_wifi_sptr self) -> swig_int_ptr"""
+        return _sendfile_swig.sendfile_wifi_sptr_message_ports_in(self)
 
 
     def message_ports_out(self):
-        """message_ports_out(file_sender_sptr self) -> swig_int_ptr"""
-        return _sendfile_swig.file_sender_sptr_message_ports_out(self)
+        """message_ports_out(sendfile_wifi_sptr self) -> swig_int_ptr"""
+        return _sendfile_swig.sendfile_wifi_sptr_message_ports_out(self)
 
 
     def message_subscribers(self, which_port):
-        """message_subscribers(file_sender_sptr self, swig_int_ptr which_port) -> swig_int_ptr"""
-        return _sendfile_swig.file_sender_sptr_message_subscribers(self, which_port)
+        """message_subscribers(sendfile_wifi_sptr self, swig_int_ptr which_port) -> swig_int_ptr"""
+        return _sendfile_swig.sendfile_wifi_sptr_message_subscribers(self, which_port)
 
-file_sender_sptr_swigregister = _sendfile_swig.file_sender_sptr_swigregister
-file_sender_sptr_swigregister(file_sender_sptr)
+sendfile_wifi_sptr_swigregister = _sendfile_swig.sendfile_wifi_sptr_swigregister
+sendfile_wifi_sptr_swigregister(sendfile_wifi_sptr)
 
 
-file_sender_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
-file_sender = file_sender.make;
+sendfile_wifi_sptr.__repr__ = lambda self: "<gr_block %s (%d)>" % (self.name(), self.unique_id())
+sendfile_wifi = sendfile_wifi.make;
 
 
 

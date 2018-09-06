@@ -26,7 +26,7 @@ include_directories(${Boost_INCLUDE_DIR})
 link_directories(${Boost_LIBRARY_DIRS})
 
 list(APPEND sendfile_sources
-    file_sender_impl.cc
+    sendfile_wifi_impl.cc
 )
 
 set(sendfile_sources "${sendfile_sources}" PARENT_SCOPE)

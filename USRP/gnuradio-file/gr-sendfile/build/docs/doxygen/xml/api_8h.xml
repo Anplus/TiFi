@@ -3,7 +3,7 @@
   <compounddef id="api_8h" kind="file" language="C++">
     <compoundname>api.h</compoundname>
     <includes local="no">gnuradio/attributes.h</includes>
-    <includedby refid="file__sender_8h" local="no">file_sender.h</includedby>
+    <includedby refid="sendfile__wifi_8h" local="no">sendfile_wifi.h</includedby>
     <incdepgraph>
       <node id="1">
         <label>gnuradio/attributes.h</label>
@@ -17,20 +17,20 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="3">
-        <label>file_sender.h</label>
-        <link refid="file__sender_8h"/>
+        <label>sendfile_wifi.h</label>
+        <link refid="sendfile__wifi_8h"/>
         <childnode refid="4" relation="include">
         </childnode>
-      </node>
-      <node id="4">
-        <label>file_sender_impl.h</label>
-        <link refid="file__sender__impl_8h"/>
       </node>
       <node id="2">
         <label>api.h</label>
         <link refid="api.h"/>
         <childnode refid="3" relation="include">
         </childnode>
+      </node>
+      <node id="4">
+        <label>sendfile_wifi_impl.h</label>
+        <link refid="sendfile__wifi__impl_8h"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">

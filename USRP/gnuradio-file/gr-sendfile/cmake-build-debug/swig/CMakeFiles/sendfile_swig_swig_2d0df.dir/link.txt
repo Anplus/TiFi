@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/sendfile_swig_swig_2d0df.dir/sendfile_swig_swig_2d0df.cpp.o  -o sendfile_swig_swig_2d0df 

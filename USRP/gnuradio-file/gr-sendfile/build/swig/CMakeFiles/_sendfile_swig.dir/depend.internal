@@ -3,7 +3,7 @@
 
 swig/CMakeFiles/_sendfile_swig.dir/sendfile_swigPYTHON_wrap.cxx.o
  ../include/sendfile/api.h
- ../include/sendfile/file_sender.h
+ ../include/sendfile/sendfile_wifi.h
  /home/anplus/Documents/gnuradio-file/gr-sendfile/build/swig/sendfile_swigPYTHON_wrap.cxx
  /usr/include/python2.7/Python.h
  /usr/include/python2.7/abstract.h
@@ -72,8 +72,6 @@ swig/CMakeFiles/_sendfile_swig.dir/sendfile_swigPYTHON_wrap.cxx.o
  /usr/local/include/gnuradio/block.h
  /usr/local/include/gnuradio/block_gateway.h
  /usr/local/include/gnuradio/block_registry.h
- /usr/local/include/gnuradio/blocks/api.h
- /usr/local/include/gnuradio/blocks/file_sink_base.h
  /usr/local/include/gnuradio/config.h
  /usr/local/include/gnuradio/feval.h
  /usr/local/include/gnuradio/gr_complex.h

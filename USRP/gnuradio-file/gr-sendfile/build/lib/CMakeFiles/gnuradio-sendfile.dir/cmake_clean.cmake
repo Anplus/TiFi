@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/gnuradio-sendfile.dir/file_sender_impl.cc.o"
+  "CMakeFiles/gnuradio-sendfile.dir/sendfile_wifi_impl.cc.o"
   "libgnuradio-sendfile-1.0.0git.pdb"
   "libgnuradio-sendfile-1.0.0git.so"
   "libgnuradio-sendfile-1.0.0git.so.0.0.0"

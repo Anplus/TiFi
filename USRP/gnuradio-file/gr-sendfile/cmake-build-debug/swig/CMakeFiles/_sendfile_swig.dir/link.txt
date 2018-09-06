@@ -1,1 +1,0 @@
-/usr/bin/c++ -fPIC -g  -shared  -o _sendfile_swig.so CMakeFiles/_sendfile_swig.dir/sendfile_swigPYTHON_wrap.cxx.o -Wl,-rpath,/home/anplus/Documents/gnuradio-file/gr-sendfile/cmake-build-debug/lib:/usr/local/lib: -lpython2.7 ../lib/libgnuradio-sendfile-1.0.0git.so.0.0.0 -lboost_filesystem -lboost_system /usr/local/lib/libgnuradio-runtime.so /usr/local/lib/libgnuradio-pmt.so 

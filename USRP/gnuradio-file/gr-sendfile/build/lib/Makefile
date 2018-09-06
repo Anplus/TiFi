@@ -195,33 +195,6 @@ test-sendfile/fast:
 	cd /home/anplus/Documents/gnuradio-file/gr-sendfile/build && $(MAKE) -f lib/CMakeFiles/test-sendfile.dir/build.make lib/CMakeFiles/test-sendfile.dir/build
 .PHONY : test-sendfile/fast
 
-file_sender_impl.o: file_sender_impl.cc.o
-
-.PHONY : file_sender_impl.o
-
-# target to build an object file
-file_sender_impl.cc.o:
-	cd /home/anplus/Documents/gnuradio-file/gr-sendfile/build && $(MAKE) -f lib/CMakeFiles/gnuradio-sendfile.dir/build.make lib/CMakeFiles/gnuradio-sendfile.dir/file_sender_impl.cc.o
-.PHONY : file_sender_impl.cc.o
-
-file_sender_impl.i: file_sender_impl.cc.i
-
-.PHONY : file_sender_impl.i
-
-# target to preprocess a source file
-file_sender_impl.cc.i:
-	cd /home/anplus/Documents/gnuradio-file/gr-sendfile/build && $(MAKE) -f lib/CMakeFiles/gnuradio-sendfile.dir/build.make lib/CMakeFiles/gnuradio-sendfile.dir/file_sender_impl.cc.i
-.PHONY : file_sender_impl.cc.i
-
-file_sender_impl.s: file_sender_impl.cc.s
-
-.PHONY : file_sender_impl.s
-
-# target to generate assembly for a file
-file_sender_impl.cc.s:
-	cd /home/anplus/Documents/gnuradio-file/gr-sendfile/build && $(MAKE) -f lib/CMakeFiles/gnuradio-sendfile.dir/build.make lib/CMakeFiles/gnuradio-sendfile.dir/file_sender_impl.cc.s
-.PHONY : file_sender_impl.cc.s
-
 qa_sendfile.o: qa_sendfile.cc.o
 
 .PHONY : qa_sendfile.o
@@ -248,6 +221,33 @@ qa_sendfile.s: qa_sendfile.cc.s
 qa_sendfile.cc.s:
 	cd /home/anplus/Documents/gnuradio-file/gr-sendfile/build && $(MAKE) -f lib/CMakeFiles/test-sendfile.dir/build.make lib/CMakeFiles/test-sendfile.dir/qa_sendfile.cc.s
 .PHONY : qa_sendfile.cc.s
+
+sendfile_wifi_impl.o: sendfile_wifi_impl.cc.o
+
+.PHONY : sendfile_wifi_impl.o
+
+# target to build an object file
+sendfile_wifi_impl.cc.o:
+	cd /home/anplus/Documents/gnuradio-file/gr-sendfile/build && $(MAKE) -f lib/CMakeFiles/gnuradio-sendfile.dir/build.make lib/CMakeFiles/gnuradio-sendfile.dir/sendfile_wifi_impl.cc.o
+.PHONY : sendfile_wifi_impl.cc.o
+
+sendfile_wifi_impl.i: sendfile_wifi_impl.cc.i
+
+.PHONY : sendfile_wifi_impl.i
+
+# target to preprocess a source file
+sendfile_wifi_impl.cc.i:
+	cd /home/anplus/Documents/gnuradio-file/gr-sendfile/build && $(MAKE) -f lib/CMakeFiles/gnuradio-sendfile.dir/build.make lib/CMakeFiles/gnuradio-sendfile.dir/sendfile_wifi_impl.cc.i
+.PHONY : sendfile_wifi_impl.cc.i
+
+sendfile_wifi_impl.s: sendfile_wifi_impl.cc.s
+
+.PHONY : sendfile_wifi_impl.s
+
+# target to generate assembly for a file
+sendfile_wifi_impl.cc.s:
+	cd /home/anplus/Documents/gnuradio-file/gr-sendfile/build && $(MAKE) -f lib/CMakeFiles/gnuradio-sendfile.dir/build.make lib/CMakeFiles/gnuradio-sendfile.dir/sendfile_wifi_impl.cc.s
+.PHONY : sendfile_wifi_impl.cc.s
 
 test_sendfile.o: test_sendfile.cc.o
 
@@ -291,12 +291,12 @@ help:
 	@echo "... test-sendfile"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... file_sender_impl.o"
-	@echo "... file_sender_impl.i"
-	@echo "... file_sender_impl.s"
 	@echo "... qa_sendfile.o"
 	@echo "... qa_sendfile.i"
 	@echo "... qa_sendfile.s"
+	@echo "... sendfile_wifi_impl.o"
+	@echo "... sendfile_wifi_impl.i"
+	@echo "... sendfile_wifi_impl.s"
 	@echo "... test_sendfile.o"
 	@echo "... test_sendfile.i"
 	@echo "... test_sendfile.s"

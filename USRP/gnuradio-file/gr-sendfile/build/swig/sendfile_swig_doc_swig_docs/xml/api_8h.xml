@@ -3,7 +3,7 @@
   <compounddef id="api_8h" kind="file" language="C++">
     <compoundname>api.h</compoundname>
     <includes local="no">gnuradio/attributes.h</includes>
-    <includedby refid="file__sender_8h" local="no">/home/anplus/Documents/gnuradio-file/gr-sendfile/include/sendfile/file_sender.h</includedby>
+    <includedby refid="sendfile__wifi_8h" local="no">/home/anplus/Documents/gnuradio-file/gr-sendfile/include/sendfile/sendfile_wifi.h</includedby>
     <incdepgraph>
       <node id="1">
         <label>gnuradio/attributes.h</label>
@@ -17,8 +17,8 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="3">
-        <label>/home/anplus/Documents/gnuradio-file/gr-sendfile/include/sendfile/file_sender.h</label>
-        <link refid="file__sender_8h"/>
+        <label>/home/anplus/Documents/gnuradio-file/gr-sendfile/include/sendfile/sendfile_wifi.h</label>
+        <link refid="sendfile__wifi_8h"/>
       </node>
       <node id="2">
         <label>/home/anplus/Documents/gnuradio-file/gr-sendfile/include/sendfile/api.h</label>

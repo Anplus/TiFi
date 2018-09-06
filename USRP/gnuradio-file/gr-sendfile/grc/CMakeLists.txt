@@ -18,5 +18,5 @@
 # Boston, MA 02110-1301, USA.
 
 install(FILES
-    sendfile_file_sender.xml DESTINATION share/gnuradio/grc/blocks
+    sendfile_sendfile_wifi.xml DESTINATION share/gnuradio/grc/blocks
 )

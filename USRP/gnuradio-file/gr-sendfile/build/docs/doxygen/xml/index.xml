@@ -1,24 +1,22 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.11">
-  <compound refid="classgr_1_1sendfile_1_1file__sender" kind="class"><name>gr::sendfile::file_sender</name>
-    <member refid="classgr_1_1sendfile_1_1file__sender_1a669526442d79507a09539b0afdec7aea" kind="typedef"><name>sptr</name></member>
-    <member refid="classgr_1_1sendfile_1_1file__sender_1a01128b119933b095a0cf8fe9e019440d" kind="function"><name>make</name></member>
+  <compound refid="classgr_1_1sendfile_1_1sendfile__wifi" kind="class"><name>gr::sendfile::sendfile_wifi</name>
+    <member refid="classgr_1_1sendfile_1_1sendfile__wifi_1a1fb063fececc92feef39421972526494" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1sendfile_1_1sendfile__wifi_1ae643fc74fb7cc8ed1d696ac8d2413261" kind="function"><name>make</name></member>
   </compound>
-  <compound refid="classgr_1_1sendfile_1_1file__sender__impl" kind="class"><name>gr::sendfile::file_sender_impl</name>
-    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a374dfc0ccfd9368f3ce274d9d84d08af" kind="variable"><name>d_itemsize</name></member>
-    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a69a25ae94c499ee1d62e8d5c570d7707" kind="variable"><name>filename</name></member>
-    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a5afa8b700dc3c4fae5ed874a95b794ee" kind="variable"><name>d_fp</name></member>
-    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1aac3e2ee587c880569e6f858d2c07d2b8" kind="variable"><name>d_new_fp</name></member>
-    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a2116e391edb80424d30773618305e003" kind="variable"><name>d_repeat</name></member>
-    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a63fdb9e334eb75bd4bf364bd945342ae" kind="variable"><name>d_updated</name></member>
-    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1afd066ad8fb48464b73b4c4c77be57096" kind="variable"><name>fp_mutex</name></member>
-    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1ae586c007275cf17c3c0c008c1c303548" kind="function"><name>do_update</name></member>
-    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a9b293a071f12155ed7e7b8a25b30eaf0" kind="function"><name>file_sender_impl</name></member>
-    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1acf94d0bc88f503de154109d2e3cc6b47" kind="function"><name>~file_sender_impl</name></member>
-    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a87668c9a601df1ca0e36a648922ed882" kind="function"><name>seek</name></member>
-    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a2b6aefc40cddb411443f22b82509f133" kind="function"><name>open</name></member>
-    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1a0985c49f9c51b3daf42f7ccb84617eb7" kind="function"><name>close</name></member>
-    <member refid="classgr_1_1sendfile_1_1file__sender__impl_1acc00d38a379ac2528d7008cbce515cd9" kind="function"><name>work</name></member>
+  <compound refid="classgr_1_1sendfile_1_1sendfile__wifi__impl" kind="class"><name>gr::sendfile::sendfile_wifi_impl</name>
+    <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a8a7642e0524e8e8480fbbcb3882c26e0" kind="variable"><name>d_itemsize</name></member>
+    <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1ae17fb112ef6d38ef80a4496280cf87ba" kind="variable"><name>filename</name></member>
+    <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a3f62e9a69e790bcb784262fbf6264a0e" kind="variable"><name>enable_send</name></member>
+    <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1aaabfded2f446811dbc79a7c81d1afeb3" kind="variable"><name>d_fp</name></member>
+    <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a1c9a42573b53eade3e2967124d36a340" kind="variable"><name>d_new_fp</name></member>
+    <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a126fcae58d8a3db1bce99e1bc49c233e" kind="variable"><name>d_repeat</name></member>
+    <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a885b1e1ddf3ac7f476ee92e3a1b1e662" kind="variable"><name>d_updated</name></member>
+    <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a755e45a53bc8427b5567f72fbc2e7528" kind="variable"><name>fp_mutex</name></member>
+    <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a403bbd07dcea1a7030504d169d058d67" kind="function"><name>do_update</name></member>
+    <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a8b29692a2d3ecf3792f314c683403062" kind="function"><name>sendfile_wifi_impl</name></member>
+    <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1a14468c0cbaf9b3c5d44d9943f3cbdf9b" kind="function"><name>~sendfile_wifi_impl</name></member>
+    <member refid="classgr_1_1sendfile_1_1sendfile__wifi__impl_1ac23c2a01aa942249bccfb4cc945def2d" kind="function"><name>work</name></member>
   </compound>
   <compound refid="namespacegr" kind="namespace"><name>gr</name>
   </compound>
@@ -29,13 +27,13 @@
   <compound refid="api_8h" kind="file"><name>api.h</name>
     <member refid="api_8h_1a1e9c79e4dae8c940fb34c829514bf7f2" kind="define"><name>SENDFILE_API</name></member>
   </compound>
-  <compound refid="file__sender_8h" kind="file"><name>file_sender.h</name>
-  </compound>
-  <compound refid="file__sender__impl_8h" kind="file"><name>file_sender_impl.h</name>
-  </compound>
   <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
   </compound>
   <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="sendfile__wifi_8h" kind="file"><name>sendfile_wifi.h</name>
+  </compound>
+  <compound refid="sendfile__wifi__impl_8h" kind="file"><name>sendfile_wifi_impl.h</name>
   </compound>
   <compound refid="group__block" kind="group"><name>block</name>
   </compound>

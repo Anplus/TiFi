@@ -3020,7 +3020,7 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 #define SWIGTYPE_p_boost__shared_ptrT_gr__flowgraph_t swig_types[8]
 #define SWIGTYPE_p_boost__shared_ptrT_gr__hier_block2_t swig_types[9]
 #define SWIGTYPE_p_boost__shared_ptrT_gr__io_signature_t swig_types[10]
-#define SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t swig_types[11]
+#define SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t swig_types[11]
 #define SWIGTYPE_p_boost__shared_ptrT_gr__top_block_t swig_types[12]
 #define SWIGTYPE_p_char swig_types[13]
 #define SWIGTYPE_p_const_reference swig_types[14]
@@ -3031,7 +3031,7 @@ SWIG_Python_NonDynamicSetAttr(PyObject *obj, PyObject *name, PyObject *value) {
 #define SWIGTYPE_p_gr__endianness_t swig_types[19]
 #define SWIGTYPE_p_gr__hier_block2 swig_types[20]
 #define SWIGTYPE_p_gr__rt_status_t swig_types[21]
-#define SWIGTYPE_p_gr__sendfile__file_sender swig_types[22]
+#define SWIGTYPE_p_gr__sendfile__sendfile_wifi swig_types[22]
 #define SWIGTYPE_p_gr__sync_block swig_types[23]
 #define SWIGTYPE_p_gr__sync_decimator swig_types[24]
 #define SWIGTYPE_p_gr__sync_interpolator swig_types[25]
@@ -4367,7 +4367,7 @@ SWIG_From_long_SS_long  (long long value)
 }
 
 
-#include "sendfile/file_sender.h"
+#include "sendfile/sendfile_wifi.h"
 
 
 SWIGINTERN int
@@ -5091,7 +5091,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
   size_t arg1 ;
   size_t val1 ;
@@ -5100,17 +5100,17 @@ SWIGINTERN PyObject *_wrap_file_sender_make(PyObject *SWIGUNUSEDPARM(self), PyOb
   char *  kwnames[] = {
     (char *) "itemsize", NULL 
   };
-  gr::sendfile::file_sender::sptr result;
+  gr::sendfile::sendfile_wifi::sptr result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"O:file_sender_make",kwnames,&obj0)) SWIG_fail;
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"O:sendfile_wifi_make",kwnames,&obj0)) SWIG_fail;
   ecode1 = SWIG_AsVal_size_t(obj0, &val1);
   if (!SWIG_IsOK(ecode1)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "file_sender_make" "', argument " "1"" of type '" "size_t""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode1), "in method '" "sendfile_wifi_make" "', argument " "1"" of type '" "size_t""'");
   } 
   arg1 = static_cast< size_t >(val1);
   {
     try {
-      result = gr::sendfile::file_sender::make(arg1);
+      result = gr::sendfile::sendfile_wifi::make(arg1);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -5120,26 +5120,26 @@ SWIGINTERN PyObject *_wrap_file_sender_make(PyObject *SWIGUNUSEDPARM(self), PyOb
     }
     
   }
-  resultobj = SWIG_NewPointerObj((new gr::sendfile::file_sender::sptr(static_cast< const gr::sendfile::file_sender::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, SWIG_POINTER_OWN |  0 );
+  resultobj = SWIG_NewPointerObj((new gr::sendfile::sendfile_wifi::sptr(static_cast< const gr::sendfile::sendfile_wifi::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, SWIG_POINTER_OWN |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_delete_file_sender(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_delete_sendfile_wifi(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  gr::sendfile::file_sender *arg1 = (gr::sendfile::file_sender *) 0 ;
+  gr::sendfile::sendfile_wifi *arg1 = (gr::sendfile::sendfile_wifi *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"delete_file_sender",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_gr__sendfile__file_sender, SWIG_POINTER_DISOWN |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"delete_sendfile_wifi",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_gr__sendfile__sendfile_wifi, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_file_sender" "', argument " "1"" of type '" "gr::sendfile::file_sender *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_sendfile_wifi" "', argument " "1"" of type '" "gr::sendfile::sendfile_wifi *""'"); 
   }
-  arg1 = reinterpret_cast< gr::sendfile::file_sender * >(argp1);
+  arg1 = reinterpret_cast< gr::sendfile::sendfile_wifi * >(argp1);
   {
     try {
       delete arg1;
@@ -5159,21 +5159,21 @@ fail:
 }
 
 
-SWIGINTERN PyObject *file_sender_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *sendfile_wifi_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
   if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
-  SWIG_TypeNewClientData(SWIGTYPE_p_gr__sendfile__file_sender, SWIG_NewClientData(obj));
+  SWIG_TypeNewClientData(SWIGTYPE_p_gr__sendfile__sendfile_wifi, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
 
-SWIGINTERN PyObject *_wrap_new_file_sender_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_new_sendfile_wifi_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *result = 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *result = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"new_file_sender_sptr",0,0)) SWIG_fail;
+  if(!PyArg_UnpackTuple(args,(char *)"new_sendfile_wifi_sptr",0,0)) SWIG_fail;
   {
     try {
-      result = (boost::shared_ptr< gr::sendfile::file_sender > *)new boost::shared_ptr< gr::sendfile::file_sender >();
+      result = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *)new boost::shared_ptr< gr::sendfile::sendfile_wifi >();
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -5183,30 +5183,30 @@ SWIGINTERN PyObject *_wrap_new_file_sender_sptr__SWIG_0(PyObject *SWIGUNUSEDPARM
     }
     
   }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, SWIG_POINTER_NEW |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, SWIG_POINTER_NEW |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_new_file_sender_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_new_sendfile_wifi_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  gr::sendfile::file_sender *arg1 = (gr::sendfile::file_sender *) 0 ;
+  gr::sendfile::sendfile_wifi *arg1 = (gr::sendfile::sendfile_wifi *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  boost::shared_ptr< gr::sendfile::file_sender > *result = 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *result = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"new_file_sender_sptr",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_gr__sendfile__file_sender, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"new_sendfile_wifi_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_gr__sendfile__sendfile_wifi, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_file_sender_sptr" "', argument " "1"" of type '" "gr::sendfile::file_sender *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "new_sendfile_wifi_sptr" "', argument " "1"" of type '" "gr::sendfile::sendfile_wifi *""'"); 
   }
-  arg1 = reinterpret_cast< gr::sendfile::file_sender * >(argp1);
+  arg1 = reinterpret_cast< gr::sendfile::sendfile_wifi * >(argp1);
   {
     try {
-      result = (boost::shared_ptr< gr::sendfile::file_sender > *)new boost::shared_ptr< gr::sendfile::file_sender >(arg1);
+      result = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *)new boost::shared_ptr< gr::sendfile::sendfile_wifi >(arg1);
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -5216,14 +5216,14 @@ SWIGINTERN PyObject *_wrap_new_file_sender_sptr__SWIG_1(PyObject *SWIGUNUSEDPARM
     }
     
   }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, SWIG_POINTER_NEW |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, SWIG_POINTER_NEW |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_new_file_sender_sptr(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_new_sendfile_wifi_sptr(PyObject *self, PyObject *args) {
   Py_ssize_t argc;
   PyObject *argv[2] = {
     0
@@ -5236,44 +5236,44 @@ SWIGINTERN PyObject *_wrap_new_file_sender_sptr(PyObject *self, PyObject *args) 
     argv[ii] = PyTuple_GET_ITEM(args,ii);
   }
   if (argc == 0) {
-    return _wrap_new_file_sender_sptr__SWIG_0(self, args);
+    return _wrap_new_sendfile_wifi_sptr__SWIG_0(self, args);
   }
   if (argc == 1) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_gr__sendfile__file_sender, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_gr__sendfile__sendfile_wifi, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_new_file_sender_sptr__SWIG_1(self, args);
+      return _wrap_new_sendfile_wifi_sptr__SWIG_1(self, args);
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_file_sender_sptr'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'new_sendfile_wifi_sptr'.\n"
     "  Possible C/C++ prototypes are:\n"
-    "    boost::shared_ptr< gr::sendfile::file_sender >::shared_ptr()\n"
-    "    boost::shared_ptr< gr::sendfile::file_sender >::shared_ptr(gr::sendfile::file_sender *)\n");
+    "    boost::shared_ptr< gr::sendfile::sendfile_wifi >::shared_ptr()\n"
+    "    boost::shared_ptr< gr::sendfile::sendfile_wifi >::shared_ptr(gr::sendfile::sendfile_wifi *)\n");
   return 0;
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr___deref__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr___deref__(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
-  gr::sendfile::file_sender *result = 0 ;
+  gr::sendfile::sendfile_wifi *result = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr___deref__",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr___deref__",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr___deref__" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr___deref__" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
-      result = (gr::sendfile::file_sender *)(arg1)->operator ->();
+      result = (gr::sendfile::sendfile_wifi *)(arg1)->operator ->();
     }
     catch(std::exception &e) {
       SWIG_exception(SWIG_RuntimeError, e.what());
@@ -5283,26 +5283,26 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr___deref__(PyObject *SWIGUNUSEDPARM(s
     }
     
   }
-  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_gr__sendfile__file_sender, 0 |  0 );
+  resultobj = SWIG_NewPointerObj(SWIG_as_voidptr(result), SWIGTYPE_p_gr__sendfile__sendfile_wifi, 0 |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_delete_file_sender_sptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_delete_sendfile_wifi_sptr(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"delete_file_sender_sptr",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, SWIG_POINTER_DISOWN |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"delete_sendfile_wifi_sptr",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, SWIG_POINTER_DISOWN |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_file_sender_sptr" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "delete_sendfile_wifi_sptr" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       delete arg1;
@@ -5322,9 +5322,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_make(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   size_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -5335,17 +5335,17 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_make(PyObject *SWIGUNUSEDPARM(self),
   char *  kwnames[] = {
     (char *) "self",(char *) "itemsize", NULL 
   };
-  gr::sendfile::file_sender::sptr result;
+  gr::sendfile::sendfile_wifi::sptr result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:file_sender_sptr_make",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:sendfile_wifi_sptr_make",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_make" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_make" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_size_t(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_make" "', argument " "2"" of type '" "size_t""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_make" "', argument " "2"" of type '" "size_t""'");
   } 
   arg2 = static_cast< size_t >(val2);
   {
@@ -5360,27 +5360,27 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_make(PyObject *SWIGUNUSEDPARM(self),
     }
     
   }
-  resultobj = SWIG_NewPointerObj((new gr::sendfile::file_sender::sptr(static_cast< const gr::sendfile::file_sender::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, SWIG_POINTER_OWN |  0 );
+  resultobj = SWIG_NewPointerObj((new gr::sendfile::sendfile_wifi::sptr(static_cast< const gr::sendfile::sendfile_wifi::sptr& >(result))), SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, SWIG_POINTER_OWN |  0 );
   return resultobj;
 fail:
   return NULL;
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_history(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_history(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   unsigned int result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_history",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_history",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_history" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_history" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (unsigned int)(*arg1)->history();
@@ -5400,9 +5400,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_declare_sample_delay__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_declare_sample_delay__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   int arg3 ;
   void *argp1 = 0 ;
@@ -5415,20 +5415,20 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_declare_sample_delay__SWIG_0(PyObjec
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_declare_sample_delay",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_declare_sample_delay",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_declare_sample_delay" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_declare_sample_delay" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_declare_sample_delay" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_declare_sample_delay" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   ecode3 = SWIG_AsVal_int(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "file_sender_sptr_declare_sample_delay" "', argument " "3"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "sendfile_wifi_sptr_declare_sample_delay" "', argument " "3"" of type '" "int""'");
   } 
   arg3 = static_cast< int >(val3);
   {
@@ -5450,9 +5450,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_declare_sample_delay__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_declare_sample_delay__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   unsigned int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -5461,15 +5461,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_declare_sample_delay__SWIG_1(PyObjec
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_declare_sample_delay",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_declare_sample_delay",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_declare_sample_delay" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_declare_sample_delay" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_declare_sample_delay" "', argument " "2"" of type '" "unsigned int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_declare_sample_delay" "', argument " "2"" of type '" "unsigned int""'");
   } 
   arg2 = static_cast< unsigned int >(val2);
   {
@@ -5491,7 +5491,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_declare_sample_delay(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_declare_sample_delay(PyObject *self, PyObject *args) {
   Py_ssize_t argc;
   PyObject *argv[4] = {
     0
@@ -5506,7 +5506,7 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_declare_sample_delay(PyObject *self,
   if (argc == 2) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       {
@@ -5514,14 +5514,14 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_declare_sample_delay(PyObject *self,
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_file_sender_sptr_declare_sample_delay__SWIG_1(self, args);
+        return _wrap_sendfile_wifi_sptr_declare_sample_delay__SWIG_1(self, args);
       }
     }
   }
   if (argc == 3) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       {
@@ -5534,14 +5534,14 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_declare_sample_delay(PyObject *self,
           _v = SWIG_CheckState(res);
         }
         if (_v) {
-          return _wrap_file_sender_sptr_declare_sample_delay__SWIG_0(self, args);
+          return _wrap_sendfile_wifi_sptr_declare_sample_delay__SWIG_0(self, args);
         }
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'file_sender_sptr_declare_sample_delay'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'sendfile_wifi_sptr_declare_sample_delay'.\n"
     "  Possible C/C++ prototypes are:\n"
     "    gr::block::declare_sample_delay(int,int)\n"
     "    gr::block::declare_sample_delay(unsigned int)\n");
@@ -5549,9 +5549,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_sample_delay(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_sample_delay(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -5564,15 +5564,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_sample_delay(PyObject *SWIGUNUSEDPAR
   };
   unsigned int result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:file_sender_sptr_sample_delay",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:sendfile_wifi_sptr_sample_delay",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_sample_delay" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_sample_delay" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_sample_delay" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_sample_delay" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   {
@@ -5594,20 +5594,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_output_multiple(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_output_multiple(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   int result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_output_multiple",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_output_multiple",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_output_multiple" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_output_multiple" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (int)(*arg1)->output_multiple();
@@ -5627,20 +5627,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_relative_rate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_relative_rate(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   double result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_relative_rate",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_relative_rate",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_relative_rate" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_relative_rate" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (double)(*arg1)->relative_rate();
@@ -5660,20 +5660,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_start(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_start(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   bool result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_start",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_start",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_start" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_start" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (bool)(*arg1)->start();
@@ -5693,20 +5693,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_stop(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_stop(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   bool result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_stop",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_stop",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_stop" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_stop" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (bool)(*arg1)->stop();
@@ -5726,9 +5726,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_nitems_read(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_nitems_read(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   unsigned int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -5741,15 +5741,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_nitems_read(PyObject *SWIGUNUSEDPARM
   };
   uint64_t result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:file_sender_sptr_nitems_read",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:sendfile_wifi_sptr_nitems_read",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_nitems_read" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_nitems_read" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_nitems_read" "', argument " "2"" of type '" "unsigned int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_nitems_read" "', argument " "2"" of type '" "unsigned int""'");
   } 
   arg2 = static_cast< unsigned int >(val2);
   {
@@ -5771,9 +5771,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_nitems_written(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_nitems_written(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   unsigned int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -5786,15 +5786,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_nitems_written(PyObject *SWIGUNUSEDP
   };
   uint64_t result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:file_sender_sptr_nitems_written",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:sendfile_wifi_sptr_nitems_written",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_nitems_written" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_nitems_written" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_unsigned_SS_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_nitems_written" "', argument " "2"" of type '" "unsigned int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_nitems_written" "', argument " "2"" of type '" "unsigned int""'");
   } 
   arg2 = static_cast< unsigned int >(val2);
   {
@@ -5816,20 +5816,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   int result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_max_noutput_items",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_max_noutput_items",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (int)(*arg1)->max_noutput_items();
@@ -5849,9 +5849,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_set_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_set_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -5863,15 +5863,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_set_max_noutput_items(PyObject *SWIG
     (char *) "self",(char *) "m", NULL 
   };
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:file_sender_sptr_set_max_noutput_items",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:sendfile_wifi_sptr_set_max_noutput_items",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_set_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_set_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_set_max_noutput_items" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_set_max_noutput_items" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   {
@@ -5893,19 +5893,19 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_unset_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_unset_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_unset_max_noutput_items",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_unset_max_noutput_items",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_unset_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_unset_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       (*arg1)->unset_max_noutput_items();
@@ -5925,20 +5925,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_is_set_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_is_set_max_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   bool result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_is_set_max_noutput_items",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_is_set_max_noutput_items",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_is_set_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_is_set_max_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (bool)(*arg1)->is_set_max_noutput_items();
@@ -5958,9 +5958,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_set_min_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_set_min_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -5972,15 +5972,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_set_min_noutput_items(PyObject *SWIG
     (char *) "self",(char *) "m", NULL 
   };
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:file_sender_sptr_set_min_noutput_items",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:sendfile_wifi_sptr_set_min_noutput_items",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_set_min_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_set_min_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_set_min_noutput_items" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_set_min_noutput_items" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   {
@@ -6002,20 +6002,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_min_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_min_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   int result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_min_noutput_items",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_min_noutput_items",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_min_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_min_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (int)(*arg1)->min_noutput_items();
@@ -6035,9 +6035,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_max_output_buffer(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_max_output_buffer(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -6050,15 +6050,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_max_output_buffer(PyObject *SWIGUNUS
   };
   long result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:file_sender_sptr_max_output_buffer",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:sendfile_wifi_sptr_max_output_buffer",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_max_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_max_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_max_output_buffer" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_max_output_buffer" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   {
@@ -6080,9 +6080,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_set_max_output_buffer__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_set_max_output_buffer__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   long arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -6091,15 +6091,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_set_max_output_buffer__SWIG_0(PyObje
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_set_max_output_buffer",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_set_max_output_buffer",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_set_max_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_set_max_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_long(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_set_max_output_buffer" "', argument " "2"" of type '" "long""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_set_max_output_buffer" "', argument " "2"" of type '" "long""'");
   } 
   arg2 = static_cast< long >(val2);
   {
@@ -6121,9 +6121,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_set_max_output_buffer__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_set_max_output_buffer__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   long arg3 ;
   void *argp1 = 0 ;
@@ -6136,20 +6136,20 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_set_max_output_buffer__SWIG_1(PyObje
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_set_max_output_buffer",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_set_max_output_buffer",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_set_max_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_set_max_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_set_max_output_buffer" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_set_max_output_buffer" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   ecode3 = SWIG_AsVal_long(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "file_sender_sptr_set_max_output_buffer" "', argument " "3"" of type '" "long""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "sendfile_wifi_sptr_set_max_output_buffer" "', argument " "3"" of type '" "long""'");
   } 
   arg3 = static_cast< long >(val3);
   {
@@ -6171,7 +6171,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_set_max_output_buffer(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_set_max_output_buffer(PyObject *self, PyObject *args) {
   Py_ssize_t argc;
   PyObject *argv[4] = {
     0
@@ -6186,7 +6186,7 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_set_max_output_buffer(PyObject *self
   if (argc == 2) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       {
@@ -6194,14 +6194,14 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_set_max_output_buffer(PyObject *self
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_file_sender_sptr_set_max_output_buffer__SWIG_0(self, args);
+        return _wrap_sendfile_wifi_sptr_set_max_output_buffer__SWIG_0(self, args);
       }
     }
   }
   if (argc == 3) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       {
@@ -6214,14 +6214,14 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_set_max_output_buffer(PyObject *self
           _v = SWIG_CheckState(res);
         }
         if (_v) {
-          return _wrap_file_sender_sptr_set_max_output_buffer__SWIG_1(self, args);
+          return _wrap_sendfile_wifi_sptr_set_max_output_buffer__SWIG_1(self, args);
         }
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'file_sender_sptr_set_max_output_buffer'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'sendfile_wifi_sptr_set_max_output_buffer'.\n"
     "  Possible C/C++ prototypes are:\n"
     "    gr::block::set_max_output_buffer(long)\n"
     "    gr::block::set_max_output_buffer(int,long)\n");
@@ -6229,9 +6229,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_min_output_buffer(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_min_output_buffer(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -6244,15 +6244,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_min_output_buffer(PyObject *SWIGUNUS
   };
   long result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:file_sender_sptr_min_output_buffer",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:sendfile_wifi_sptr_min_output_buffer",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_min_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_min_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_min_output_buffer" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_min_output_buffer" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   {
@@ -6274,9 +6274,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_set_min_output_buffer__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_set_min_output_buffer__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   long arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -6285,15 +6285,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_set_min_output_buffer__SWIG_0(PyObje
   PyObject * obj0 = 0 ;
   PyObject * obj1 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_set_min_output_buffer",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_set_min_output_buffer",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_set_min_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_set_min_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_long(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_set_min_output_buffer" "', argument " "2"" of type '" "long""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_set_min_output_buffer" "', argument " "2"" of type '" "long""'");
   } 
   arg2 = static_cast< long >(val2);
   {
@@ -6315,9 +6315,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_set_min_output_buffer__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_set_min_output_buffer__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   long arg3 ;
   void *argp1 = 0 ;
@@ -6330,20 +6330,20 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_set_min_output_buffer__SWIG_1(PyObje
   PyObject * obj1 = 0 ;
   PyObject * obj2 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_set_min_output_buffer",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_set_min_output_buffer",3,3,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_set_min_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_set_min_output_buffer" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_set_min_output_buffer" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_set_min_output_buffer" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   ecode3 = SWIG_AsVal_long(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "file_sender_sptr_set_min_output_buffer" "', argument " "3"" of type '" "long""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "sendfile_wifi_sptr_set_min_output_buffer" "', argument " "3"" of type '" "long""'");
   } 
   arg3 = static_cast< long >(val3);
   {
@@ -6365,7 +6365,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_set_min_output_buffer(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_set_min_output_buffer(PyObject *self, PyObject *args) {
   Py_ssize_t argc;
   PyObject *argv[4] = {
     0
@@ -6380,7 +6380,7 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_set_min_output_buffer(PyObject *self
   if (argc == 2) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       {
@@ -6388,14 +6388,14 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_set_min_output_buffer(PyObject *self
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_file_sender_sptr_set_min_output_buffer__SWIG_0(self, args);
+        return _wrap_sendfile_wifi_sptr_set_min_output_buffer__SWIG_0(self, args);
       }
     }
   }
   if (argc == 3) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       {
@@ -6408,14 +6408,14 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_set_min_output_buffer(PyObject *self
           _v = SWIG_CheckState(res);
         }
         if (_v) {
-          return _wrap_file_sender_sptr_set_min_output_buffer__SWIG_1(self, args);
+          return _wrap_sendfile_wifi_sptr_set_min_output_buffer__SWIG_1(self, args);
         }
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'file_sender_sptr_set_min_output_buffer'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'sendfile_wifi_sptr_set_min_output_buffer'.\n"
     "  Possible C/C++ prototypes are:\n"
     "    gr::block::set_min_output_buffer(long)\n"
     "    gr::block::set_min_output_buffer(int,long)\n");
@@ -6423,20 +6423,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_noutput_items(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_noutput_items",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_noutput_items",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_noutput_items" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (float)(*arg1)->pc_noutput_items();
@@ -6456,20 +6456,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_noutput_items_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_noutput_items_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_noutput_items_avg",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_noutput_items_avg",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_noutput_items_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_noutput_items_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (float)(*arg1)->pc_noutput_items_avg();
@@ -6489,20 +6489,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_noutput_items_var(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_noutput_items_var(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_noutput_items_var",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_noutput_items_var",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_noutput_items_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_noutput_items_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (float)(*arg1)->pc_noutput_items_var();
@@ -6522,20 +6522,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_nproduced(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_nproduced(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_nproduced",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_nproduced",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_nproduced" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_nproduced" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (float)(*arg1)->pc_nproduced();
@@ -6555,20 +6555,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_nproduced_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_nproduced_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_nproduced_avg",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_nproduced_avg",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_nproduced_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_nproduced_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (float)(*arg1)->pc_nproduced_avg();
@@ -6588,20 +6588,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_nproduced_var(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_nproduced_var(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_nproduced_var",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_nproduced_var",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_nproduced_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_nproduced_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (float)(*arg1)->pc_nproduced_var();
@@ -6621,9 +6621,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_input_buffers_full__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -6633,15 +6633,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full__SWIG_0(PyObje
   PyObject * obj1 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_input_buffers_full",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_input_buffers_full",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_input_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_input_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_pc_input_buffers_full" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_pc_input_buffers_full" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   {
@@ -6663,20 +6663,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_input_buffers_full__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   std::vector< float,std::allocator< float > > result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_input_buffers_full",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_input_buffers_full",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_input_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_input_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (*arg1)->pc_input_buffers_full();
@@ -6696,7 +6696,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_input_buffers_full(PyObject *self, PyObject *args) {
   Py_ssize_t argc;
   PyObject *argv[3] = {
     0
@@ -6711,16 +6711,16 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full(PyObject *self
   if (argc == 1) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_file_sender_sptr_pc_input_buffers_full__SWIG_1(self, args);
+      return _wrap_sendfile_wifi_sptr_pc_input_buffers_full__SWIG_1(self, args);
     }
   }
   if (argc == 2) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       {
@@ -6728,13 +6728,13 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full(PyObject *self
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_file_sender_sptr_pc_input_buffers_full__SWIG_0(self, args);
+        return _wrap_sendfile_wifi_sptr_pc_input_buffers_full__SWIG_0(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'file_sender_sptr_pc_input_buffers_full'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'sendfile_wifi_sptr_pc_input_buffers_full'.\n"
     "  Possible C/C++ prototypes are:\n"
     "    gr::block::pc_input_buffers_full(int)\n"
     "    gr::block::pc_input_buffers_full()\n");
@@ -6742,9 +6742,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full_avg__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_input_buffers_full_avg__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -6754,15 +6754,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full_avg__SWIG_0(Py
   PyObject * obj1 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_input_buffers_full_avg",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_input_buffers_full_avg",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_input_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_input_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_pc_input_buffers_full_avg" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_pc_input_buffers_full_avg" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   {
@@ -6784,20 +6784,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full_avg__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_input_buffers_full_avg__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   std::vector< float,std::allocator< float > > result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_input_buffers_full_avg",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_input_buffers_full_avg",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_input_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_input_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (*arg1)->pc_input_buffers_full_avg();
@@ -6817,7 +6817,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full_avg(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_input_buffers_full_avg(PyObject *self, PyObject *args) {
   Py_ssize_t argc;
   PyObject *argv[3] = {
     0
@@ -6832,16 +6832,16 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full_avg(PyObject *
   if (argc == 1) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_file_sender_sptr_pc_input_buffers_full_avg__SWIG_1(self, args);
+      return _wrap_sendfile_wifi_sptr_pc_input_buffers_full_avg__SWIG_1(self, args);
     }
   }
   if (argc == 2) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       {
@@ -6849,13 +6849,13 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full_avg(PyObject *
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_file_sender_sptr_pc_input_buffers_full_avg__SWIG_0(self, args);
+        return _wrap_sendfile_wifi_sptr_pc_input_buffers_full_avg__SWIG_0(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'file_sender_sptr_pc_input_buffers_full_avg'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'sendfile_wifi_sptr_pc_input_buffers_full_avg'.\n"
     "  Possible C/C++ prototypes are:\n"
     "    gr::block::pc_input_buffers_full_avg(int)\n"
     "    gr::block::pc_input_buffers_full_avg()\n");
@@ -6863,9 +6863,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full_var__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_input_buffers_full_var__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -6875,15 +6875,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full_var__SWIG_0(Py
   PyObject * obj1 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_input_buffers_full_var",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_input_buffers_full_var",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_input_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_input_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_pc_input_buffers_full_var" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_pc_input_buffers_full_var" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   {
@@ -6905,20 +6905,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full_var__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_input_buffers_full_var__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   std::vector< float,std::allocator< float > > result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_input_buffers_full_var",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_input_buffers_full_var",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_input_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_input_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (*arg1)->pc_input_buffers_full_var();
@@ -6938,7 +6938,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full_var(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_input_buffers_full_var(PyObject *self, PyObject *args) {
   Py_ssize_t argc;
   PyObject *argv[3] = {
     0
@@ -6953,16 +6953,16 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full_var(PyObject *
   if (argc == 1) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_file_sender_sptr_pc_input_buffers_full_var__SWIG_1(self, args);
+      return _wrap_sendfile_wifi_sptr_pc_input_buffers_full_var__SWIG_1(self, args);
     }
   }
   if (argc == 2) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       {
@@ -6970,13 +6970,13 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_input_buffers_full_var(PyObject *
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_file_sender_sptr_pc_input_buffers_full_var__SWIG_0(self, args);
+        return _wrap_sendfile_wifi_sptr_pc_input_buffers_full_var__SWIG_0(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'file_sender_sptr_pc_input_buffers_full_var'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'sendfile_wifi_sptr_pc_input_buffers_full_var'.\n"
     "  Possible C/C++ prototypes are:\n"
     "    gr::block::pc_input_buffers_full_var(int)\n"
     "    gr::block::pc_input_buffers_full_var()\n");
@@ -6984,9 +6984,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_output_buffers_full__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -6996,15 +6996,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full__SWIG_0(PyObj
   PyObject * obj1 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_output_buffers_full",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_output_buffers_full",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_output_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_output_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_pc_output_buffers_full" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_pc_output_buffers_full" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   {
@@ -7026,20 +7026,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_output_buffers_full__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   std::vector< float,std::allocator< float > > result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_output_buffers_full",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_output_buffers_full",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_output_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_output_buffers_full" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (*arg1)->pc_output_buffers_full();
@@ -7059,7 +7059,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_output_buffers_full(PyObject *self, PyObject *args) {
   Py_ssize_t argc;
   PyObject *argv[3] = {
     0
@@ -7074,16 +7074,16 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full(PyObject *sel
   if (argc == 1) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_file_sender_sptr_pc_output_buffers_full__SWIG_1(self, args);
+      return _wrap_sendfile_wifi_sptr_pc_output_buffers_full__SWIG_1(self, args);
     }
   }
   if (argc == 2) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       {
@@ -7091,13 +7091,13 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full(PyObject *sel
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_file_sender_sptr_pc_output_buffers_full__SWIG_0(self, args);
+        return _wrap_sendfile_wifi_sptr_pc_output_buffers_full__SWIG_0(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'file_sender_sptr_pc_output_buffers_full'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'sendfile_wifi_sptr_pc_output_buffers_full'.\n"
     "  Possible C/C++ prototypes are:\n"
     "    gr::block::pc_output_buffers_full(int)\n"
     "    gr::block::pc_output_buffers_full()\n");
@@ -7105,9 +7105,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full_avg__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_output_buffers_full_avg__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -7117,15 +7117,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full_avg__SWIG_0(P
   PyObject * obj1 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_output_buffers_full_avg",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_output_buffers_full_avg",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_output_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_output_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_pc_output_buffers_full_avg" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_pc_output_buffers_full_avg" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   {
@@ -7147,20 +7147,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full_avg__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_output_buffers_full_avg__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   std::vector< float,std::allocator< float > > result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_output_buffers_full_avg",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_output_buffers_full_avg",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_output_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_output_buffers_full_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (*arg1)->pc_output_buffers_full_avg();
@@ -7180,7 +7180,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full_avg(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_output_buffers_full_avg(PyObject *self, PyObject *args) {
   Py_ssize_t argc;
   PyObject *argv[3] = {
     0
@@ -7195,16 +7195,16 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full_avg(PyObject 
   if (argc == 1) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_file_sender_sptr_pc_output_buffers_full_avg__SWIG_1(self, args);
+      return _wrap_sendfile_wifi_sptr_pc_output_buffers_full_avg__SWIG_1(self, args);
     }
   }
   if (argc == 2) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       {
@@ -7212,13 +7212,13 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full_avg(PyObject 
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_file_sender_sptr_pc_output_buffers_full_avg__SWIG_0(self, args);
+        return _wrap_sendfile_wifi_sptr_pc_output_buffers_full_avg__SWIG_0(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'file_sender_sptr_pc_output_buffers_full_avg'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'sendfile_wifi_sptr_pc_output_buffers_full_avg'.\n"
     "  Possible C/C++ prototypes are:\n"
     "    gr::block::pc_output_buffers_full_avg(int)\n"
     "    gr::block::pc_output_buffers_full_avg()\n");
@@ -7226,9 +7226,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full_var__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_output_buffers_full_var__SWIG_0(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -7238,15 +7238,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full_var__SWIG_0(P
   PyObject * obj1 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_output_buffers_full_var",2,2,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_output_buffers_full_var",2,2,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_output_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_output_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_pc_output_buffers_full_var" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_pc_output_buffers_full_var" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   {
@@ -7268,20 +7268,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full_var__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_output_buffers_full_var__SWIG_1(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   std::vector< float,std::allocator< float > > result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_output_buffers_full_var",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_output_buffers_full_var",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_output_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_output_buffers_full_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (*arg1)->pc_output_buffers_full_var();
@@ -7301,7 +7301,7 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full_var(PyObject *self, PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_output_buffers_full_var(PyObject *self, PyObject *args) {
   Py_ssize_t argc;
   PyObject *argv[3] = {
     0
@@ -7316,16 +7316,16 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full_var(PyObject 
   if (argc == 1) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
-      return _wrap_file_sender_sptr_pc_output_buffers_full_var__SWIG_1(self, args);
+      return _wrap_sendfile_wifi_sptr_pc_output_buffers_full_var__SWIG_1(self, args);
     }
   }
   if (argc == 2) {
     int _v;
     void *vptr = 0;
-    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0);
+    int res = SWIG_ConvertPtr(argv[0], &vptr, SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0);
     _v = SWIG_CheckState(res);
     if (_v) {
       {
@@ -7333,13 +7333,13 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_output_buffers_full_var(PyObject 
         _v = SWIG_CheckState(res);
       }
       if (_v) {
-        return _wrap_file_sender_sptr_pc_output_buffers_full_var__SWIG_0(self, args);
+        return _wrap_sendfile_wifi_sptr_pc_output_buffers_full_var__SWIG_0(self, args);
       }
     }
   }
   
 fail:
-  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'file_sender_sptr_pc_output_buffers_full_var'.\n"
+  SWIG_SetErrorMsg(PyExc_NotImplementedError,"Wrong number or type of arguments for overloaded function 'sendfile_wifi_sptr_pc_output_buffers_full_var'.\n"
     "  Possible C/C++ prototypes are:\n"
     "    gr::block::pc_output_buffers_full_var(int)\n"
     "    gr::block::pc_output_buffers_full_var()\n");
@@ -7347,20 +7347,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_work_time(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_work_time(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_work_time",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_work_time",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_work_time" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_work_time" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (float)(*arg1)->pc_work_time();
@@ -7380,20 +7380,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_work_time_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_work_time_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_work_time_avg",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_work_time_avg",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_work_time_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_work_time_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (float)(*arg1)->pc_work_time_avg();
@@ -7413,20 +7413,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_work_time_var(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_work_time_var(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_work_time_var",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_work_time_var",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_work_time_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_work_time_var" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (float)(*arg1)->pc_work_time_var();
@@ -7446,20 +7446,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_work_time_total(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_work_time_total(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_work_time_total",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_work_time_total",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_work_time_total" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_work_time_total" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (float)(*arg1)->pc_work_time_total();
@@ -7479,20 +7479,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_pc_throughput_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_pc_throughput_avg(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   float result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_pc_throughput_avg",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_pc_throughput_avg",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_pc_throughput_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_pc_throughput_avg" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (float)(*arg1)->pc_throughput_avg();
@@ -7512,9 +7512,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_set_processor_affinity(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_set_processor_affinity(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   std::vector< int,std::allocator< int > > *arg2 = 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -7525,20 +7525,20 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_set_processor_affinity(PyObject *SWI
     (char *) "self",(char *) "mask", NULL 
   };
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:file_sender_sptr_set_processor_affinity",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:sendfile_wifi_sptr_set_processor_affinity",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_set_processor_affinity" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_set_processor_affinity" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     std::vector< int,std::allocator< int > > *ptr = (std::vector< int,std::allocator< int > > *)0;
     res2 = swig::asptr(obj1, &ptr);
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "file_sender_sptr_set_processor_affinity" "', argument " "2"" of type '" "std::vector< int,std::allocator< int > > const &""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "sendfile_wifi_sptr_set_processor_affinity" "', argument " "2"" of type '" "std::vector< int,std::allocator< int > > const &""'"); 
     }
     if (!ptr) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "file_sender_sptr_set_processor_affinity" "', argument " "2"" of type '" "std::vector< int,std::allocator< int > > const &""'"); 
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "sendfile_wifi_sptr_set_processor_affinity" "', argument " "2"" of type '" "std::vector< int,std::allocator< int > > const &""'"); 
     }
     arg2 = ptr;
   }
@@ -7563,19 +7563,19 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_unset_processor_affinity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_unset_processor_affinity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_unset_processor_affinity",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_unset_processor_affinity",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_unset_processor_affinity" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_unset_processor_affinity" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       (*arg1)->unset_processor_affinity();
@@ -7595,20 +7595,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_processor_affinity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_processor_affinity(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   std::vector< int,std::allocator< int > > result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_processor_affinity",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_processor_affinity",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_processor_affinity" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_processor_affinity" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (*arg1)->processor_affinity();
@@ -7628,20 +7628,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_active_thread_priority(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_active_thread_priority(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   int result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_active_thread_priority",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_active_thread_priority",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_active_thread_priority" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_active_thread_priority" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (int)(*arg1)->active_thread_priority();
@@ -7661,20 +7661,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_thread_priority(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_thread_priority(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   int result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_thread_priority",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_thread_priority",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_thread_priority" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_thread_priority" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (int)(*arg1)->thread_priority();
@@ -7694,9 +7694,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_set_thread_priority(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_set_thread_priority(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -7709,15 +7709,15 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_set_thread_priority(PyObject *SWIGUN
   };
   int result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:file_sender_sptr_set_thread_priority",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:sendfile_wifi_sptr_set_thread_priority",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_set_thread_priority" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_set_thread_priority" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_set_thread_priority" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_set_thread_priority" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   {
@@ -7739,20 +7739,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   std::string result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_name",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_name",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_name" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_name" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (*arg1)->name();
@@ -7772,20 +7772,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_symbol_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_symbol_name(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   std::string result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_symbol_name",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_symbol_name",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_symbol_name" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_symbol_name" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (*arg1)->symbol_name();
@@ -7805,20 +7805,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_input_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_input_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   gr::io_signature::sptr result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_input_signature",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_input_signature",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_input_signature" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_input_signature" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (*arg1)->input_signature();
@@ -7838,20 +7838,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_output_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_output_signature(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   gr::io_signature::sptr result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_output_signature",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_output_signature",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_output_signature" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_output_signature" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (*arg1)->output_signature();
@@ -7871,20 +7871,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_unique_id(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_unique_id(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   long result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_unique_id",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_unique_id",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_unique_id" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > const *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_unique_id" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > const *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (long)(*arg1)->unique_id();
@@ -7904,20 +7904,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_to_basic_block(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_to_basic_block(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   gr::basic_block_sptr result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_to_basic_block",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_to_basic_block",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_to_basic_block" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_to_basic_block" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (*arg1)->to_basic_block();
@@ -7937,9 +7937,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_check_topology(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_check_topology(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   int arg2 ;
   int arg3 ;
   void *argp1 = 0 ;
@@ -7956,20 +7956,20 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_check_topology(PyObject *SWIGUNUSEDP
   };
   bool result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:file_sender_sptr_check_topology",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:sendfile_wifi_sptr_check_topology",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_check_topology" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_check_topology" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   ecode2 = SWIG_AsVal_int(obj1, &val2);
   if (!SWIG_IsOK(ecode2)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "file_sender_sptr_check_topology" "', argument " "2"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode2), "in method '" "sendfile_wifi_sptr_check_topology" "', argument " "2"" of type '" "int""'");
   } 
   arg2 = static_cast< int >(val2);
   ecode3 = SWIG_AsVal_int(obj2, &val3);
   if (!SWIG_IsOK(ecode3)) {
-    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "file_sender_sptr_check_topology" "', argument " "3"" of type '" "int""'");
+    SWIG_exception_fail(SWIG_ArgError(ecode3), "in method '" "sendfile_wifi_sptr_check_topology" "', argument " "3"" of type '" "int""'");
   } 
   arg3 = static_cast< int >(val3);
   {
@@ -7991,20 +7991,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_alias(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_alias(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   std::string result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_alias",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_alias",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_alias" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_alias" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (*arg1)->alias();
@@ -8024,9 +8024,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_set_block_alias(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_set_block_alias(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   std::string arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -8036,17 +8036,17 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_set_block_alias(PyObject *SWIGUNUSED
     (char *) "self",(char *) "name", NULL 
   };
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:file_sender_sptr_set_block_alias",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:sendfile_wifi_sptr_set_block_alias",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_set_block_alias" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_set_block_alias" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     std::string *ptr = (std::string *)0;
     int res = SWIG_AsPtr_std_string(obj1, &ptr);
     if (!SWIG_IsOK(res) || !ptr) {
-      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "file_sender_sptr_set_block_alias" "', argument " "2"" of type '" "std::string""'"); 
+      SWIG_exception_fail(SWIG_ArgError((ptr ? res : SWIG_TypeError)), "in method '" "sendfile_wifi_sptr_set_block_alias" "', argument " "2"" of type '" "std::string""'"); 
     }
     arg2 = *ptr;
     if (SWIG_IsNewObj(res)) delete ptr;
@@ -8070,9 +8070,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr__post(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr__post(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   pmt::pmt_t arg2 ;
   pmt::pmt_t arg3 ;
   void *argp1 = 0 ;
@@ -8088,19 +8088,19 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr__post(PyObject *SWIGUNUSEDPARM(self)
     (char *) "self",(char *) "which_port",(char *) "msg", NULL 
   };
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:file_sender_sptr__post",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OOO:sendfile_wifi_sptr__post",kwnames,&obj0,&obj1,&obj2)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr__post" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr__post" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__intrusive_ptrT_pmt__pmt_base_t,  0  | 0);
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "file_sender_sptr__post" "', argument " "2"" of type '" "pmt::pmt_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "sendfile_wifi_sptr__post" "', argument " "2"" of type '" "pmt::pmt_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "file_sender_sptr__post" "', argument " "2"" of type '" "pmt::pmt_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "sendfile_wifi_sptr__post" "', argument " "2"" of type '" "pmt::pmt_t""'");
     } else {
       pmt::pmt_t * temp = reinterpret_cast< pmt::pmt_t * >(argp2);
       arg2 = *temp;
@@ -8110,10 +8110,10 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr__post(PyObject *SWIGUNUSEDPARM(self)
   {
     res3 = SWIG_ConvertPtr(obj2, &argp3, SWIGTYPE_p_boost__intrusive_ptrT_pmt__pmt_base_t,  0  | 0);
     if (!SWIG_IsOK(res3)) {
-      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "file_sender_sptr__post" "', argument " "3"" of type '" "pmt::pmt_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res3), "in method '" "sendfile_wifi_sptr__post" "', argument " "3"" of type '" "pmt::pmt_t""'"); 
     }  
     if (!argp3) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "file_sender_sptr__post" "', argument " "3"" of type '" "pmt::pmt_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "sendfile_wifi_sptr__post" "', argument " "3"" of type '" "pmt::pmt_t""'");
     } else {
       pmt::pmt_t * temp = reinterpret_cast< pmt::pmt_t * >(argp3);
       arg3 = *temp;
@@ -8139,20 +8139,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_message_ports_in(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_message_ports_in(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   pmt::pmt_t result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_message_ports_in",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_message_ports_in",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_message_ports_in" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_message_ports_in" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (*arg1)->message_ports_in();
@@ -8172,20 +8172,20 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_message_ports_out(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_message_ports_out(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
   PyObject * obj0 = 0 ;
   pmt::pmt_t result;
   
-  if(!PyArg_UnpackTuple(args,(char *)"file_sender_sptr_message_ports_out",1,1,&obj0)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if(!PyArg_UnpackTuple(args,(char *)"sendfile_wifi_sptr_message_ports_out",1,1,&obj0)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_message_ports_out" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_message_ports_out" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     try {
       result = (*arg1)->message_ports_out();
@@ -8205,9 +8205,9 @@ fail:
 }
 
 
-SWIGINTERN PyObject *_wrap_file_sender_sptr_message_subscribers(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
+SWIGINTERN PyObject *_wrap_sendfile_wifi_sptr_message_subscribers(PyObject *SWIGUNUSEDPARM(self), PyObject *args, PyObject *kwargs) {
   PyObject *resultobj = 0;
-  boost::shared_ptr< gr::sendfile::file_sender > *arg1 = (boost::shared_ptr< gr::sendfile::file_sender > *) 0 ;
+  boost::shared_ptr< gr::sendfile::sendfile_wifi > *arg1 = (boost::shared_ptr< gr::sendfile::sendfile_wifi > *) 0 ;
   pmt::pmt_t arg2 ;
   void *argp1 = 0 ;
   int res1 = 0 ;
@@ -8220,19 +8220,19 @@ SWIGINTERN PyObject *_wrap_file_sender_sptr_message_subscribers(PyObject *SWIGUN
   };
   pmt::pmt_t result;
   
-  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:file_sender_sptr_message_subscribers",kwnames,&obj0,&obj1)) SWIG_fail;
-  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0 |  0 );
+  if (!PyArg_ParseTupleAndKeywords(args,kwargs,(char *)"OO:sendfile_wifi_sptr_message_subscribers",kwnames,&obj0,&obj1)) SWIG_fail;
+  res1 = SWIG_ConvertPtr(obj0, &argp1,SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0 |  0 );
   if (!SWIG_IsOK(res1)) {
-    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "file_sender_sptr_message_subscribers" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::file_sender > *""'"); 
+    SWIG_exception_fail(SWIG_ArgError(res1), "in method '" "sendfile_wifi_sptr_message_subscribers" "', argument " "1"" of type '" "boost::shared_ptr< gr::sendfile::sendfile_wifi > *""'"); 
   }
-  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::file_sender > * >(argp1);
+  arg1 = reinterpret_cast< boost::shared_ptr< gr::sendfile::sendfile_wifi > * >(argp1);
   {
     res2 = SWIG_ConvertPtr(obj1, &argp2, SWIGTYPE_p_boost__intrusive_ptrT_pmt__pmt_base_t,  0  | 0);
     if (!SWIG_IsOK(res2)) {
-      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "file_sender_sptr_message_subscribers" "', argument " "2"" of type '" "pmt::pmt_t""'"); 
+      SWIG_exception_fail(SWIG_ArgError(res2), "in method '" "sendfile_wifi_sptr_message_subscribers" "', argument " "2"" of type '" "pmt::pmt_t""'"); 
     }  
     if (!argp2) {
-      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "file_sender_sptr_message_subscribers" "', argument " "2"" of type '" "pmt::pmt_t""'");
+      SWIG_exception_fail(SWIG_ValueError, "invalid null reference " "in method '" "sendfile_wifi_sptr_message_subscribers" "', argument " "2"" of type '" "pmt::pmt_t""'");
     } else {
       pmt::pmt_t * temp = reinterpret_cast< pmt::pmt_t * >(argp2);
       arg2 = *temp;
@@ -8258,10 +8258,10 @@ fail:
 }
 
 
-SWIGINTERN PyObject *file_sender_sptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
+SWIGINTERN PyObject *sendfile_wifi_sptr_swigregister(PyObject *SWIGUNUSEDPARM(self), PyObject *args) {
   PyObject *obj;
   if (!PyArg_UnpackTuple(args,(char*)"swigregister", 1, 1,&obj)) return NULL;
-  SWIG_TypeNewClientData(SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__file_sender_t, SWIG_NewClientData(obj));
+  SWIG_TypeNewClientData(SWIGTYPE_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, SWIG_NewClientData(obj));
   return SWIG_Py_Void();
 }
 
@@ -8271,133 +8271,133 @@ static PyMethodDef SwigMethods[] = {
 	 { (char *)"high_res_timer_now_perfmon", _wrap_high_res_timer_now_perfmon, METH_VARARGS, (char *)"high_res_timer_now_perfmon() -> gr::high_res_timer_type"},
 	 { (char *)"high_res_timer_tps", _wrap_high_res_timer_tps, METH_VARARGS, (char *)"high_res_timer_tps() -> gr::high_res_timer_type"},
 	 { (char *)"high_res_timer_epoch", _wrap_high_res_timer_epoch, METH_VARARGS, (char *)"high_res_timer_epoch() -> gr::high_res_timer_type"},
-	 { (char *)"file_sender_make", (PyCFunction) _wrap_file_sender_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"file_sender_make(size_t itemsize) -> file_sender_sptr\n"
+	 { (char *)"sendfile_wifi_make", (PyCFunction) _wrap_sendfile_wifi_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"sendfile_wifi_make(size_t itemsize) -> sendfile_wifi_sptr\n"
 		"\n"
 		"<+description of block+>\n"
 		"\n"
 		"Constructor Specific Documentation:\n"
 		"\n"
-		"Return a shared_ptr to a new instance of sendfile::file_sender.\n"
+		"Return a shared_ptr to a new instance of sendfile::sendfile_wifi.\n"
 		"\n"
-		"To avoid accidental use of raw pointers, sendfile::file_sender's constructor is in a private implementation class. sendfile::file_sender::make is the public interface for creating new instances.\n"
+		"To avoid accidental use of raw pointers, sendfile::sendfile_wifi's constructor is in a private implementation class. sendfile::sendfile_wifi::make is the public interface for creating new instances.\n"
 		"\n"
 		"Args:\n"
 		"    itemsize : \n"
 		""},
-	 { (char *)"delete_file_sender", _wrap_delete_file_sender, METH_VARARGS, (char *)"delete_file_sender(file_sender self)"},
-	 { (char *)"file_sender_swigregister", file_sender_swigregister, METH_VARARGS, NULL},
-	 { (char *)"new_file_sender_sptr", _wrap_new_file_sender_sptr, METH_VARARGS, (char *)"\n"
-		"file_sender_sptr()\n"
-		"new_file_sender_sptr(file_sender p) -> file_sender_sptr\n"
+	 { (char *)"delete_sendfile_wifi", _wrap_delete_sendfile_wifi, METH_VARARGS, (char *)"delete_sendfile_wifi(sendfile_wifi self)"},
+	 { (char *)"sendfile_wifi_swigregister", sendfile_wifi_swigregister, METH_VARARGS, NULL},
+	 { (char *)"new_sendfile_wifi_sptr", _wrap_new_sendfile_wifi_sptr, METH_VARARGS, (char *)"\n"
+		"sendfile_wifi_sptr()\n"
+		"new_sendfile_wifi_sptr(sendfile_wifi p) -> sendfile_wifi_sptr\n"
 		""},
-	 { (char *)"file_sender_sptr___deref__", _wrap_file_sender_sptr___deref__, METH_VARARGS, (char *)"file_sender_sptr___deref__(file_sender_sptr self) -> file_sender"},
-	 { (char *)"delete_file_sender_sptr", _wrap_delete_file_sender_sptr, METH_VARARGS, (char *)"delete_file_sender_sptr(file_sender_sptr self)"},
-	 { (char *)"file_sender_sptr_make", (PyCFunction) _wrap_file_sender_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
-		"file_sender_sptr_make(file_sender_sptr self, size_t itemsize) -> file_sender_sptr\n"
+	 { (char *)"sendfile_wifi_sptr___deref__", _wrap_sendfile_wifi_sptr___deref__, METH_VARARGS, (char *)"sendfile_wifi_sptr___deref__(sendfile_wifi_sptr self) -> sendfile_wifi"},
+	 { (char *)"delete_sendfile_wifi_sptr", _wrap_delete_sendfile_wifi_sptr, METH_VARARGS, (char *)"delete_sendfile_wifi_sptr(sendfile_wifi_sptr self)"},
+	 { (char *)"sendfile_wifi_sptr_make", (PyCFunction) _wrap_sendfile_wifi_sptr_make, METH_VARARGS | METH_KEYWORDS, (char *)"\n"
+		"sendfile_wifi_sptr_make(sendfile_wifi_sptr self, size_t itemsize) -> sendfile_wifi_sptr\n"
 		"\n"
 		"<+description of block+>\n"
 		"\n"
 		"Constructor Specific Documentation:\n"
 		"\n"
-		"Return a shared_ptr to a new instance of sendfile::file_sender.\n"
+		"Return a shared_ptr to a new instance of sendfile::sendfile_wifi.\n"
 		"\n"
-		"To avoid accidental use of raw pointers, sendfile::file_sender's constructor is in a private implementation class. sendfile::file_sender::make is the public interface for creating new instances.\n"
+		"To avoid accidental use of raw pointers, sendfile::sendfile_wifi's constructor is in a private implementation class. sendfile::sendfile_wifi::make is the public interface for creating new instances.\n"
 		"\n"
 		"Args:\n"
 		"    itemsize : \n"
 		""},
-	 { (char *)"file_sender_sptr_history", _wrap_file_sender_sptr_history, METH_VARARGS, (char *)"file_sender_sptr_history(file_sender_sptr self) -> unsigned int"},
-	 { (char *)"file_sender_sptr_declare_sample_delay", _wrap_file_sender_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
+	 { (char *)"sendfile_wifi_sptr_history", _wrap_sendfile_wifi_sptr_history, METH_VARARGS, (char *)"sendfile_wifi_sptr_history(sendfile_wifi_sptr self) -> unsigned int"},
+	 { (char *)"sendfile_wifi_sptr_declare_sample_delay", _wrap_sendfile_wifi_sptr_declare_sample_delay, METH_VARARGS, (char *)"\n"
 		"declare_sample_delay(int which, int delay)\n"
-		"file_sender_sptr_declare_sample_delay(file_sender_sptr self, unsigned int delay)\n"
+		"sendfile_wifi_sptr_declare_sample_delay(sendfile_wifi_sptr self, unsigned int delay)\n"
 		""},
-	 { (char *)"file_sender_sptr_sample_delay", (PyCFunction) _wrap_file_sender_sptr_sample_delay, METH_VARARGS | METH_KEYWORDS, (char *)"file_sender_sptr_sample_delay(file_sender_sptr self, int which) -> unsigned int"},
-	 { (char *)"file_sender_sptr_output_multiple", _wrap_file_sender_sptr_output_multiple, METH_VARARGS, (char *)"file_sender_sptr_output_multiple(file_sender_sptr self) -> int"},
-	 { (char *)"file_sender_sptr_relative_rate", _wrap_file_sender_sptr_relative_rate, METH_VARARGS, (char *)"file_sender_sptr_relative_rate(file_sender_sptr self) -> double"},
-	 { (char *)"file_sender_sptr_start", _wrap_file_sender_sptr_start, METH_VARARGS, (char *)"file_sender_sptr_start(file_sender_sptr self) -> bool"},
-	 { (char *)"file_sender_sptr_stop", _wrap_file_sender_sptr_stop, METH_VARARGS, (char *)"file_sender_sptr_stop(file_sender_sptr self) -> bool"},
-	 { (char *)"file_sender_sptr_nitems_read", (PyCFunction) _wrap_file_sender_sptr_nitems_read, METH_VARARGS | METH_KEYWORDS, (char *)"file_sender_sptr_nitems_read(file_sender_sptr self, unsigned int which_input) -> uint64_t"},
-	 { (char *)"file_sender_sptr_nitems_written", (PyCFunction) _wrap_file_sender_sptr_nitems_written, METH_VARARGS | METH_KEYWORDS, (char *)"file_sender_sptr_nitems_written(file_sender_sptr self, unsigned int which_output) -> uint64_t"},
-	 { (char *)"file_sender_sptr_max_noutput_items", _wrap_file_sender_sptr_max_noutput_items, METH_VARARGS, (char *)"file_sender_sptr_max_noutput_items(file_sender_sptr self) -> int"},
-	 { (char *)"file_sender_sptr_set_max_noutput_items", (PyCFunction) _wrap_file_sender_sptr_set_max_noutput_items, METH_VARARGS | METH_KEYWORDS, (char *)"file_sender_sptr_set_max_noutput_items(file_sender_sptr self, int m)"},
-	 { (char *)"file_sender_sptr_unset_max_noutput_items", _wrap_file_sender_sptr_unset_max_noutput_items, METH_VARARGS, (char *)"file_sender_sptr_unset_max_noutput_items(file_sender_sptr self)"},
-	 { (char *)"file_sender_sptr_is_set_max_noutput_items", _wrap_file_sender_sptr_is_set_max_noutput_items, METH_VARARGS, (char *)"file_sender_sptr_is_set_max_noutput_items(file_sender_sptr self) -> bool"},
-	 { (char *)"file_sender_sptr_set_min_noutput_items", (PyCFunction) _wrap_file_sender_sptr_set_min_noutput_items, METH_VARARGS | METH_KEYWORDS, (char *)"file_sender_sptr_set_min_noutput_items(file_sender_sptr self, int m)"},
-	 { (char *)"file_sender_sptr_min_noutput_items", _wrap_file_sender_sptr_min_noutput_items, METH_VARARGS, (char *)"file_sender_sptr_min_noutput_items(file_sender_sptr self) -> int"},
-	 { (char *)"file_sender_sptr_max_output_buffer", (PyCFunction) _wrap_file_sender_sptr_max_output_buffer, METH_VARARGS | METH_KEYWORDS, (char *)"file_sender_sptr_max_output_buffer(file_sender_sptr self, int i) -> long"},
-	 { (char *)"file_sender_sptr_set_max_output_buffer", _wrap_file_sender_sptr_set_max_output_buffer, METH_VARARGS, (char *)"\n"
+	 { (char *)"sendfile_wifi_sptr_sample_delay", (PyCFunction) _wrap_sendfile_wifi_sptr_sample_delay, METH_VARARGS | METH_KEYWORDS, (char *)"sendfile_wifi_sptr_sample_delay(sendfile_wifi_sptr self, int which) -> unsigned int"},
+	 { (char *)"sendfile_wifi_sptr_output_multiple", _wrap_sendfile_wifi_sptr_output_multiple, METH_VARARGS, (char *)"sendfile_wifi_sptr_output_multiple(sendfile_wifi_sptr self) -> int"},
+	 { (char *)"sendfile_wifi_sptr_relative_rate", _wrap_sendfile_wifi_sptr_relative_rate, METH_VARARGS, (char *)"sendfile_wifi_sptr_relative_rate(sendfile_wifi_sptr self) -> double"},
+	 { (char *)"sendfile_wifi_sptr_start", _wrap_sendfile_wifi_sptr_start, METH_VARARGS, (char *)"sendfile_wifi_sptr_start(sendfile_wifi_sptr self) -> bool"},
+	 { (char *)"sendfile_wifi_sptr_stop", _wrap_sendfile_wifi_sptr_stop, METH_VARARGS, (char *)"sendfile_wifi_sptr_stop(sendfile_wifi_sptr self) -> bool"},
+	 { (char *)"sendfile_wifi_sptr_nitems_read", (PyCFunction) _wrap_sendfile_wifi_sptr_nitems_read, METH_VARARGS | METH_KEYWORDS, (char *)"sendfile_wifi_sptr_nitems_read(sendfile_wifi_sptr self, unsigned int which_input) -> uint64_t"},
+	 { (char *)"sendfile_wifi_sptr_nitems_written", (PyCFunction) _wrap_sendfile_wifi_sptr_nitems_written, METH_VARARGS | METH_KEYWORDS, (char *)"sendfile_wifi_sptr_nitems_written(sendfile_wifi_sptr self, unsigned int which_output) -> uint64_t"},
+	 { (char *)"sendfile_wifi_sptr_max_noutput_items", _wrap_sendfile_wifi_sptr_max_noutput_items, METH_VARARGS, (char *)"sendfile_wifi_sptr_max_noutput_items(sendfile_wifi_sptr self) -> int"},
+	 { (char *)"sendfile_wifi_sptr_set_max_noutput_items", (PyCFunction) _wrap_sendfile_wifi_sptr_set_max_noutput_items, METH_VARARGS | METH_KEYWORDS, (char *)"sendfile_wifi_sptr_set_max_noutput_items(sendfile_wifi_sptr self, int m)"},
+	 { (char *)"sendfile_wifi_sptr_unset_max_noutput_items", _wrap_sendfile_wifi_sptr_unset_max_noutput_items, METH_VARARGS, (char *)"sendfile_wifi_sptr_unset_max_noutput_items(sendfile_wifi_sptr self)"},
+	 { (char *)"sendfile_wifi_sptr_is_set_max_noutput_items", _wrap_sendfile_wifi_sptr_is_set_max_noutput_items, METH_VARARGS, (char *)"sendfile_wifi_sptr_is_set_max_noutput_items(sendfile_wifi_sptr self) -> bool"},
+	 { (char *)"sendfile_wifi_sptr_set_min_noutput_items", (PyCFunction) _wrap_sendfile_wifi_sptr_set_min_noutput_items, METH_VARARGS | METH_KEYWORDS, (char *)"sendfile_wifi_sptr_set_min_noutput_items(sendfile_wifi_sptr self, int m)"},
+	 { (char *)"sendfile_wifi_sptr_min_noutput_items", _wrap_sendfile_wifi_sptr_min_noutput_items, METH_VARARGS, (char *)"sendfile_wifi_sptr_min_noutput_items(sendfile_wifi_sptr self) -> int"},
+	 { (char *)"sendfile_wifi_sptr_max_output_buffer", (PyCFunction) _wrap_sendfile_wifi_sptr_max_output_buffer, METH_VARARGS | METH_KEYWORDS, (char *)"sendfile_wifi_sptr_max_output_buffer(sendfile_wifi_sptr self, int i) -> long"},
+	 { (char *)"sendfile_wifi_sptr_set_max_output_buffer", _wrap_sendfile_wifi_sptr_set_max_output_buffer, METH_VARARGS, (char *)"\n"
 		"set_max_output_buffer(long max_output_buffer)\n"
-		"file_sender_sptr_set_max_output_buffer(file_sender_sptr self, int port, long max_output_buffer)\n"
+		"sendfile_wifi_sptr_set_max_output_buffer(sendfile_wifi_sptr self, int port, long max_output_buffer)\n"
 		""},
-	 { (char *)"file_sender_sptr_min_output_buffer", (PyCFunction) _wrap_file_sender_sptr_min_output_buffer, METH_VARARGS | METH_KEYWORDS, (char *)"file_sender_sptr_min_output_buffer(file_sender_sptr self, int i) -> long"},
-	 { (char *)"file_sender_sptr_set_min_output_buffer", _wrap_file_sender_sptr_set_min_output_buffer, METH_VARARGS, (char *)"\n"
+	 { (char *)"sendfile_wifi_sptr_min_output_buffer", (PyCFunction) _wrap_sendfile_wifi_sptr_min_output_buffer, METH_VARARGS | METH_KEYWORDS, (char *)"sendfile_wifi_sptr_min_output_buffer(sendfile_wifi_sptr self, int i) -> long"},
+	 { (char *)"sendfile_wifi_sptr_set_min_output_buffer", _wrap_sendfile_wifi_sptr_set_min_output_buffer, METH_VARARGS, (char *)"\n"
 		"set_min_output_buffer(long min_output_buffer)\n"
-		"file_sender_sptr_set_min_output_buffer(file_sender_sptr self, int port, long min_output_buffer)\n"
+		"sendfile_wifi_sptr_set_min_output_buffer(sendfile_wifi_sptr self, int port, long min_output_buffer)\n"
 		""},
-	 { (char *)"file_sender_sptr_pc_noutput_items", _wrap_file_sender_sptr_pc_noutput_items, METH_VARARGS, (char *)"file_sender_sptr_pc_noutput_items(file_sender_sptr self) -> float"},
-	 { (char *)"file_sender_sptr_pc_noutput_items_avg", _wrap_file_sender_sptr_pc_noutput_items_avg, METH_VARARGS, (char *)"file_sender_sptr_pc_noutput_items_avg(file_sender_sptr self) -> float"},
-	 { (char *)"file_sender_sptr_pc_noutput_items_var", _wrap_file_sender_sptr_pc_noutput_items_var, METH_VARARGS, (char *)"file_sender_sptr_pc_noutput_items_var(file_sender_sptr self) -> float"},
-	 { (char *)"file_sender_sptr_pc_nproduced", _wrap_file_sender_sptr_pc_nproduced, METH_VARARGS, (char *)"file_sender_sptr_pc_nproduced(file_sender_sptr self) -> float"},
-	 { (char *)"file_sender_sptr_pc_nproduced_avg", _wrap_file_sender_sptr_pc_nproduced_avg, METH_VARARGS, (char *)"file_sender_sptr_pc_nproduced_avg(file_sender_sptr self) -> float"},
-	 { (char *)"file_sender_sptr_pc_nproduced_var", _wrap_file_sender_sptr_pc_nproduced_var, METH_VARARGS, (char *)"file_sender_sptr_pc_nproduced_var(file_sender_sptr self) -> float"},
-	 { (char *)"file_sender_sptr_pc_input_buffers_full", _wrap_file_sender_sptr_pc_input_buffers_full, METH_VARARGS, (char *)"\n"
+	 { (char *)"sendfile_wifi_sptr_pc_noutput_items", _wrap_sendfile_wifi_sptr_pc_noutput_items, METH_VARARGS, (char *)"sendfile_wifi_sptr_pc_noutput_items(sendfile_wifi_sptr self) -> float"},
+	 { (char *)"sendfile_wifi_sptr_pc_noutput_items_avg", _wrap_sendfile_wifi_sptr_pc_noutput_items_avg, METH_VARARGS, (char *)"sendfile_wifi_sptr_pc_noutput_items_avg(sendfile_wifi_sptr self) -> float"},
+	 { (char *)"sendfile_wifi_sptr_pc_noutput_items_var", _wrap_sendfile_wifi_sptr_pc_noutput_items_var, METH_VARARGS, (char *)"sendfile_wifi_sptr_pc_noutput_items_var(sendfile_wifi_sptr self) -> float"},
+	 { (char *)"sendfile_wifi_sptr_pc_nproduced", _wrap_sendfile_wifi_sptr_pc_nproduced, METH_VARARGS, (char *)"sendfile_wifi_sptr_pc_nproduced(sendfile_wifi_sptr self) -> float"},
+	 { (char *)"sendfile_wifi_sptr_pc_nproduced_avg", _wrap_sendfile_wifi_sptr_pc_nproduced_avg, METH_VARARGS, (char *)"sendfile_wifi_sptr_pc_nproduced_avg(sendfile_wifi_sptr self) -> float"},
+	 { (char *)"sendfile_wifi_sptr_pc_nproduced_var", _wrap_sendfile_wifi_sptr_pc_nproduced_var, METH_VARARGS, (char *)"sendfile_wifi_sptr_pc_nproduced_var(sendfile_wifi_sptr self) -> float"},
+	 { (char *)"sendfile_wifi_sptr_pc_input_buffers_full", _wrap_sendfile_wifi_sptr_pc_input_buffers_full, METH_VARARGS, (char *)"\n"
 		"pc_input_buffers_full(int which) -> float\n"
-		"file_sender_sptr_pc_input_buffers_full(file_sender_sptr self) -> pmt_vector_float\n"
+		"sendfile_wifi_sptr_pc_input_buffers_full(sendfile_wifi_sptr self) -> pmt_vector_float\n"
 		""},
-	 { (char *)"file_sender_sptr_pc_input_buffers_full_avg", _wrap_file_sender_sptr_pc_input_buffers_full_avg, METH_VARARGS, (char *)"\n"
+	 { (char *)"sendfile_wifi_sptr_pc_input_buffers_full_avg", _wrap_sendfile_wifi_sptr_pc_input_buffers_full_avg, METH_VARARGS, (char *)"\n"
 		"pc_input_buffers_full_avg(int which) -> float\n"
-		"file_sender_sptr_pc_input_buffers_full_avg(file_sender_sptr self) -> pmt_vector_float\n"
+		"sendfile_wifi_sptr_pc_input_buffers_full_avg(sendfile_wifi_sptr self) -> pmt_vector_float\n"
 		""},
-	 { (char *)"file_sender_sptr_pc_input_buffers_full_var", _wrap_file_sender_sptr_pc_input_buffers_full_var, METH_VARARGS, (char *)"\n"
+	 { (char *)"sendfile_wifi_sptr_pc_input_buffers_full_var", _wrap_sendfile_wifi_sptr_pc_input_buffers_full_var, METH_VARARGS, (char *)"\n"
 		"pc_input_buffers_full_var(int which) -> float\n"
-		"file_sender_sptr_pc_input_buffers_full_var(file_sender_sptr self) -> pmt_vector_float\n"
+		"sendfile_wifi_sptr_pc_input_buffers_full_var(sendfile_wifi_sptr self) -> pmt_vector_float\n"
 		""},
-	 { (char *)"file_sender_sptr_pc_output_buffers_full", _wrap_file_sender_sptr_pc_output_buffers_full, METH_VARARGS, (char *)"\n"
+	 { (char *)"sendfile_wifi_sptr_pc_output_buffers_full", _wrap_sendfile_wifi_sptr_pc_output_buffers_full, METH_VARARGS, (char *)"\n"
 		"pc_output_buffers_full(int which) -> float\n"
-		"file_sender_sptr_pc_output_buffers_full(file_sender_sptr self) -> pmt_vector_float\n"
+		"sendfile_wifi_sptr_pc_output_buffers_full(sendfile_wifi_sptr self) -> pmt_vector_float\n"
 		""},
-	 { (char *)"file_sender_sptr_pc_output_buffers_full_avg", _wrap_file_sender_sptr_pc_output_buffers_full_avg, METH_VARARGS, (char *)"\n"
+	 { (char *)"sendfile_wifi_sptr_pc_output_buffers_full_avg", _wrap_sendfile_wifi_sptr_pc_output_buffers_full_avg, METH_VARARGS, (char *)"\n"
 		"pc_output_buffers_full_avg(int which) -> float\n"
-		"file_sender_sptr_pc_output_buffers_full_avg(file_sender_sptr self) -> pmt_vector_float\n"
+		"sendfile_wifi_sptr_pc_output_buffers_full_avg(sendfile_wifi_sptr self) -> pmt_vector_float\n"
 		""},
-	 { (char *)"file_sender_sptr_pc_output_buffers_full_var", _wrap_file_sender_sptr_pc_output_buffers_full_var, METH_VARARGS, (char *)"\n"
+	 { (char *)"sendfile_wifi_sptr_pc_output_buffers_full_var", _wrap_sendfile_wifi_sptr_pc_output_buffers_full_var, METH_VARARGS, (char *)"\n"
 		"pc_output_buffers_full_var(int which) -> float\n"
-		"file_sender_sptr_pc_output_buffers_full_var(file_sender_sptr self) -> pmt_vector_float\n"
+		"sendfile_wifi_sptr_pc_output_buffers_full_var(sendfile_wifi_sptr self) -> pmt_vector_float\n"
 		""},
-	 { (char *)"file_sender_sptr_pc_work_time", _wrap_file_sender_sptr_pc_work_time, METH_VARARGS, (char *)"file_sender_sptr_pc_work_time(file_sender_sptr self) -> float"},
-	 { (char *)"file_sender_sptr_pc_work_time_avg", _wrap_file_sender_sptr_pc_work_time_avg, METH_VARARGS, (char *)"file_sender_sptr_pc_work_time_avg(file_sender_sptr self) -> float"},
-	 { (char *)"file_sender_sptr_pc_work_time_var", _wrap_file_sender_sptr_pc_work_time_var, METH_VARARGS, (char *)"file_sender_sptr_pc_work_time_var(file_sender_sptr self) -> float"},
-	 { (char *)"file_sender_sptr_pc_work_time_total", _wrap_file_sender_sptr_pc_work_time_total, METH_VARARGS, (char *)"file_sender_sptr_pc_work_time_total(file_sender_sptr self) -> float"},
-	 { (char *)"file_sender_sptr_pc_throughput_avg", _wrap_file_sender_sptr_pc_throughput_avg, METH_VARARGS, (char *)"file_sender_sptr_pc_throughput_avg(file_sender_sptr self) -> float"},
-	 { (char *)"file_sender_sptr_set_processor_affinity", (PyCFunction) _wrap_file_sender_sptr_set_processor_affinity, METH_VARARGS | METH_KEYWORDS, (char *)"file_sender_sptr_set_processor_affinity(file_sender_sptr self, std::vector< int,std::allocator< int > > const & mask)"},
-	 { (char *)"file_sender_sptr_unset_processor_affinity", _wrap_file_sender_sptr_unset_processor_affinity, METH_VARARGS, (char *)"file_sender_sptr_unset_processor_affinity(file_sender_sptr self)"},
-	 { (char *)"file_sender_sptr_processor_affinity", _wrap_file_sender_sptr_processor_affinity, METH_VARARGS, (char *)"file_sender_sptr_processor_affinity(file_sender_sptr self) -> std::vector< int,std::allocator< int > >"},
-	 { (char *)"file_sender_sptr_active_thread_priority", _wrap_file_sender_sptr_active_thread_priority, METH_VARARGS, (char *)"file_sender_sptr_active_thread_priority(file_sender_sptr self) -> int"},
-	 { (char *)"file_sender_sptr_thread_priority", _wrap_file_sender_sptr_thread_priority, METH_VARARGS, (char *)"file_sender_sptr_thread_priority(file_sender_sptr self) -> int"},
-	 { (char *)"file_sender_sptr_set_thread_priority", (PyCFunction) _wrap_file_sender_sptr_set_thread_priority, METH_VARARGS | METH_KEYWORDS, (char *)"file_sender_sptr_set_thread_priority(file_sender_sptr self, int priority) -> int"},
-	 { (char *)"file_sender_sptr_name", _wrap_file_sender_sptr_name, METH_VARARGS, (char *)"file_sender_sptr_name(file_sender_sptr self) -> std::string"},
-	 { (char *)"file_sender_sptr_symbol_name", _wrap_file_sender_sptr_symbol_name, METH_VARARGS, (char *)"file_sender_sptr_symbol_name(file_sender_sptr self) -> std::string"},
-	 { (char *)"file_sender_sptr_input_signature", _wrap_file_sender_sptr_input_signature, METH_VARARGS, (char *)"file_sender_sptr_input_signature(file_sender_sptr self) -> io_signature_sptr"},
-	 { (char *)"file_sender_sptr_output_signature", _wrap_file_sender_sptr_output_signature, METH_VARARGS, (char *)"file_sender_sptr_output_signature(file_sender_sptr self) -> io_signature_sptr"},
-	 { (char *)"file_sender_sptr_unique_id", _wrap_file_sender_sptr_unique_id, METH_VARARGS, (char *)"file_sender_sptr_unique_id(file_sender_sptr self) -> long"},
-	 { (char *)"file_sender_sptr_to_basic_block", _wrap_file_sender_sptr_to_basic_block, METH_VARARGS, (char *)"file_sender_sptr_to_basic_block(file_sender_sptr self) -> basic_block_sptr"},
-	 { (char *)"file_sender_sptr_check_topology", (PyCFunction) _wrap_file_sender_sptr_check_topology, METH_VARARGS | METH_KEYWORDS, (char *)"file_sender_sptr_check_topology(file_sender_sptr self, int ninputs, int noutputs) -> bool"},
-	 { (char *)"file_sender_sptr_alias", _wrap_file_sender_sptr_alias, METH_VARARGS, (char *)"file_sender_sptr_alias(file_sender_sptr self) -> std::string"},
-	 { (char *)"file_sender_sptr_set_block_alias", (PyCFunction) _wrap_file_sender_sptr_set_block_alias, METH_VARARGS | METH_KEYWORDS, (char *)"file_sender_sptr_set_block_alias(file_sender_sptr self, std::string name)"},
-	 { (char *)"file_sender_sptr__post", (PyCFunction) _wrap_file_sender_sptr__post, METH_VARARGS | METH_KEYWORDS, (char *)"file_sender_sptr__post(file_sender_sptr self, swig_int_ptr which_port, swig_int_ptr msg)"},
-	 { (char *)"file_sender_sptr_message_ports_in", _wrap_file_sender_sptr_message_ports_in, METH_VARARGS, (char *)"file_sender_sptr_message_ports_in(file_sender_sptr self) -> swig_int_ptr"},
-	 { (char *)"file_sender_sptr_message_ports_out", _wrap_file_sender_sptr_message_ports_out, METH_VARARGS, (char *)"file_sender_sptr_message_ports_out(file_sender_sptr self) -> swig_int_ptr"},
-	 { (char *)"file_sender_sptr_message_subscribers", (PyCFunction) _wrap_file_sender_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"file_sender_sptr_message_subscribers(file_sender_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
-	 { (char *)"file_sender_sptr_swigregister", file_sender_sptr_swigregister, METH_VARARGS, NULL},
+	 { (char *)"sendfile_wifi_sptr_pc_work_time", _wrap_sendfile_wifi_sptr_pc_work_time, METH_VARARGS, (char *)"sendfile_wifi_sptr_pc_work_time(sendfile_wifi_sptr self) -> float"},
+	 { (char *)"sendfile_wifi_sptr_pc_work_time_avg", _wrap_sendfile_wifi_sptr_pc_work_time_avg, METH_VARARGS, (char *)"sendfile_wifi_sptr_pc_work_time_avg(sendfile_wifi_sptr self) -> float"},
+	 { (char *)"sendfile_wifi_sptr_pc_work_time_var", _wrap_sendfile_wifi_sptr_pc_work_time_var, METH_VARARGS, (char *)"sendfile_wifi_sptr_pc_work_time_var(sendfile_wifi_sptr self) -> float"},
+	 { (char *)"sendfile_wifi_sptr_pc_work_time_total", _wrap_sendfile_wifi_sptr_pc_work_time_total, METH_VARARGS, (char *)"sendfile_wifi_sptr_pc_work_time_total(sendfile_wifi_sptr self) -> float"},
+	 { (char *)"sendfile_wifi_sptr_pc_throughput_avg", _wrap_sendfile_wifi_sptr_pc_throughput_avg, METH_VARARGS, (char *)"sendfile_wifi_sptr_pc_throughput_avg(sendfile_wifi_sptr self) -> float"},
+	 { (char *)"sendfile_wifi_sptr_set_processor_affinity", (PyCFunction) _wrap_sendfile_wifi_sptr_set_processor_affinity, METH_VARARGS | METH_KEYWORDS, (char *)"sendfile_wifi_sptr_set_processor_affinity(sendfile_wifi_sptr self, std::vector< int,std::allocator< int > > const & mask)"},
+	 { (char *)"sendfile_wifi_sptr_unset_processor_affinity", _wrap_sendfile_wifi_sptr_unset_processor_affinity, METH_VARARGS, (char *)"sendfile_wifi_sptr_unset_processor_affinity(sendfile_wifi_sptr self)"},
+	 { (char *)"sendfile_wifi_sptr_processor_affinity", _wrap_sendfile_wifi_sptr_processor_affinity, METH_VARARGS, (char *)"sendfile_wifi_sptr_processor_affinity(sendfile_wifi_sptr self) -> std::vector< int,std::allocator< int > >"},
+	 { (char *)"sendfile_wifi_sptr_active_thread_priority", _wrap_sendfile_wifi_sptr_active_thread_priority, METH_VARARGS, (char *)"sendfile_wifi_sptr_active_thread_priority(sendfile_wifi_sptr self) -> int"},
+	 { (char *)"sendfile_wifi_sptr_thread_priority", _wrap_sendfile_wifi_sptr_thread_priority, METH_VARARGS, (char *)"sendfile_wifi_sptr_thread_priority(sendfile_wifi_sptr self) -> int"},
+	 { (char *)"sendfile_wifi_sptr_set_thread_priority", (PyCFunction) _wrap_sendfile_wifi_sptr_set_thread_priority, METH_VARARGS | METH_KEYWORDS, (char *)"sendfile_wifi_sptr_set_thread_priority(sendfile_wifi_sptr self, int priority) -> int"},
+	 { (char *)"sendfile_wifi_sptr_name", _wrap_sendfile_wifi_sptr_name, METH_VARARGS, (char *)"sendfile_wifi_sptr_name(sendfile_wifi_sptr self) -> std::string"},
+	 { (char *)"sendfile_wifi_sptr_symbol_name", _wrap_sendfile_wifi_sptr_symbol_name, METH_VARARGS, (char *)"sendfile_wifi_sptr_symbol_name(sendfile_wifi_sptr self) -> std::string"},
+	 { (char *)"sendfile_wifi_sptr_input_signature", _wrap_sendfile_wifi_sptr_input_signature, METH_VARARGS, (char *)"sendfile_wifi_sptr_input_signature(sendfile_wifi_sptr self) -> io_signature_sptr"},
+	 { (char *)"sendfile_wifi_sptr_output_signature", _wrap_sendfile_wifi_sptr_output_signature, METH_VARARGS, (char *)"sendfile_wifi_sptr_output_signature(sendfile_wifi_sptr self) -> io_signature_sptr"},
+	 { (char *)"sendfile_wifi_sptr_unique_id", _wrap_sendfile_wifi_sptr_unique_id, METH_VARARGS, (char *)"sendfile_wifi_sptr_unique_id(sendfile_wifi_sptr self) -> long"},
+	 { (char *)"sendfile_wifi_sptr_to_basic_block", _wrap_sendfile_wifi_sptr_to_basic_block, METH_VARARGS, (char *)"sendfile_wifi_sptr_to_basic_block(sendfile_wifi_sptr self) -> basic_block_sptr"},
+	 { (char *)"sendfile_wifi_sptr_check_topology", (PyCFunction) _wrap_sendfile_wifi_sptr_check_topology, METH_VARARGS | METH_KEYWORDS, (char *)"sendfile_wifi_sptr_check_topology(sendfile_wifi_sptr self, int ninputs, int noutputs) -> bool"},
+	 { (char *)"sendfile_wifi_sptr_alias", _wrap_sendfile_wifi_sptr_alias, METH_VARARGS, (char *)"sendfile_wifi_sptr_alias(sendfile_wifi_sptr self) -> std::string"},
+	 { (char *)"sendfile_wifi_sptr_set_block_alias", (PyCFunction) _wrap_sendfile_wifi_sptr_set_block_alias, METH_VARARGS | METH_KEYWORDS, (char *)"sendfile_wifi_sptr_set_block_alias(sendfile_wifi_sptr self, std::string name)"},
+	 { (char *)"sendfile_wifi_sptr__post", (PyCFunction) _wrap_sendfile_wifi_sptr__post, METH_VARARGS | METH_KEYWORDS, (char *)"sendfile_wifi_sptr__post(sendfile_wifi_sptr self, swig_int_ptr which_port, swig_int_ptr msg)"},
+	 { (char *)"sendfile_wifi_sptr_message_ports_in", _wrap_sendfile_wifi_sptr_message_ports_in, METH_VARARGS, (char *)"sendfile_wifi_sptr_message_ports_in(sendfile_wifi_sptr self) -> swig_int_ptr"},
+	 { (char *)"sendfile_wifi_sptr_message_ports_out", _wrap_sendfile_wifi_sptr_message_ports_out, METH_VARARGS, (char *)"sendfile_wifi_sptr_message_ports_out(sendfile_wifi_sptr self) -> swig_int_ptr"},
+	 { (char *)"sendfile_wifi_sptr_message_subscribers", (PyCFunction) _wrap_sendfile_wifi_sptr_message_subscribers, METH_VARARGS | METH_KEYWORDS, (char *)"sendfile_wifi_sptr_message_subscribers(sendfile_wifi_sptr self, swig_int_ptr which_port) -> swig_int_ptr"},
+	 { (char *)"sendfile_wifi_sptr_swigregister", sendfile_wifi_sptr_swigregister, METH_VARARGS, NULL},
 	 { NULL, NULL, 0, NULL }
 };
 
 
 /* -------- TYPE CONVERSION AND EQUIVALENCE RULES (BEGIN) -------- */
 
-static void *_p_gr__sendfile__file_senderTo_p_gr__block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gr::block *) (gr::sync_block *) ((gr::sendfile::file_sender *) x));
+static void *_p_gr__sendfile__sendfile_wifiTo_p_gr__block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr::block *) (gr::sync_block *) ((gr::sendfile::sendfile_wifi *) x));
 }
 static void *_p_gr__sync_decimatorTo_p_gr__block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::block *) (gr::sync_block *) ((gr::sync_decimator *) x));
@@ -8414,8 +8414,8 @@ static void *_p_gr__block_gatewayTo_p_gr__block(void *x, int *SWIGUNUSEDPARM(new
 static void *_p_gr__sync_interpolatorTo_p_gr__block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::block *) (gr::sync_block *) ((gr::sync_interpolator *) x));
 }
-static void *_p_gr__sendfile__file_senderTo_p_gr__sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gr::sync_block *)  ((gr::sendfile::file_sender *) x));
+static void *_p_gr__sendfile__sendfile_wifiTo_p_gr__sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr::sync_block *)  ((gr::sendfile::sendfile_wifi *) x));
 }
 static void *_p_gr__sync_decimatorTo_p_gr__sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::sync_block *)  ((gr::sync_decimator *) x));
@@ -8423,8 +8423,8 @@ static void *_p_gr__sync_decimatorTo_p_gr__sync_block(void *x, int *SWIGUNUSEDPA
 static void *_p_gr__sync_interpolatorTo_p_gr__sync_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::sync_block *)  ((gr::sync_interpolator *) x));
 }
-static void *_p_gr__sendfile__file_senderTo_p_gr__basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
-    return (void *)((gr::basic_block *) (gr::block *)(gr::sync_block *) ((gr::sendfile::file_sender *) x));
+static void *_p_gr__sendfile__sendfile_wifiTo_p_gr__basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
+    return (void *)((gr::basic_block *) (gr::block *)(gr::sync_block *) ((gr::sendfile::sendfile_wifi *) x));
 }
 static void *_p_gr__blockTo_p_gr__basic_block(void *x, int *SWIGUNUSEDPARM(newmemory)) {
     return (void *)((gr::basic_block *)  ((gr::block *) x));
@@ -8461,7 +8461,7 @@ static swig_type_info _swigt__p_boost__shared_ptrT_gr__flat_flowgraph_t = {"_p_b
 static swig_type_info _swigt__p_boost__shared_ptrT_gr__flowgraph_t = {"_p_boost__shared_ptrT_gr__flowgraph_t", "boost::shared_ptr< gr::flowgraph > *|gr::flowgraph_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr__hier_block2_t = {"_p_boost__shared_ptrT_gr__hier_block2_t", "boost::shared_ptr< gr::hier_block2 > *|gr::hier_block2_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr__io_signature_t = {"_p_boost__shared_ptrT_gr__io_signature_t", "gr::io_signature::sptr *|boost::shared_ptr< gr::io_signature > *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_boost__shared_ptrT_gr__sendfile__file_sender_t = {"_p_boost__shared_ptrT_gr__sendfile__file_sender_t", "gr::sendfile::file_sender::sptr *|boost::shared_ptr< gr::sendfile::file_sender > *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t = {"_p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t", "gr::sendfile::sendfile_wifi::sptr *|boost::shared_ptr< gr::sendfile::sendfile_wifi > *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_boost__shared_ptrT_gr__top_block_t = {"_p_boost__shared_ptrT_gr__top_block_t", "boost::shared_ptr< gr::top_block > *|gr::top_block_sptr *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_char = {"_p_char", "char *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_const_reference = {"_p_const_reference", "const_reference *", 0, 0, (void*)0, 0};
@@ -8476,7 +8476,7 @@ static swig_type_info _swigt__p_gr__top_block = {"_p_gr__top_block", 0, 0, 0, 0,
 static swig_type_info _swigt__p_gr__block = {"_p_gr__block", "gr::block *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr__endianness_t = {"_p_gr__endianness_t", "enum gr::endianness_t *|gr::endianness_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr__rt_status_t = {"_p_gr__rt_status_t", "enum gr::rt_status_t *|gr::rt_status_t *", 0, 0, (void*)0, 0};
-static swig_type_info _swigt__p_gr__sendfile__file_sender = {"_p_gr__sendfile__file_sender", "gr::sendfile::file_sender *", 0, 0, (void*)0, 0};
+static swig_type_info _swigt__p_gr__sendfile__sendfile_wifi = {"_p_gr__sendfile__sendfile_wifi", "gr::sendfile::sendfile_wifi *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_gr__sync_block = {"_p_gr__sync_block", "gr::sync_block *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_int = {"_p_int", "intptr_t *|int *|int_least32_t *|int_fast32_t *|int32_t *|int_fast16_t *", 0, 0, (void*)0, 0};
 static swig_type_info _swigt__p_long_long = {"_p_long_long", "gr::high_res_timer_type *|int_least64_t *|int_fast64_t *|int64_t *|long long *|intmax_t *", 0, 0, (void*)0, 0};
@@ -8505,7 +8505,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_boost__shared_ptrT_gr__flowgraph_t,
   &_swigt__p_boost__shared_ptrT_gr__hier_block2_t,
   &_swigt__p_boost__shared_ptrT_gr__io_signature_t,
-  &_swigt__p_boost__shared_ptrT_gr__sendfile__file_sender_t,
+  &_swigt__p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t,
   &_swigt__p_boost__shared_ptrT_gr__top_block_t,
   &_swigt__p_char,
   &_swigt__p_const_reference,
@@ -8516,7 +8516,7 @@ static swig_type_info *swig_type_initial[] = {
   &_swigt__p_gr__endianness_t,
   &_swigt__p_gr__hier_block2,
   &_swigt__p_gr__rt_status_t,
-  &_swigt__p_gr__sendfile__file_sender,
+  &_swigt__p_gr__sendfile__sendfile_wifi,
   &_swigt__p_gr__sync_block,
   &_swigt__p_gr__sync_decimator,
   &_swigt__p_gr__sync_interpolator,
@@ -8549,7 +8549,7 @@ static swig_cast_info _swigc__p_boost__shared_ptrT_gr__flat_flowgraph_t[] = {  {
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr__flowgraph_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__flowgraph_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr__hier_block2_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__hier_block2_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr__io_signature_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__io_signature_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_boost__shared_ptrT_gr__sendfile__file_sender_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__sendfile__file_sender_t, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_boost__shared_ptrT_gr__top_block_t[] = {  {&_swigt__p_boost__shared_ptrT_gr__top_block_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_char[] = {  {&_swigt__p_char, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_const_reference[] = {  {&_swigt__p_const_reference, 0, 0, 0},{0, 0, 0, 0}};
@@ -8560,12 +8560,12 @@ static swig_cast_info _swigc__p_gr__block_gateway[] = {{&_swigt__p_gr__block_gat
 static swig_cast_info _swigc__p_gr__hier_block2[] = {{&_swigt__p_gr__hier_block2, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__sync_interpolator[] = {{&_swigt__p_gr__sync_interpolator, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__top_block[] = {{&_swigt__p_gr__top_block, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr__basic_block[] = {  {&_swigt__p_gr__sendfile__file_sender, _p_gr__sendfile__file_senderTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__basic_block, 0, 0, 0},  {&_swigt__p_gr__block, _p_gr__blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_block, _p_gr__sync_blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__tagged_stream_block, _p_gr__tagged_stream_blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__block_gateway, _p_gr__block_gatewayTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__hier_block2, _p_gr__hier_block2To_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__top_block, _p_gr__top_blockTo_p_gr__basic_block, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr__block[] = {  {&_swigt__p_gr__sendfile__file_sender, _p_gr__sendfile__file_senderTo_p_gr__block, 0, 0},  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__block, 0, 0},  {&_swigt__p_gr__block, 0, 0, 0},  {&_swigt__p_gr__sync_block, _p_gr__sync_blockTo_p_gr__block, 0, 0},  {&_swigt__p_gr__tagged_stream_block, _p_gr__tagged_stream_blockTo_p_gr__block, 0, 0},  {&_swigt__p_gr__block_gateway, _p_gr__block_gatewayTo_p_gr__block, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr__basic_block[] = {  {&_swigt__p_gr__sendfile__sendfile_wifi, _p_gr__sendfile__sendfile_wifiTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__basic_block, 0, 0, 0},  {&_swigt__p_gr__block, _p_gr__blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_block, _p_gr__sync_blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__tagged_stream_block, _p_gr__tagged_stream_blockTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__block_gateway, _p_gr__block_gatewayTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__hier_block2, _p_gr__hier_block2To_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__basic_block, 0, 0},  {&_swigt__p_gr__top_block, _p_gr__top_blockTo_p_gr__basic_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr__block[] = {  {&_swigt__p_gr__sendfile__sendfile_wifi, _p_gr__sendfile__sendfile_wifiTo_p_gr__block, 0, 0},  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__block, 0, 0},  {&_swigt__p_gr__block, 0, 0, 0},  {&_swigt__p_gr__sync_block, _p_gr__sync_blockTo_p_gr__block, 0, 0},  {&_swigt__p_gr__tagged_stream_block, _p_gr__tagged_stream_blockTo_p_gr__block, 0, 0},  {&_swigt__p_gr__block_gateway, _p_gr__block_gatewayTo_p_gr__block, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__block, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__endianness_t[] = {  {&_swigt__p_gr__endianness_t, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_gr__rt_status_t[] = {  {&_swigt__p_gr__rt_status_t, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr__sendfile__file_sender[] = {  {&_swigt__p_gr__sendfile__file_sender, 0, 0, 0},{0, 0, 0, 0}};
-static swig_cast_info _swigc__p_gr__sync_block[] = {  {&_swigt__p_gr__sendfile__file_sender, _p_gr__sendfile__file_senderTo_p_gr__sync_block, 0, 0},  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__sync_block, 0, 0},  {&_swigt__p_gr__sync_block, 0, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__sync_block, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr__sendfile__sendfile_wifi[] = {  {&_swigt__p_gr__sendfile__sendfile_wifi, 0, 0, 0},{0, 0, 0, 0}};
+static swig_cast_info _swigc__p_gr__sync_block[] = {  {&_swigt__p_gr__sendfile__sendfile_wifi, _p_gr__sendfile__sendfile_wifiTo_p_gr__sync_block, 0, 0},  {&_swigt__p_gr__sync_decimator, _p_gr__sync_decimatorTo_p_gr__sync_block, 0, 0},  {&_swigt__p_gr__sync_block, 0, 0, 0},  {&_swigt__p_gr__sync_interpolator, _p_gr__sync_interpolatorTo_p_gr__sync_block, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_int[] = {  {&_swigt__p_int, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_long_long[] = {  {&_swigt__p_long_long, 0, 0, 0},{0, 0, 0, 0}};
 static swig_cast_info _swigc__p_reference[] = {  {&_swigt__p_reference, 0, 0, 0},{0, 0, 0, 0}};
@@ -8593,7 +8593,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_boost__shared_ptrT_gr__flowgraph_t,
   _swigc__p_boost__shared_ptrT_gr__hier_block2_t,
   _swigc__p_boost__shared_ptrT_gr__io_signature_t,
-  _swigc__p_boost__shared_ptrT_gr__sendfile__file_sender_t,
+  _swigc__p_boost__shared_ptrT_gr__sendfile__sendfile_wifi_t,
   _swigc__p_boost__shared_ptrT_gr__top_block_t,
   _swigc__p_char,
   _swigc__p_const_reference,
@@ -8604,7 +8604,7 @@ static swig_cast_info *swig_cast_initial[] = {
   _swigc__p_gr__endianness_t,
   _swigc__p_gr__hier_block2,
   _swigc__p_gr__rt_status_t,
-  _swigc__p_gr__sendfile__file_sender,
+  _swigc__p_gr__sendfile__sendfile_wifi,
   _swigc__p_gr__sync_block,
   _swigc__p_gr__sync_decimator,
   _swigc__p_gr__sync_interpolator,

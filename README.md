@@ -7,3 +7,5 @@ This is the source code for the Mobicom 2018 - TiFi.
 \RFID contains the Code for generating the RFID Command.
 
 \USRP contains the GNURadio Codes for constructing the whole TiFi Project.
+
+![TiFi in GnuRadio flowchar](./TiFi.png)

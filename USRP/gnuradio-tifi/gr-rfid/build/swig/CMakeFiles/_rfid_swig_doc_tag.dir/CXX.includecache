@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/anplus/Documents/TiFi/USRP/gnuradio-tifi/gr-rfid/build/swig/_rfid_swig_doc_tag.cpp
+

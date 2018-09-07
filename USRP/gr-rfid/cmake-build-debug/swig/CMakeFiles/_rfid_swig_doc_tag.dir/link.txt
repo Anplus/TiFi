@@ -1,1 +1,0 @@
-/usr/bin/c++  -g  -rdynamic CMakeFiles/_rfid_swig_doc_tag.dir/_rfid_swig_doc_tag.cpp.o  -o _rfid_swig_doc_tag 

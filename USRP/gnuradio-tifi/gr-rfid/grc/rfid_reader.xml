@@ -4,7 +4,7 @@
   <key>rfid_reader</key>
   <category>rfid</category>
   <import>import rfid</import>
-  <make>rfid.reader($samp_rate,$dac_rate)</make>
+  <make>rfid.reader($samp,$dac)</make>
   <!-- Make one 'param' node for every Parameter you want settable from the GUI.
        Sub-nodes:
        * name
@@ -12,12 +12,12 @@
        * type -->
   <param>
     <name>Sample Rate</name>
-    <key>$samp_rate</key>
+    <key>samp</key>
     <type>int</type>
   </param>
   <param>
     <name>DAC Rate</name>
-    <key>$dac_rate</key>
+    <key>dac</key>
     <type>int</type>
   </param>
   <!-- Make one 'sink' node per input. Sub-nodes:

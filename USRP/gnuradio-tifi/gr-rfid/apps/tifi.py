@@ -4,7 +4,7 @@
 # GNU Radio Python Flow Graph
 # Title: Tifi
 # Author: Zhenlin AN
-# Generated: Fri Sep  7 11:12:03 2018
+# Generated: Mon Sep 10 10:33:00 2018
 ##################################################
 
 if __name__ == '__main__':
@@ -103,8 +103,7 @@ class tifi(gr.top_block, Qt.QWidget):
         self.uhd_usrp_sink_0.set_gain(0, 0)
         self.sendfile_sendfile_wifi_0 = sendfile.sendfile_wifi(gr.sizeof_gr_complex)
         self.rfid_tag_decoder_0 = rfid.tag_decoder(samp_rate)
-        self.rfid_reader_0 = Template error: rfid.reader($samp_rate,$dac_rate)
-            cannot find 'samp_rate'
+        self.rfid_reader_0 = rfid.reader(int(samp_rate),int(dac_rate))
         self.rfid_gate_0 = rfid.gate(samp_rate)
         self.interp_fir_filter_xxx_0 = filter.interp_fir_filter_ccc(5, (25, ))
         self.interp_fir_filter_xxx_0.declare_sample_delay(0)
